@@ -216,5 +216,38 @@ Example 8. At some point, the codelists need to come into play.
 </gmd:distributionInfo>
 ```
 
+Example 9. Moving on to Service Metadata. Remember the pattern?
+
+```
+<gmd:identificationInfo>
+    <gmd:MD_ServiceIdentification>
+        <gmd:citation/>
+        <gmd:abstract/>
+        <gmd:resourceFormat>
+            <gmd:MD_Format>
+                <gmd:name/>
+                <gmd:version/>
+                <gmd:formatDistributor>
+                    <gmd:MD_Distributor>
+                        <gmd:distributorContact/>
+                        <gmd:distributorTransferOptions>
+                            <gmd:MD_DigitalTransferOptions>
+                                <gmd:onLine>
+                                    <gmd:CI_OnlineResource>
+                                        <gmd:linkage>
+                                            <gmd:URL>www.my_url.com</gmd:URL>
+                                        </gmd:linkage>
+                                    </gmd:CI_OnlineResource>
+                                </gmd:onLine>
+                            </gmd:MD_DigitalTransferOptions>
+                        </gmd:distributorTransferOptions>
+                    </gmd:MD_Distributor>
+                </gmd:formatDistributor>
+            </gmd:MD_Format>
+        </gmd:resourceFormat>
+    </gmd:MD_ServiceIdentification>
+</gmd:identificationInfo>
+```
+
 
 
