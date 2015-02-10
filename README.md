@@ -29,6 +29,30 @@ Example 2. A single link in transferOptions
         </gmd:transferOptions>
     </gmd:MD_Distribution>
 </gmd:distributionInfo>
+```
+
+Example 3. A single link with transfer size
 
 ```
+<gmd:distributionInfo>
+    <gmd:MD_Distribution>
+        <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+                <gmd:transferSize>
+                    <gco:Real>10.0</gco:Real>
+                </gmd:transferSize>
+                <gmd:onLine>
+                    <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                            <gmd:URL>www.my_url.com</gmd:URL>
+                        </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+        </gmd:transferOptions>
+    </gmd:MD_Distribution>
+</gmd:distributionInfo>
+```
+
+
 
