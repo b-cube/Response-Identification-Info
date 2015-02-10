@@ -249,5 +249,31 @@ Example 9. Moving on to Service Metadata. Remember the pattern?
 </gmd:identificationInfo>
 ```
 
+Example 10. Proper service identification.
+
+```
+<gmd:identificationInfo>
+    <srv:SV_ServiceIdentification>
+        <gmd:citation/>
+        <gmd:abstract/>
+        <srv:serviceType/>
+        <srv:couplingType/>
+        <srv:containsOperations>
+            <srv:SV_OperationMetadata>
+                <srv:operationName/>
+                <srv:DCP/>
+                <srv:connectPoint>
+                    <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                            <gmd:URL>www.my_url.com</gmd:URL>
+                        </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                </srv:connectPoint>
+            </srv:SV_OperationMetadata>
+        </srv:containsOperations>
+    </srv:SV_ServiceIdentification>
+</gmd:identificationInfo>
+```
+
 
 
