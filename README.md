@@ -275,5 +275,7 @@ Example 10. Proper service identification.
 </gmd:identificationInfo>
 ```
 
+And there it is. Looks like just the ten. I am a little disappointed, but, really, some of the difference is related to elements not included here. 
+
 
 
