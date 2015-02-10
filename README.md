@@ -108,5 +108,30 @@ Example 5. A distribution format with a format distributor (context matters but 
 </gmd:distributionInfo>
 ```
 
+Example 6. Basic distributor (seeing a pattern here)
+
+```
+<gmd:distributionInfo>
+    <gmd:MD_Distribution>
+        <gmd:distributor>
+            <gmd:MD_Distributor>
+                <gmd:distributorContact/>
+                <gmd:distributorTransferOptions>
+                    <gmd:MD_DigitalTransferOptions>
+                        <gmd:onLine>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+                                    <gmd:URL>www.my_url.com</gmd:URL>
+                                </gmd:linkage>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onLine>
+                    </gmd:MD_DigitalTransferOptions>
+                </gmd:distributorTransferOptions>
+            </gmd:MD_Distributor>
+        </gmd:distributor>
+    </gmd:MD_Distribution>
+</gmd:distributionInfo>
+```
+
 
 
