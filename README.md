@@ -54,5 +54,23 @@ Example 3. A single link with transfer size
 </gmd:distributionInfo>
 ```
 
+Example 4. A basic distributionFormat block
+
+```
+<gmd:distributionInfo>
+    <gmd:MD_Distribution>
+        <gmd:distributionFormat>
+            <gmd:MD_Format>
+                <gmd:name>
+                    <gco:CharacterString>A Format</gco:CharacterString>
+                </gmd:name>
+                <gmd:version>
+                    <gco:CharacterString>1.0</gco:CharacterString>
+                </gmd:version>
+            </gmd:MD_Format>
+        </gmd:distributionFormat>
+    </gmd:MD_Distribution>
+</gmd:distributionInfo>
+```
 
 
