@@ -1,1 +1,6 @@
-notebooks/.ipynb_checkpoints/
+*_checkpoints.ipynb
+
+notebooks/.ipynb_checkpoints/Unpack XML Signatures-checkpoint.ipynb
+
+notebooks/outputs/*
+local/
