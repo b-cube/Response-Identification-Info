@@ -1,0 +1,2626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	last update: 2009-12-11
+	contact: anna.milan@noaa.gov
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0">
+	<!-- root element and key/keyrefs -->
+	<xs:element name="seismicMetadata" type="seismicMetadata_Type">
+		<!-- line id keys 		-->
+		<xs:key name="lineKey">
+			<xs:selector xpath="objectInformation/seismicLine"/>
+			<xs:field xpath="@ID"/>
+		</xs:key>
+		<xs:keyref refer="lineKey" name="associatedSeismicLineIDREF">
+			<xs:selector xpath="acquisitionInformation/seismicNavFile/associatedSeismicLine"/>
+			<xs:field xpath="@IDREF"/>
+		</xs:keyref>
+		<xs:keyref refer="lineKey" name="objectSeismicLine">
+			<xs:selector xpath="objectInformation/seismicDataObject/objectSeismicLine"/>
+			<xs:field xpath="@IDREF"/>
+		</xs:keyref>
+		<!--  seismicStation Key	-->
+		<xs:key name="seismicStationKey">
+			<xs:selector xpath="acquisitionInformation/seismicStation"/>
+			<xs:field xpath="@ID"/>
+		</xs:key>
+		<xs:keyref refer="seismicStationKey" name="seismicStationKeyRef">
+			<xs:selector xpath="objectInformation/seismicDataObject/seismicStation"/>
+			<xs:field xpath="@IDREF"/>
+		</xs:keyref>
+		<!-- lineAcquisitionParameters Key -->
+		<xs:key name="lineAcquisitionParametersKey">
+			<xs:selector xpath="acquisitionInformation/acquisitionParameters"/>
+			<xs:field xpath="@ID"/>
+		</xs:key>
+		<xs:keyref refer="lineAcquisitionParametersKey" name="lineAcquisitionParametersKeyRef">
+			<xs:selector xpath="objectInformation/seismicLine/lineAcquisitionParameters"/>
+			<xs:field xpath="@IDREF"/>
+		</xs:keyref>
+	</xs:element>
+	<!-- ************** 4 Top Level Seismic Metadata Elements ************* -->
+	<xs:complexType name="seismicMetadata_Type">
+		<xs:sequence>
+			<xs:element name="datasetInformation" type="datasetInformation_Type" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Collection level information, e.g. contacts, data quality, bounding geographic area, keywords. </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="acquisitionInformation" type="acquisitionInformation_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Information about how the data was collected, e.g. specific acquisition details, devices, ships, seismic stations. </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="objectInformation" type="objectInformation_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Object level information, e.g. SEG-Ys, detailed line information. </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="metadataInformation" type="metadataInformation_Type" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Metadata about this metadata file, e.g last update date and author. </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- datasetInformation_Type  -->
+	<xs:complexType name="datasetInformation_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Collection level information, e.g. contacts, data quality, bounding geographic area, keywords. </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="datasetID" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def> A unique identifier for the dataset. (Mandatory, Not repeatable)</def>
+						<eg>edu.utexas.ig:ew9101_01p</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datasetTitle" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Descriptive title for the dataset. (Mandatory, Not repeatable)</def>
+						<eg>EW9101 MCS Processed SEG-Y Data </eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datasetStartDate" type="citationDateType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Beginning of data collection, dataset publication or revision. (Mandatory, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datasetDescription" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>General description of the dataset. A paragraph or two should highlight the characteristics that make this a logical dataset, such as the information content, date range and geographic location of the dataset. (Mandatory. Not repeatable.)</def>
+						<eg>This was a joint UT and Lamont-Doherty Earth Observatory program collecting a series of MCS lines in the Bransfield Strait, across the South Shetland Trench and farther south along the Antarctic margin. UTIG was responsible for the Bransfield Strait and South Shetland Trench data.
+							Additional lines collected farther south along the margin were the responsibility of Lamont-Doherty Earth Observatory.</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="purpose" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Brief statement of dataset objective, intended users or project goals. (Optional, Not repeatable)</def>
+						<eg>The goals of this data collection were to increase understanding of the following processes: Andean-type orogenesis, continental lithosphere extension in a convergent continental margin setting, ridge crest subduction, and interaction of large- offset fracture zones with convergent
+							margins, including the uplift of subduction complexes.</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="supplementalInformation" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Any other descriptive information about the dataset. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataClass" type="dataClassVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Identifies the level of processing data has undergone. (Mandatory, Not repeatable)</def>
+						<eg>processed</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataType" type="dataTypeVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Kind of data differentiated by the type of receiver or source. (Mandatory, Not repeatable)</def>
+						<eg>Seismic:Active:MCS</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processedMethod" type="processedMethodVocType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Data may be processed for reflections, refractions or velocities; For use if DataClass = Processed or Compilation. (Optional, Repeatable)</def>
+						<eg>Seismic:Reflection</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processedDataClass" type="processedDataClassVocType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Primary classification of data processing results. (Optional, Repeatable)</def>
+						<eg>Stack, Migration</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicDataProvenance" type="seismicDataProvenanceVocType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Classification how the data was generated (Mandatory, Repeatable)</def>
+						<eg>DigitalSeg:DigitallyAcquired</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataMedia" type="dataMediaVocType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>The media used for dataset transfer. (Mandatory, Repeatable)</def>
+						<eg>Online</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datasetQualityDescription" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>General statement of the accuracy of the datasets, any known problems or a qualitative assessment of dataset on part of contributor. If this is information is not available put in 'Unknown'. (Mandatory, Not repeatable)</def>
+						<eg>Unknown</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datasetProcessing" minOccurs="1" maxOccurs="unbounded" type="processingParameters_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Descriptive information of processing or lineage pertinent to the entire collection level represented. </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="boundingCoordinates" minOccurs="1" maxOccurs="unbounded" type="boundingCoordinates_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>The limits of coverage of a data set expressed by latitude and longitude. (Mandatory, Repeatable)</def>
+						<xs:eg/>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="geographicFeatures" minOccurs="0" maxOccurs="unbounded" type="geographicFeatures_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Names of geographic locations and undersea features associated with the dataset and a citation to the featureName authority. (Optional, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="temporalExtent" minOccurs="0" maxOccurs="unbounded" type="temporalExtent_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Beginning and ending dates of dataset content. (Optional, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="timeZone_GMT" minOccurs="0" maxOccurs="1" type="xs:integer">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Time zone of the dataset, represented as an integer with +/- hours from Greenwich Mean Time. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="resourceProvider" minOccurs="1" maxOccurs="unbounded" type="contactInformation_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Contact information of person or organization that provides the dataset. (Mandatory, Repeatable)</def>
+						<eg>UTX-AUSTIN/IG</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataContact" minOccurs="1" maxOccurs="unbounded" type="contactInformation_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Contact information of principle investigator (chief scientist) or current responsible party of dataset. (Mandatory, Repeatable)</def>
+						<eg>Mutter_J</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datasetAccessControl" type="accessControl_Type" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Reference to the id of information about dataset access, access contact and, if applicable, access date. (Mandatory, Repeatable)</def>
+						<eg>edu.utexas.ig:ew9101_access01</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="projectSponsor" minOccurs="0" maxOccurs="unbounded" type="projectSponsor_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Organization that sponsored the development of dataset and award information. (Optional, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="documentation" minOccurs="0" maxOccurs="unbounded" type="citationInformation_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Citation of dataset related documentation, such as user guides and science papers. (Optional, Repeatable)</def>
+						<xs:eg/>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- acquisitionInformation_Type -->
+	<xs:complexType name="acquisitionInformation_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Information about how the data was collected, e.g. specific acquisition details, devices, ships, seismic stations. </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="acquisitionParameters" minOccurs="1" maxOccurs="unbounded" type="acquisitionParameters_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Acquisition parameters used to gather the seismic data. (Optional, Repeatable)</def>
+						<eg>edu.columbia.ldeo:MGL0801_ACQ001</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="platformInformation" minOccurs="0" maxOccurs="unbounded" type="platformInformation_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Ship Name and responsible organization. Note: this could be apply to other types of platforms, as well. (Optional, Repeatable) </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fieldActivity" minOccurs="0" maxOccurs="unbounded" type="fieldActivity_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Optional, Repeatable) </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicStation" minOccurs="0" maxOccurs="unbounded" type="seismicStation_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name of OBS or sonobuoy associated with an SDO. (Optional, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicNavFile" minOccurs="0" maxOccurs="unbounded" type="seismicNavFile_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Navigation information associated with dataset or seismic object. (Optional, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- objectInformation_Type -->
+	<xs:complexType name="objectInformation_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Object level information, e.g. SEG-Ys, detailed line information. </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="seismicLine" minOccurs="0" maxOccurs="unbounded" type="seismicLine_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def> (Optional, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicDataObject" minOccurs="1" maxOccurs="unbounded" type="seismicDataObject_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>A seismic data file (e.g. a SEG-Y) (Mandatory, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- metadataInformation_Type -->
+	<xs:complexType name="metadataInformation_Type">
+		<xs:sequence>
+			<xs:element name="metadataDate" type="Date_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Date when metadata was created or last updated. Recorded as YYYY-MM-DD. (Mandatory, Not repeatable)</def>
+						<eg>Date: 2008-10-15</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="metadataContact" type="contactInformation_Type" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Contact information of person who wrote the metadata. (Mandatory, Not repeatable)</def>
+						<eg>Gahagan_L</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="metadataStandard" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name and version of the standard used to document the dataset. (Mandatory, Not repeatable)</def>
+						<def>Seismic Metadata Convention v0.5</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateOfSubmission" type="Date_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Date of dataset submission to the archive data center. Must be formatted as YYYY-MM-DD. (Mandatory, Not repeatable)</def>
+						<eg>2005-01-11</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- **************End  Top Level Seismic Metadata Elements ************* -->
+	<!-- accessControl -->
+	<xs:complexType name="accessControl_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def> To describe, if any, If any one object or the entire dataset is on hold. (Mandatory, Repeatable)</def>
+				<xs:eg/>
+				<xs:devNotes/>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="accessControl" type="accessControlElements_Type" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="accessControlElements_Type">
+		<xs:sequence>
+			<xs:element name="accessState" type="accessStateVocType">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Vocabulary list of restrictions for accessing the data set. "Open" is an option if there are no restrictions. (Mandatory, Not repeatable)</def>
+						<eg>open</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="accessPerson" type="contactInformation_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Contact for access information. (Mandatory, Not repeatable)</def>
+						<eg>Gahagan_L</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="accessReleaseDate" type="Date_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Date when dataset or seismic data object will be released, YYYY-MM-DD. Required if any part of the dataset is restricted and useful if the dataset is already released. (Optional, Not repeatable)</def>
+						<eg>2005-01-11</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Unique identification for this access information.</def>
+					<eg>edu.utexas.ig:ew9101_access01</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- Acquisition Parameters (change vocabulary to all source/receiver types-->
+	<xs:complexType name="acquisitionParameters_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Details of seismic data collection. (Optional, Repeatable)</def>
+				<eg>gov.usgs.cmg:S-8-07-SC_ACQxxx</eg>
+				<eg>edu.columbia.ldeo:MGL0801_ACQxxx</eg>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="fieldActivity" minOccurs="0" maxOccurs="unbounded" type="fieldActivity_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Unique identifier of the field data acquisition program associated with the data set. (Optional, Repeatable)</def>
+						<eg>S-8-07-SC</eg>
+						<eg>MGL0801</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="receiverType" type="deviceTypeVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Type of receiver used to detect the arrival of seismic waves.(Mandatory, Not repeatable)</def>
+						<eg>CHIRP</eg>
+						<eg>Hydrophone:Streamer</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourceType" type="deviceTypeVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Type of source used to generate seismic waves. (Mandatory, Not repeatable)</def>
+						<eg>CHIRP</eg>
+						<eg>AirGun:Bolt1500LL; AirGun:Bolt1900LLX</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="acquisitionSystemName" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Vendor name for the data acquisition system used to record the seismic signals. (Optional, Not repeatable)</def>
+						<xs:annotation>
+							<xs:documentation>
+								<eg>Triton Subbottom </eg>
+								<eg>Syntron Syntrack 960</eg>
+							</xs:documentation>
+						</xs:annotation>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="acquisitionSystemType" type="acquisitionSystemTypeVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Signal may be recorded in Digital or Analog form. (Mandatory, Not repeatable)</def>
+						<eg>Digital</eg>
+						<eg>Digital</eg>
+						<devNote>Changed to vocab type - 3/5/09</devNote>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicNavSystem" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Navigation system used as primary source of positioning information for the data set. (Optional, Not repeatable)</def>
+						<eg>Yonav (USGS)</eg>
+						<eg>POS-MV (primary), SeaPath</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!-- ? should surveyDatum be a  vocabType? -->
+			<xs:element name="surveyDatum" minOccurs="0" maxOccurs="1" type="surveyDatumVocType">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Geodetic reference system used for seismic survey. (Optional, Not repeatable)</def>
+						<eg>WGS84</eg>
+						<eg>WGS84</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourceToNearChannel_inMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Distance between the sound source and the nearest channel or hydrophone group in receiver cable. (Optional, Not repeatable)</def>
+						<eg>0</eg>
+						<eg>42</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="antennaToSource_inMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Distance between the GPS antenna and sound source. (Optional, Not repeatable)</def>
+						<eg>18 </eg>
+						<eg>62</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numberOfChannelsRecorded" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Total number of channels (or hydrophone groups) recorded. Corresponds to sum of all channels on all cables. (Optional, Not repeatable)</def>
+						<eg>3</eg>
+						<eg>1824</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numberOfCables" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Number of receiver cables or streamers used in survey. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg>3</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numberOfChannelsEachCable" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Number of receiver channels (or hydrophone groups) on each cable or streamer. (Optional, Not repeatable)</def>
+						<eg>n/a </eg>
+						<eg>456</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="channelLength_inMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Length of hydrophone group composing one channel. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg>12.5</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cableLength_inMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Length of receiver cable or streamer. (Optional, Not repeatable)</def>
+						<eg>n/a </eg>
+						<eg>6000</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cableSpacing_inMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Separation between cables for 3D operations. (Optional, Not repeatable)</def>
+						<eg>n/a </eg>
+						<eg>150</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nearChannelNumber" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Number of the receiver channel located nearest the sound source. (Optional, Not repeatable)</def>
+						<eg>n/a </eg>
+						<eg>468</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cableReceiverDepth_inMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Nominal depth of the streamer cable or receiver. For Subbottom, this is the same value as sourceDepth. (Optional, Not repeatable)</def>
+						<eg>2</eg>
+						<eg>9</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cableReceiverDepthRecorded" type="yesNoVocType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Yes, If the depth of the streamer cable or receiver is recorded and no, if it is not. Note: this only pertains to digital recording, for example, SEG-D field trace headers. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numberSourceArrays" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Useful for 3D operations where 2 source arrays are shot alternately. This is not the number of linear gun strings that comprise the source. Number of sources = 1 if all guns were fired simultaneously. Number of source arrays = 2 if the source was fired as 2 arrays fired alternately.
+							(Optional, Not repeatable)</def>
+						<eg>1</eg>
+						<eg>1</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="flipFlopShooting" type="yesNoVocType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Yes or No. Depending on whether two source arrays were fired alternately. (Optional, Not repeatable)</def>
+						<eg>No</eg>
+						<eg>empty</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourceArraySeparation_inMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>If the source is configured as 2 arrays fired alternately, this number is the separation (in meters) between the arrays. Used for 3D operations and potentially 2D operations. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg>n/a</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourceVolume" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Total volume of compressed air/water bubble released by source array. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg> 54077.31</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourceVolumeUnits" type="sourceVolumeUnitsVocType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>The units of the source volume. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg>cubicCentimeters</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourcePressure_inBars" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Total pressure exerted by the source. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg>131.0003</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourceNumber" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Number of air/water/GI guns used in the source array. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg>18</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourceDepth_inMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Depth at which the source is towed. (Optional, Not repeatable)</def>
+						<eg>2</eg>
+						<eg>6.5</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shotControl" type="shotControlVocType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Source shots are fired at regular intervals of either time or distance. (Optional, Not repeatable)</def>
+						<eg>time</eg>
+						<eg>time</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shotInterval_inSecondsOrMeters" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Time or distance interval between shots. (Optional, Not repeatable)</def>
+						<eg>0.25</eg>
+						<eg>10</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sampleInterval_inMicroseconds" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Sampling interval for seismic recording. (Optional, Not repeatable)</def>
+						<eg>62</eg>
+						<eg>2000</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sweepFrequency" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>For Chirp systems - the manufacturer specified min/max frequency range of the emitted source signal. (Optional, Not repeatable)</def>
+						<eg>500 Hz to 3.5 kHz and 30 millisecond window</eg>
+						<eg>n/a</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="recordLength_inSeconds" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Total length of the recorded seismic trace in time. (Optional, Not repeatable)</def>
+						<eg>300</eg>
+						<eg>8192</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="compassBirds" type="yesNoVocType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Yes if compass birds were used on the steamer cable. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg>yes</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tailBuoyPositioning" type="yesNoVocType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Yes if the tail buoy on end of streamer cable had an active GPS for positioning. (Optional, Not repeatable)</def>
+						<eg>n/a</eg>
+						<eg>yes</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="recordingDelay" type="yesNoVocType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Yes if the beginning of data recording is delayed for a specified time interval after each shot. Used for example in older generation seismic surveys in deep water settings to exclude the water column. (Optional, Not repeatable)</def>
+						<eg>no</eg>
+						<eg>no</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sourcePowerSetting" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Power setting of seismic source - used for high frequency subbottom systems. (Optional, Not repeatable)</def>
+						<eg>500 joules</eg>
+						<eg>n/a</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Unique id of this acquisition information. If there is more than one acquisition configuration for an expedition then a new table should be created.</def>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- Bounding Coordinates -->
+	<xs:complexType name="boundingCoordinates_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>The limits of coverage of a data set expressed by latitude and longitude values in the order western-most, eastern-most, northern-most, and southern-most. (Mandatory, Repeatable)</def>- <xs:eg/>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="northLat" type="lat_Type" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Northern-most latitude coordinate of the dataset extent expressed in decimal degrees. (Mandatory, Not repeatable)</def>
+						<eg>-60.3486</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="southLat" type="lat_Type" maxOccurs="1" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Southern-most latitude coordinate of the dataset extent expressed in decimal degrees. (Mandatory, Not repeatable)</def>
+						<eg>-69.4320</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="eastLong" type="long_Type" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Eastern-most longitude coordinate of the dataset extent expressed in decimal degrees. (Mandatory, Not repeatable)</def>
+						<eg>-55.502</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="westLong" type="long_Type" maxOccurs="1" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Western-most longitude coordinate of the dataset extent expressed in decimal degrees. (Mandatory, Not repeatable)</def>
+						<eg>-79.8162</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- citation Information -->
+	<xs:complexType name="citationInformation_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Reference to documentation or dataset. (Mandatory?, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="citationInformation" minOccurs="1" maxOccurs="1" type="citationInformationDetails_Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="citationInformationDetails_Type">
+		<xs:sequence>
+			<xs:element name="author" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name of the individual that developed the data set or authored the resource. (Mandatory, Repeatable)</def>
+						<eg>GEBCO Sub-Committee on Undersea Feature Names</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name by which the cited resource is known (ISO 19115) (Mandatory, Not repeatable)</def>
+						<eg>IHO-IOC GEBCO Gazetteer</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="citationDate" type="citationDateType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Mandatory, Repeatable) </def>
+						<eg>date: 2007, dateTypeCode: published</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="journalName" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name of journal where cited resource is published. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="page" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Journal pages of cited resource. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="volume" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Journal volume. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="doi" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Digital Object Identifier of cited resource. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataReportFileName" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>File name of cited object. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="onlineLinkage" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>URL to remote location or publication of cited resource. (Optional, Not repeatable)</def>
+						<eg>http://www.gebco.net/data_and_products/undersea_feature_names/documents/gazet_sept2007.xls </eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Unique identifier of the cited resource.</def>
+					<eg>edu.utexas.ig._001</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- contact Information-->
+	<xs:complexType name="contactInformation_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Contact information of person or organization. (Mandatory, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="contactInformation" minOccurs="1" maxOccurs="1" type="contactInformationDetails_Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="contactInformationDetails_Type">
+		<xs:sequence>
+			<xs:element name="organization" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name of the contact organization. (Mandatory, Repeatable)</def>
+						<eg>Lamont-Doherty Earth Observatory</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Contact person name. (Mandatory, Not repeatable)</def>
+						<eg>John C. Mutter</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="email" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Contact email. (Mandatory, Not repeatable)</def>
+						<eg>jcm@ldeo.columbia.edu</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="role" type="roleVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Role code of contact, based on ISO 19115 controlled vocabulary. (Mandatory, Not repeatable)</def>
+						<eg>principalInvestigator</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Unique identifier of contact information. </def>
+					<eg>Mutter_J</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- citationDateType -->
+	<xs:complexType name="citationDateType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>The date when the cited resource was published or otherwise made available for release. (CSDGM 1998) Typically this is the survey start date with date type code of 'creation'. </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="date" minOccurs="1" maxOccurs="1" type="Date_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Mandatory, Not repeatable)</def>
+						<eg>1991-02-01</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateTypeCode" type="dateTypeCodeVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>creation: survey start date or beginning of data collection; publication: release date; revision: when data was processed or revised. (Mandatory, Not repeatable)</def>
+						<eg>creation</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- fieldActivity -->
+	<xs:complexType name="fieldActivity_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Identifier that references just the cruiseID associated with the dataset or the id of a separate cruise level metadata record. It could also represent an entryID, expeditionID or fieldActivityID if cruiseID is not available. (Optional, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="ID" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>
+					<eg>EW9101</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!--GeographicFeatures-->
+	<xs:complexType name="geographicFeatures_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Names of geographic locations associated with the dataset and a citation to the featureName authority. (Optional, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="featureName" type="xs:string" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name of geographic feature, specific location or area.</def>
+						<eg>South Pacific Ocean</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="featureAuthority" minOccurs="0" maxOccurs="1" type="citationInformation_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Reference id to a publication of geographic names or Gazetteer, for example, the IHO of Undersea Feature Names. (Optional, Not repeatable)</def>
+						<eg>edu.utexas.ig._001</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--  platform Information-->
+	<xs:complexType name="platformInformation_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Ship Name and responsible organization. Note: this could be apply to other types of platforms, as well. (Optional, Repeatable) </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="platform" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name of the ship (Mandatory, Not repeatable)</def>
+						<eg>Maurice Ewing</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="platformOrganization" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Platform operator (not owner). (Mandatory, Not repeatable)</def>
+						<eg>LDEO</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--    processingParameters -->
+	<xs:complexType name="processingParameters_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Processing parameters for the dataset or seismicDataObject.</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="processingParameters" minOccurs="1" maxOccurs="1" type="processingParametersElements_Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="processingParametersElements_Type">
+		<xs:sequence>
+			<xs:element name="processingScope" type="processingScopeVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Defines whether the processing was for the dataset or the dataObject. (Mandatory, Not repeatable)</def>
+						<eg>dataset</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="parentDataset" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Identifier of the processed data set that served as parent or field dataset for processing. (Optional, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="ID" type="xs:string" use="required">
+						<xs:annotation>
+							<xs:documentation>
+								<def>Unique identifier of the parent dataset. </def>
+								<eg>org.marine-geo:EW9101_parent001</eg>
+							</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="processingStep" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Description of processing performed on the dataset or object. Or more general lineage description. (Mandatory, Not repeatable)</def>
+						<eg>UTIG: Data processing used CG and G's Geovecteur software. CMPs for stacking were calculated from a mean distance between shots for each line segment. Some processing histories are in the UTIG archive. LDEO: MCS in house processing. For all files: edit traces, timing correction,
+							outside mute, normal move out and stack.</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processingStepDate" type="Date_Type" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Date of process step action. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processContact" minOccurs="0" maxOccurs="1" type="contactInformation_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Contact information of person who performed the processing. (Optional, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Unique identifier for this set of processing parameters. </def>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- Project Sponsor -->
+	<xs:complexType name="projectSponsor_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Organization that sponsored the development of dataset and award information. (Optional, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="organization" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Optional, Repeatable)</def>
+						<eg>National Science Foundation</eg>
+						<devNote>Should we have an organization vocab list?</devNote>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="awardTitle" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Mandatory, Not repeatable)</def>
+						<eg> The Pacific Margin of the Antarctic Peninsula: A Marine Geophysical Study of the Tectonic Evolution of Andean-Type Orogen</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="awardNumber" minOccurs="0" maxOccurs="1" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Optional, Not repeatable)</def>
+						<eg> 8916436</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="awardDate" type="citationDateType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Mandatory, Repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Unique identifier for the project sponsor</def>
+					<eg>gov.nsf:OCE94-18135</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- seismicDataObject -->
+	<xs:complexType name="seismicDataObject_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>A seismic data file (e.g. a SEG-Y) (Optional, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="objectSeismicLine" minOccurs="0" maxOccurs="unbounded" type="IDREF_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Identifier reference to seismic line associated with a seismic data object. LineID or StationID should be populated. The ID is enforced locally. (Optional, Repeatable)</def>
+						<eg>sap02</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="alternateLineName" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Optional, Repeatable)</def>
+						<eg>1069</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicStation" minOccurs="0" maxOccurs="unbounded" type="IDREF_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Reference to the id of seismic station information (for OBS or sonobuoy) associated with a seismic data object. (Optional, Repeatable)</def>
+						<eg>edu.texas.ig:EW9204_xxx</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataMedia" type="dataMediaVocType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Mandatory, Repeatable)</def>
+						<eg>Online</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataFileFormat" type="dataFileFormatVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>format of digital file (Mandatory, Not repeatable)</def>
+						<eg>SEGY</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="embeddedNavigation" type="yesNoVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Indicates whether the navigation information is included in the seismic data object file header. (Mandatory, Not repeatable)</def>
+						<eg>yes</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicNavFile" minOccurs="0" maxOccurs="unbounded" type="seismicNavFile_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Navigation file that corresponds with this data file or data object. There may not always be a navigation file, e.g. for a data compilation represented as one xml element with structured text. (Optional, Repeatable)</def>
+						<eg>ar54.5558.ew9101.sap02.stack.ploc</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicDataProvenance" type="seismicDataProvenanceVocType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Classiification how the data was generated (Optional, Repeatable)</def>
+						<eg>DigitalSeg:DigitallyAcquired</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processedDataClass" type="processedDataClassVocType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<eg>stack</eg>
+						<devNote>changed name from dataProcessing to processedDataClass (am 02/04/2009)</devNote>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataObjectProcessing" minOccurs="0" maxOccurs="unbounded" type="processingParameters_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Reference to the id for processingParameters for a data object, This information is intended to describe unique processing information for each seismic data object. (Optional, Repeatable)</def>
+						<eg>edu.utexas.ig:ew9101:ar54.5558_01</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="processingDocument" minOccurs="0" maxOccurs="unbounded" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Reference to more documentation that captures the processing/lineage in more detail. (Optional, Repeatable)</def>
+						<eg>ar54.5558.hst (e.g., jpeg of sidepanel, sioseis script, program flow)</eg>
+						<devNote>Keep as free text field, however will need to develop best practices to ensure the ancillary processing documents are sent to archive and relationship to dataset/datafile is maintained.</devNote>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="objectAccessControl" type="accessControl_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Reference to id of access control information for the data object, if the access is the same for the entire dataset then you can re-use the dataset access information. (Mandatory, Not repeatable)</def>
+						<eg>edu.utexas.ig:ew9101_access01</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>unique identifier of the seismic data object file (Optional.</def>
+					<eg>ar41.0015.ew9101.ap-02.stack.segy</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- seismicLine -->
+	<xs:complexType name="seismicLine_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>(Optional, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="startLat" type="lat_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Beginning latitude coordinate of seismic line expressed in decimal degrees. (Optional, Not repeatable)</def>
+						<eg>-66.7363</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="stopLat" type="lat_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Ending latitude coordinate of seismic line expressed in decimal degrees. (Optional, Not repeatable)</def>
+						<eg>-65.8171</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="startLong" type="long_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Beginning longitude coordinate of seismic line expressed in decimal degrees. (Optional, Not repeatable)</def>
+						<eg>-69.3384</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="stopLong" type="long_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Ending longitude coordinate of seismic line expressed in decimal degrees. (Optional, Not repeatable)</def>
+						<eg>-71.8139</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="startDateTime" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>First date and time of seismic line. (Optional, Not repeatable)</def>
+						<eg>1991-03-02T00:00:00</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="endDateTime" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Last date and time of seismic line. (Optional, Not repeatable)</def>
+						<eg>1991-03-03T00:00:00</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shotOrCmpStart" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Optional, Not repeatable)</def>
+						<eg>1</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shotOrCmpStop" type="xs:integer" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Optional, Not repeatable)</def>
+						<eg>2923</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="recordLength_inSeconds" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Total length of the recorded seismic trace in time. (Optional, Not repeatable)</def>
+						<eg>16</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sampleInterval_inMicroseconds" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>!needs good definition! (Optional, Not repeatable)</def>
+						<eg>4000</eg>
+						<devNote>Units same as sampleInterval field in AcquisitionParameters.</devNote>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lineAcquisitionParameters" minOccurs="0" maxOccurs="1" type="IDREF_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Details of data collection for a particular line. (Optional, Not repeatable)</def>
+						<eg>edu.utexas.ig:ew9101_001</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Unique identifier for seismic line. Identifier value is controlled internally by data providers.</def>
+					<eg>sap02</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- seismicNavFile -->
+	<xs:complexType name="seismicNavFile_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>(Optional, Repeatable)</def>
+				<devNote>may not always have a navigation file associate with dataset or seismic object. Most likely used for a data compilation.</devNote>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="associatedSeismicLine" minOccurs="0" maxOccurs="unbounded" type="IDREF_Type">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Identifier reference to seismic line. Unique ids are internally controlled by data provider. (Mandatory, Not repeatable)</def>
+						<eg>sap02</eg>
+						<devNote>Field name was "lineID"</devNote>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="surveyDatum" minOccurs="0" maxOccurs="1" type="surveyDatumVocType">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Optional, Not repeatable)</def>
+						<eg>WGS84</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="offsetsApplied" type="offsetsAppliedVocType">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Number of offset corrections, associated with the navigation system and processing procedures, of the geographic position of the seismic trace that were made. (Mandatory, Not repeatable)</def>
+						<eg>yes</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dataFileFormat" type="dataFileFormatVocType">
+				<xs:annotation>
+					<xs:documentation>
+						<def>File format of the seismic navigation file. Note: TAR and Zip are not formats - they are a compression. (Mandatory, Not repeatable)</def>
+						<eg>Text</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="details" minOccurs="0" maxOccurs="1" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Free text field for further descriptions about the navigation or the navigation file. (Optional, Not repeatable)</def>
+						<eg>Used navigation table relating CMPs to latitude/longitude. Then interpolated latitude/longitude to other CMPs. Positions are the latitude/longitude of the center of the particular cdp bin.</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Identifier of navigation file. The unique ids are internally controlled by data provider. </def>
+					<eg>ar54.5558.ew9101.sap02.stack.ploc</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- Seismic Station -->
+	<xs:complexType name="seismicStation_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>OBS or sonobuoy associated with dataset or seismic data object. (Optional, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="stationName" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Name of station. (Optional, Not repeatable)</def>
+						<eg>stn-01</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!-- ? should be vocab list? -->
+			<xs:element name="deviceID" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Identification of seismic station device (Optional, Not repeatable)</def>
+						<eg>Seismic:OBS</eg>
+						<devNote>Should this come from a vocabulary list? Change to deviceType??</devNote>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="orientation" type="orientationVocType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Are horizontal components oriented by rotation? Yes, No, or Undocumented. (Optional, Not repeatable)</def>
+						<eg>no</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="latitude" type="lat_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Longitude position of station in decimal degrees.(Optional, Not repeatable)</def>
+						<eg>27.611 </eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="longitude" type="long_Type" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Longitude position of station in decimal degrees. (Optional, Not repeatable)</def>
+						<eg>-94.114972</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="delayType" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Specify whether this is the standard SEG-Y specified format with 16 bits in byte 109 or a specialized format (sometimes used by UTIG) with 32 bits in byte 107. (Optional, Not repeatable)</def>
+						<eg>16 bit</eg>
+						<devNote>removed _in Meters and xs:decimal type - not sure why this was there (am. 6/09)</devNote>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="maximumOffset1" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Maximum shot distance on side 1 from OBS, in meters. (Optional, Not repeatable)</def>
+						<eg>-16094</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="maximumOffset2" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Maximum shot distance on side 2 from OBS, in meters. (Optional, Not repeatable)</def>
+						<eg>16495</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="seismicStationTrace" minOccurs="0" maxOccurs="unbounded" type="seismicStationTrace_Type"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					<def>Unique ID of this seismic station information. (Optional)</def>
+					<eg>edu.utexas.ig:fm3001_stn-01</eg>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<!-- seismicStationTrace -->
+	<xs:complexType name="seismicStationTrace_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>(Optional, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="traceNumber" type="xs:integer" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Mandatory, Not repeatable)</def>
+						<eg>1</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="traceDataType" type="traceDataTypeVocType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>(Mandatory, Not repeatable)</def>
+						<eg>horizontal</eg>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--TemporalExtent-->
+	<xs:complexType name="temporalExtent_Type">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Beginning and ending dates of dataset content. (Optional, Repeatable)</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="startDate" type="Date_Type" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Single value encoded as YYYY, YYYY-MM or YYYY-MM-DD.(Mandatory, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="endDate" type="Date_Type" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Single value encoded as YYYY, YYYY-MM or YYYY-MM-DD.(Mandatory, Not repeatable)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- *************SimpleTypes  *************-->
+	<xs:simpleType name="Date_Type">
+		<xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
+	</xs:simpleType>
+	<!-- Note: these bounding restrictions may not work for certain locations, such as Alaska or across the meridian... -->
+	<xs:simpleType name="lat_Type">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="-90.00"/>
+			<xs:maxInclusive value="90.00"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="long_Type">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="-180.00"/>
+			<xs:maxInclusive value="180.00"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  -->
+	<xs:complexType name="IDREF_Type">
+		<xs:attribute name="IDREF" type="xs:string" use="required"/>
+	</xs:complexType>
+	<!--************* Vocabulary Type (alphabetical)*************-->
+	<!--accessStateVocType-->
+	<xs:simpleType name="accessStateVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>restrictions for accessing the data set</def>
+				<devNote>for definition: ? each SDO may be unique wrt access</devNote>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="delay">
+				<xs:annotation>
+					<xs:documentation>
+						<def>public access to the data has been delayed (e.g., PI may still be working on data) </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="open">
+				<xs:annotation>
+					<xs:documentation>
+						<def>pubic has unrestricted access to data </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="openpartial">
+				<xs:annotation>
+					<xs:documentation>
+						<def>public has unrestricted access to only some of the data; access to remaining data may be restricted or delayed </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="restricted">
+				<xs:annotation>
+					<xs:documentation>
+						<def>public does not have access to the data; these data may be proprietary </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--acquisitionSystemTypeVocType-->
+	<xs:simpleType name="acquisitionSystemTypeVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>vocabulary for system type</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="analog"/>
+			<xs:enumeration value="digital"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- dataClassVocType -->
+	<xs:simpleType name="dataClassVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>describes the level of processing data has undergone </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="compilation">
+				<xs:annotation>
+					<xs:documentation>
+						<def>collection of different types/classes of data (e.g., fledermaus scene, movie of 3D volume, geoquest project)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="field">
+				<xs:annotation>
+					<xs:documentation>
+						<def>untouched or minimally field processed (e.g., word or media formatting, header additions); includes unprocessed SCS, CHIRP, 3.5 kHz</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="processed">
+				<xs:annotation>
+					<xs:documentation>
+						<def>any irreversible processing or header manipulation</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- dataFileFormatVocType-->
+	<xs:simpleType name="dataFileFormatVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>format of digital file</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BMP">
+				<xs:annotation>
+					<xs:documentation>
+						<def>standard Bit-mapped graphic format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DOC">
+				<xs:annotation>
+					<xs:documentation>
+						<def>format used for text documents by Microsoft Word</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Fledermaus">
+				<xs:annotation>
+					<xs:documentation>
+						<def>output from Fledermaus interactive 3D data visualization system</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GIF">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Graphics Interchange Format, a bitmap image format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HTML">
+				<xs:annotation>
+					<xs:documentation>
+						<def>HyperText Markup Language, the predominant markup language for Web pages</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JPEG">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Joint Photographic Experts Group, method of compression for photographic images</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KEB">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Knudsen Binary format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KMZ">
+				<xs:annotation>
+					<xs:documentation>
+						<def>zipped KML files with a .kmz extension, for Google Earth or Map applications</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KML">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Keyhole Markup Language, an XML-based language schema for expressing geographic annotation and visualization in Google Earth or Map applications</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MOV">
+				<xs:annotation>
+					<xs:documentation>
+						<def>QuickTime file format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="P1/90">
+				<xs:annotation>
+					<xs:documentation>
+						<def>UKOAA post plot positioning data format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="P2">
+				<xs:annotation>
+					<xs:documentation>
+						<def>UKOOA data exchange format designed to record positioning data for both 2D and 3D seismic surveys</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PDF">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Portable Document Format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PNG">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Portable Network Graphics format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PostScript">
+				<xs:annotation>
+					<xs:documentation>
+						<def>dynamically typed concatenative programming language known for its use as a page description language in the electronic and desktop publishing areas</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SEGB">
+				<xs:annotation>
+					<xs:documentation>
+						<def>a type of original acquired format for seismic data developed by the Society of Exploration Geophysicists</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SEGY">
+				<xs:annotation>
+					<xs:documentation>
+						<def>a type of original acquired format for seismic data developed by the Society of Exploration Geophysicists</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SEGD">
+				<xs:annotation>
+					<xs:documentation>
+						<def>a type of original acquired format for seismic data developed by the Society of Exploration Geophysicists</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Text">
+				<xs:annotation>
+					<xs:documentation>
+						<def>unformatted ASCII file format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TIFF">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Tagged Image File Format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="XLS">
+				<xs:annotation>
+					<xs:documentation>
+						<def>spreadsheet file format used by Microsoft Excel</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="XTF">
+				<xs:annotation>
+					<xs:documentation>
+						<def>eXtensible Text Framework "is an architecture that supports searching across collections of heterogeneous textual data" (XML, PDF, text)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nonDigital">
+				<xs:annotation>
+					<xs:documentation>
+						<def>For non-digital files.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- dataMediaVocType -->
+	<xs:simpleType name="dataMediaVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>The media used for dataset transfer.</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CD"/>
+			<xs:enumeration value="DVD"/>
+			<xs:enumeration value="External Hard Drive"/>
+			<xs:enumeration value="Microfilm"/>
+			<xs:enumeration value="Online"/>
+			<xs:enumeration value="Paper"/>
+			<xs:enumeration value="Tape"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--    dataTypeVocType-->
+	<xs:simpleType name="dataTypeVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>kind of data differentiated by the type of receiver or source</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Seismic:Active">
+				<xs:annotation>
+					<xs:documentation>
+						<def>controlled source</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Active:ESP">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Expanding Spread Profiling</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Active:MCS">
+				<xs:annotation>
+					<xs:documentation>
+						<def>more than one channel</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Active:MCS-3D">
+				<xs:annotation>
+					<xs:documentation>
+						<def>data is appropriate for 3-D processing</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Active:OBS">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Ocean Bottom Seismograph</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Active:SCS">
+				<xs:annotation>
+					<xs:documentation>
+						<def>one channel only</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Active:Sonobuoy">
+				<xs:annotation>
+					<xs:documentation>
+						<def>floating buoy receiver</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Active:Subbottom">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Chirp, 3.5 kHz controlled sources</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Passive">
+				<xs:annotation>
+					<xs:documentation>
+						<def>natural source</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--dateTypeCodeVocType-->
+	<xs:simpleType name="dateTypeCodeVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Codelist values that identify the type of date for cited resource.</def>
+				<eg>creation</eg>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="creation">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Start date of cruise and/or data collection. This is the recommended value for the dataset or object.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="published">
+				<xs:annotation>
+					<xs:documentation>
+						<def>When the data was made available to the public, recommended if creation date of dataset is unknown. Typically this is used for the publication date of a paper or cited reference. </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="revision">
+				<xs:annotation>
+					<xs:documentation>
+						<def>When the data was processed or revised or there is a new version released or cited object. (Not recommended for seismic dataset date). </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--deviceTypeVocType-->
+	<xs:simpleType name="deviceTypeVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>device used to create sound or receive sound </def>
+				<xs:devNotes>source and receiver types are grouped into one list (am 06/09)</xs:devNotes>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Gravimeter">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Measures gravitational field of Earth.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Hydrophone_OceanBottom">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Also called OBH, deployed on the sea floor.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Hydrophone_OceanBottomCable">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Like an OBH, but connected by a cable.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Hydrophone_Sonobuoy">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Like an OBH, but floats at the surface.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Hydrophone_Streamer">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Towed array of hydrophones.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Laser_Altimeter">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Single beam, measures a range.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Laser_Scanning">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Towed scanner using light, aka lidar in aircraft.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Magnetometer">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Measures magnetic field of Earth.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SeismicSource_Boomer">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Fixed frequency. These penetrate bottom and create SEGY files.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SeismicSource_Explosive">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Makes noises in the water, e.g. dynamite.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SeismicSource_Flexichoc"/>
+			<xs:enumeration value="SeismicSource_Gun_Air">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Pneumatic, make noises in the water.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SeismicSource_Gun_Air_GI"/>
+			<xs:enumeration value="SeismicSource_Gun_Water">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Pneumatic, make noises in the water.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SeismicSource_Sparker">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Fixed frequency. These penetrate bottom and create SEGY files.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismometer_BuriedBroadband">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Receiver.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismometer_OceanBottomCable">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Also called OBS, seismometer placed on the sea floor</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sonar_ADCP">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Acoustic doppler current profiler.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sonar_CHIRP">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Swept frequency sub-bottom profiler.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sonar_Echosounder">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Single, dual, and split beams. E.g. 3.5 kHz. </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sonar_Interferometric">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Measures bathymetry and sidescan.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sonar_Multibeam">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Example: make = SeaBeam, model = 2112.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sonar_Scanning">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Articulating, profiling. Example: make = Imagenex, model = 801.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sonar_Sidescan">
+				<xs:annotation>
+					<xs:documentation>
+						<def>The intensity of the acoustic reflections from the seafloor.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--    offsetsAppliedVocType-->
+	<xs:simpleType name="offsetsAppliedVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Offset corrections, associated with the navigation system and processing procedures, of the geographic position of the seismic trace that were made </def>
+				<eg>yes</eg>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="no">
+				<xs:annotation>
+					<xs:documentation>
+						<def>no offset corrections between navigation antenna and receiver made for the trace location</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="partial">
+				<xs:annotation>
+					<xs:documentation>
+						<def>some offset corrections between navigation antenna and receiver made for the trace location</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="undocumented">
+				<xs:annotation>
+					<xs:documentation>
+						<def>this information is not documented</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="yes">
+				<xs:annotation>
+					<xs:documentation>
+						<def>all offset corrections made for the trace location</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- orientationVocType -->
+	<xs:simpleType name="orientationVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Are horizontal components oriented by rotation?</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="no">
+				<xs:annotation>
+					<xs:documentation>
+						<def>the horizontal components were not rotated</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="undocumented">
+				<xs:annotation>
+					<xs:documentation>
+						<def>this information is not documented</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="yes">
+				<xs:annotation>
+					<xs:documentation>
+						<def>the horizontal components were rotated</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- processedDataClassVocType -->
+	<xs:simpleType name="processedDataClassVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>primary classification of data processing results</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CMPSorted">
+				<xs:annotation>
+					<xs:documentation>
+						<def>shot data sorted into common mid-point gathers</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CMPSorted:3D">
+				<xs:annotation>
+					<xs:documentation>
+						<def>Shot data sorted into 3-D common mid-point gathers.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Migration">
+				<xs:annotation>
+					<xs:documentation>
+						<def>method to reposition the seismic image to a truer subsurface position; may be done pre-stack, post-stack, or partially</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Migration:3D">
+				<xs:annotation>
+					<xs:documentation>
+						<def>migration of 3-D seismic data volume</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Migration:3D:Depth">
+				<xs:annotation>
+					<xs:documentation>
+						<def>depth migration of 3-D seismic data volume</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Migration:Depth">
+				<xs:annotation>
+					<xs:documentation>
+						<def>migrated data that was then depth-converted</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NearTraceStrip">
+				<xs:annotation>
+					<xs:documentation>
+						<def>a single trace from a shot gather used in processing</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="None">
+				<xs:annotation>
+					<xs:documentation>
+						<def>no processing done</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Other">
+				<xs:annotation>
+					<xs:documentation>
+						<def>e.g., resampled to 4ms</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Stack">
+				<xs:annotation>
+					<xs:documentation>
+						<def>summed traces of common mid-points</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Stack:3D">
+				<xs:annotation>
+					<xs:documentation>
+						<def>summed traces of 3-D common mid-points</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Undocumented">
+				<xs:annotation>
+					<xs:documentation>
+						<def>this information is not documented, yet may still be processed.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- processedMethodVocType -->
+	<xs:simpleType name="processedMethodVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>data may be processed for reflections, refractions or velocities; for use if DataClass = Processed or Compilation</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Seismic:Reflection">
+				<xs:annotation>
+					<xs:documentation>
+						<def>processed for reflections</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Refraction">
+				<xs:annotation>
+					<xs:documentation>
+						<def>processed for refractions</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Seismic:Velocity">
+				<xs:annotation>
+					<xs:documentation>
+						<def>processed for velocities</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- processingScopeVocType -->
+	<xs:simpleType name="processingScopeVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>the class of information to which the processing was applied</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="dataset">
+				<xs:annotation>
+					<xs:documentation>
+						<def>processing was applied to group of data objects with something in common (e.g., acquired on the same field expedition; processed the same; etc.)</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="dataObject">
+				<xs:annotation>
+					<xs:documentation>
+						<def>processing was applied to a particular dataObject, e.g. a particular SEG-Y.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="collectionHardware">
+				<xs:annotation>
+					<xs:documentation>
+						<def>processing parameters describes history/lineage of the devices used to collect the data.</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fieldSession">
+				<xs:annotation>
+					<xs:documentation>
+						<def>processing parameters describes history or processing during data collection </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- REMOVED See deviceVocType (7/2009 AM): receiverTypeVocType -->
+	<!--<xs:simpleType name="receiverTypeVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>device used to sense pressure or ground motion time series data </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3.5 KHz"/>
+			<xs:enumeration value="Chirp"/>
+			<xs:enumeration value="ComplianceMeter"/>
+			<xs:enumeration value="Hydrophone:OceanBottom"/>
+			<xs:enumeration value="Hydrophone:OceanBottomCable"/>
+			<xs:enumeration value="Hydrophone:Sonobuoy"/>
+			<xs:enumeration value="Hydrophone:Streamer"/>
+			<xs:enumeration value="Seismometer:BuriedBroadband"/>
+			<xs:enumeration value="Seismometer:OceanBottom"/>
+			<xs:enumeration value="Seismometer:OceanBottomCable"/>
+		</xs:restriction>
+	</xs:simpleType>-->
+	<!-- roleVocType -->
+	<xs:simpleType name="roleVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Function performed by the responsible party or contact.(ISO 19115)</def>
+				<eg>resourceProvider</eg>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="author">
+				<xs:annotation>
+					<xs:documentation>
+						<def>person who writes the paper </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="custodian">
+				<xs:annotation>
+					<xs:documentation>
+						<def>person/organization who cares for the data , e.g. the archive</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="distributor">
+				<xs:annotation>
+					<xs:documentation>
+						<def>person/organization who distributes the data </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="originator">
+				<xs:annotation>
+					<xs:documentation>
+						<def>person who creates/collects data </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="owner">
+				<xs:annotation>
+					<xs:documentation>
+						<def>person/organization who owns the data </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pointOfContact">
+				<xs:annotation>
+					<xs:documentation>
+						<def>person who serves as coordinator/information distributor of a project </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="principalInvestigator">
+				<xs:annotation>
+					<xs:documentation>
+						<def>lead scientist of an investigation</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="processor">
+				<xs:annotation>
+					<xs:documentation>
+						<def>the person who processed the data</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="publisher">
+				<xs:annotation>
+					<xs:documentation>
+						<def>organization that published the data/paper</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="resourceProvider">
+				<xs:annotation>
+					<xs:documentation>
+						<def>person/organization who provided the data</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="user">
+				<xs:annotation>
+					<xs:documentation>
+						<def>person who is using the data</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- seismicDataProvenanceVocType -->
+	<xs:simpleType name="seismicDataProvenanceVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>Classiification how the data was generated </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Analog">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Paper, film or other media</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DigitalSeg">
+				<xs:annotation>
+					<xs:documentation>
+						<def>digitally recorded data in a standard Society of Exploration Geophysics format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DigitalSeg:DigitallyAcquired">
+				<xs:annotation>
+					<xs:documentation>
+						<def> Field samples recorded as digital values</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DigitalSeg:ScannedFromAnalog">
+				<xs:annotation>
+					<xs:documentation>
+						<def>image scanned to create a standard Society of Exploration Geophysics (SEG-Y) format</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DigitialImage">
+				<xs:annotation>
+					<xs:documentation>
+						<def>scanned from analog record, may have navigation file image is geo-referenced image </def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--shotControlVocType-->
+	<xs:simpleType name="shotControlVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>identifies how shot spacing control was activated, either by time or distance</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="distance">
+				<xs:annotation>
+					<xs:documentation>
+						<def>shot spacing controlled by distance between shots</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="time">
+				<xs:annotation>
+					<xs:documentation>
+						<def>shot spacing controlled by time between shots</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- sourceVolumeUnitsVocType -->
+	<xs:simpleType name="sourceVolumeUnitsVocType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="cubicCentimeters"/>
+			<xs:enumeration value="cubicInches"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- surveyDatumVocType -->
+	<xs:simpleType name="surveyDatumVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>The identification of the survey reference system, as pertains to the referencing object (e.g. acquisitionParameters or NavFile). Note that the datum could be the same as time of acquisition or different. </def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Clark1866"/>
+			<xs:enumeration value="GRS80"/>
+			<xs:enumeration value="NAD27"/>
+			<xs:enumeration value="NAD83"/>
+			<xs:enumeration value="NAD87"/>
+			<xs:enumeration value="WGS84"/>
+			<xs:enumeration value="WGS72"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- traceDataTypeVocType -->
+	<xs:simpleType name="traceDataTypeVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>for use with OBS data; describes whether a channel was used to sense vertical ground motion, horizontal ground motion, or pressure variation</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="horizontal">
+				<xs:annotation>
+					<xs:documentation>
+						<def>senses horizontal ground motion</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hydrophone">
+				<xs:annotation>
+					<xs:documentation>
+						<def>senses pressure variation</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="undocumented">
+				<xs:annotation>
+					<xs:documentation>
+						<def>this information is not documented</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vertical">
+				<xs:annotation>
+					<xs:documentation>
+						<def>senses vertical ground motion</def>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--yesNoVocType-->
+	<xs:simpleType name="yesNoVocType">
+		<xs:annotation>
+			<xs:documentation>
+				<def>for use with that require a yes or no answer</def>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="no"/>
+			<xs:enumeration value="yes"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
