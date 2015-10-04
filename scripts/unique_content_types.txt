@@ -1,0 +1,249 @@
+text/xml; charset=
+image/vnd.microsoft.icon;charset=utf-8
+application/xml; charset=iso-8859-1
+application/ld+json;charset=UTF-8
+application/hdf-5
+application/pgp-keys
+image/png
+application/excel
+application/x-mathcad-xmcd
+text/xml;charset=UTF-8
+application/x-wtml
+application/xml"
+text/xml; charset=us-ascii
+application/x-quicktimeplayer
+Application/xml
+application/vnd.ogc.wms_xml
+application/opensearchdescription+xml;charset=utf-8
+application/x-abiword
+application/vnd.ms-excel; charset=UTF-8
+application/vnd.geo+json;charset=utf-8
+image/x-photoshop
+text/plain;charset=UTF-8
+application/octet-stream;charset=ISO-8859-1
+application/opensearchdescription+xml; charset=utf-8
+image/svg+xml
+application/xml;charset=ISO-8859-1
+application/vnd.ms-word.document.macroEnabled.12
+application/vnd.google-earth.kml+xml
+text/vnd.wap.wml;charset=UTF-8
+application/binary
+application/vnd.google-earth.kml
+application/opensearchdescription+xml; charset=UTF-8
+application/oleobject
+application/vnd.google-earth.kmz+xml
+application/x-java-jnlp-file;charset=UTF-8
+application/x-download;name="QuickClose-3.3.6.opm"
+application/vnd.google-earth.kml+xml;charset=UTF-8
+application/vnd.openxmlformats-officedoc
+application/rdf+json
+application/vnd.openxmlformats-officedocument.spreadsheetml.template
+text/cache-manifest
+text/plain; charset=utf-8
+text/xml"
+application/opensearchdescription+xml;charset=ISO-8859-1
+application/vnd.ms-word.document.macroenabled.12
+application/vnd.google-earth.kmz;mode=networklink
+application/x-download;name="OTRSCMDBExplorer-4.0.4.opm"
+application/odata+json
+application/octet-stream;
+chemical/x-cml;charset=ISO-8859-1
+application/xml; charset=
+application/x-java-jnlp-file
+application/vnd.eprints.data+xml; charset=utf-8
+application/wtml; charset=utf8
+application/octet-stream;charset=UTF-8
+text/html
+application/xml;charset=utf-8
+text/plain; charset=UTF-8
+application/xsd
+application/vnd.hzn-3d-crossword
+application/sparql-results+json
+application/vnd.ms-word.template.macroenabled.12
+application/vnd.ms-powerpoint.slideshow.macroenabled.12
+application/octet-stream; charset=ISO-8859-1
+application/x-variations2
+application/vnd.google-earth.kml+xml;charset=iso-8859-1
+text/xml
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+text/xml; Charset=utf-8
+application/wsdl+xml
+application/x-unknown
+application/opensearchdescription+xml; charset=ISO-8859-1
+application/mapleworks
+application/x-download;name="TicketZoomDynamicFieldDisplay-4.0.1.opm"
+text/xml; charset=WINDOWS-1252
+application/x-trash
+application/x-maple
+application/x-idv;charset=UTF-8
+application/atom+xml; charset=utf-8
+application/x-download;name="QuickClose-1.0.6.opm"
+application/force-download
+"application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+application/xml; charset=ISO-8859-1
+text/xml;charset=iso-8859-1
+application/vnd.google-earth.kmz
+application/kml; charset=utf8
+application/vnd.is-xpr
+application/x-shockwave-flash
+application/vnd.ogc.se_xml;charset=ISO-8859-1
+application/x-download;name="DashboardMyLastChangedTickets-4.0.5.opm"
+application/xml
+text/plain; charset=ISO-8859-1
+document/x-xlsx
+application/vnd.openxmlformats-officedocument.word
+application/vnd.ogc.se_xml;charset=UTF-8
+application/octet-stream;charset=utf-8
+text/html;charset=utf-8
+application/rdf+xml; charset="utf-8"
+text/html; charset=UTF-8
+text/xml; subtype=gml/3.1.1; charset=utf-8
+binary/octet-stream; charset=utf-8
+application/x-chimerax
+image/x-dwg
+application/vnd.openxmlformats-officedocument.wordprocessingml.document;charset=UTF-8
+application/octet-stream
+text/xml; charset=utf-8
+application/opensearchdescription+xml; charset="utf-8"
+application/vnd.citationstyles.csl+json
+text/xml; charset=UTF-8
+text/plain
+application/x-ms-application
+application/microdata+json
+application/x-download;name="UserImportExport-1.2.0.opm"
+application/atom+xml
+application/x-troff-man
+text/xml;content=x-votable
+application/xml; charset=UTF-8
+application/xml; charset=utf8
+application/vnd.openxmlformats-officedocument.presentationml.slideshow
+text/xml; utf-8
+"text/xml"
+application/x-java-jnlp-file;charset=ISO-8859-1
+application/rdf+xml; charset=charset=UTF-8
+application/x-smarttech-notebook
+application/rdf+xml; charset=UTF-8
+application/vnd.iso.19139+xml; charset=utf-8
+text/xml;charset=ISO-8859-1
+application/XML
+application/xml;charset=UTF-8
+application/rdf+json ; charset=utf-8
+text/xml; charset=iso-8859-15
+text/xml; charset=iso-8859-1
+application/x-forcedownload
+application/vnd.openxmlformats-officedocument.wordprocessingml
+applicaton/xml
+application/msword; charset=binary
+application/vnd.openxmlformats-officedocument.wordprocessingml.document
+application/vnd.sun.wadl+xml
+application/pdf
+application/x-ariadne-download
+application/atom+xml;charset=utf-8
+application/rdf+xml; charset=utf-8
+text/css;charset=UTF-8
+unknown
+application/vnd.ogc.wms_xml; charset=utf-8
+text/x-c
+application/vnd.google-earth.kml+xml kml; charset=utf8
+image/gif
+application/msexcel
+image/vnd.dwg
+application/x-maple-xml
+WMS_XML
+application/hdf
+text/plain;charset=ISO-8859-1
+text/xml; subtype=gml/2.1.2
+application/vnd.cups-ppd
+application/rdf+xml;charset=UTF-8
+text/xml; subtype=gml/2.1.2; charset=utf-8
+text/vnd.wap.wml
+text/xml; subtype=gml/3.2;charset=ISO-8859-1
+application/vnd.openxmlformats-officedocument.presentationml.template
+application/vnd.ms-outlook
+application/vnd.oasis.opendocument.text
+text/xml; encoding=utf-8; charset=utf-8
+application/opensearchdescription+xml
+application/x-apple-aspen-config
+application/rdf+json;charset=UTF-8
+application/vnd.google-earth.kml+xml;charset=utf-8
+application/xml; charset=us-ascii
+text/xml; charset="ISO-8859-1"
+text/xml; subtype=gml/3.1.1
+application/vnd.openxmlformats-officedocument.wordprocessingml.template
+application/vnd.ms-word.template.12
+text/plain; charset=us-ascii
+application/rdf+json; charset=UTF-8
+text/xml; charset=UTF-8;
+application/vnd.oasis.opendocument.presentation
+text/html;charset=UTF-8
+application/ld+json
+text/xml; charset=windows-1251
+text/csv
+application/vnd.ms-powerpoint.presentation.macroEnabled.12
+text/css
+text/turtle
+application/atom+xml;charset=UTF-8
+application/vnd.oasis.opendocument.spreadsheet
+application/eap-config
+text/xml; charset="utf-8"
+image/jpeg
+application/vnd.google-earth.kml+xml; charset=utf-8
+application/xml; charset=utf-8
+application/citeproc+json
+application/vnd.ms-excel.sheet.macroenabled.12
+text/iso19139+xml;charset=UTF-8
+application/x-mspowerpoint
+application/vnd.geo+json; charset=utf-8
+application/x-silverlight
+application/x-download;charset=UTF-8
+application/microdata+json; charset=UTF-8
+application/vnd.ogc.se_xml; charset=ISO-8859-1
+application/vnd.openxmlformats-officedocument.presentationml.presentation
+application/xml; qs=0.9
+application/msword; charset=iso-8859-1
+application/x-Maple
+document/x-docx
+application/rss+xml; charset=utf-8
+text/html; charset=utf-8
+application/vnd.oasis.opendocument.chart
+text/xml;charset=utf-8
+application/vnd.ms-excel.sheet.macroEnabled.12
+application/x-download
+application/x-upload-data;charset=UTF-8
+application/octet-stream; charset=utf-8
+application/maple
+application/xml; charset=ISO-8859-15
+application/vnd.ms-excel
+application/opensearchdescription+xml;charset=UTF-8
+text/xml;iso-8859-1
+application/x-compress
+application/rdf+xml;charset=utf-8
+text/rdf+json;charset=utf-8
+application/vnd.oasis.opendocument.graphics
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; name="411Lab4 sggraphs.docx"
+chemical/x-cml
+application/vnd.ogc.se_xml; charset=UTF-8
+application/rss+xml; charset=ISO-8859-1
+application/vnd.ms-excel;charset=UTF-8
+force-download
+application/rss+xml; charset=UTF-8
+application/vnd.ogc.se_xml
+text/dif+xml;charset=UTF-8
+application/zip
+text/html/force-download
+application/jnlp
+application/rdf+xml
+application/vnd.openxmlformats
+application/vnd.ms-pps
+application/x-download;name="DashboardInfoscreen-4.0.2.opm"
+application/vnd.ms-powerpoint
+text/XML
+application/rss+xml
+application/vnd.ogc.gml
+application/rdf+xml; qs=0.9
+text/xml; charset=ISO-8859-1
+application/xml; charset=UTF-8;
+application/rdf+n3
+text/xml;charset=WINDOWS-1252
+text/html;charset=ISO-8859-1
+application/msword
