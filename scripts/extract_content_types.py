@@ -1,8 +1,10 @@
 import os
 import glob
 import json
+from dateutil.parser import *
+from datetime import datetime
 
-content_types = set()
+content_types = {}
 for f in glob.glob('/Users/sparky/Documents/solr_responses/solr_20150922_docs/*.json'):
     with open(f, 'r') as g:
         data = json.loads(g.read())
@@ -16,7 +18,11 @@ for f in glob.glob('/Users/sparky/Documents/solr_responses/solr_20150922_docs/*.
     )
     content_type = headers.get('content-type', '')
     if content_type:
-        content_types.add(content_type)
+        d = content_types.get(content_type, [])
+        d.append(parse(data.get('tstamp')))
+        # content_types.add(content_type)
+        content_types[content_type] = d
 
-with open('unique_content_types.txt', 'w') as f:
-    f.write('\n'.join(content_types))
+with open('unique_content_types_by_date.txt', 'w') as f:
+    for k, v in content_types.iteritems():
+        f.write('|'.join([k, min(v).isoformat(), max(v).isoformat()])+'\n')
