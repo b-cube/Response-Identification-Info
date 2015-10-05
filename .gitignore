@@ -5,3 +5,4 @@ local/
 
 .ipynb_*
 notebooks/.ipynb_checkpoints/Unpack XML Signatures-checkpoint.ipynb
+*.~lock*
