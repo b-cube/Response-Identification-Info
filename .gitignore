@@ -1,5 +1,6 @@
 notebooks/outputs/*
 !notebooks/outputs/*.txt
+!notebooks/outputs/*.csv
 
 local/
 
