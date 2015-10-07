@@ -1,0 +1,61 @@
+Standard: WMO Core Metadata Profile, Version: 1.0 (draft)
+Standard: MEDIN Discovery Metadata Standard, Version: Version 2.3.5
+Standard: ISO 19115 Geographic information - Metadata - Converted from Data.gov legacy DMS format., Version: ISO 19115:2003(E)
+Standard: MEDIN Discovery Metadata Standard, Version: Version 2.3.7
+Standard: ISO 19115/2003/Cor.1:2006, Version: GDI-Vlaanderen Best Practices - versie 1.0
+Standard: ISO 19115-2 Geographic Information - Metadata - Part 2: Extensions for Imagery and Gridded Data, Version: ISO 19115-2:2013(E)
+Standard: ISO 19115-2 Geographic Information - Metadata - Part 2: Extensions for Imagery and Gridded Data with Biological Extensions, Version: ISO 19115-2:2009(E)
+Standard: ISO 19115 Geographic information - Metadata, Version: ISO 19115:2003(E)
+Standard: ISO 19115-2 Geographic Information - Metadata Part 2 Extensions for imagery and gridded data, Version: ISO 19115-2:2009(E)
+Standard: Gemini, Version: 2.1
+Standard: North American Profile of ISO 19115 Geographic Information Metadata, Version: Enviroment Canada - Version 1
+Standard: NERC profile of ISO19115:2003, Version: 1.0
+Standard: UK GEMINI, Version: 2.2
+Standard: NERC profile of ISO19115:2003, Version: 2003(E)
+Standard: INSPIRE Implementing Rules for Metadata, Version: 1.2
+Standard: ISO-USGIN, Version: 1.2
+Standard: ISO19115, Version: 1.0
+Standard: ISO 19115/19139, Version: 2003/cor1:2006
+Standard: UK GEMINI, Version: 2.1
+Standard: ISO 19115-2 Geographic Information - Metadata Part 2 Extensions for Imagery and Gridded Data, Version: ISO 19115-2:2009(E)
+Standard: ISO 19115 (UK GEMINI), Version: 1.0 (2.2)
+Standard: MEDIN Discovery metadata standard, Version: 2.3.4
+Standard: ISO19119, Version: 2005/PDAM 1
+Standard: MEDIN Discovery metadata standard, Version: 2.3.7
+Standard: ISO 19139 Geographic Information - Metadata - Implementation Specification, Version: 2007
+Standard: North American Profile of ISO 19115:2003 - Geographic information - Metadata, Version: CAN/CGSB-171.100-2009
+Standard: ISO 19115, Version: Nederlandse metadata profiel op ISO 19115 voor geografie 1.2
+Standard: MEDIN Discovery metadata standard, Version: 2.3.8
+Standard: NERC profile of ISO:19115:2003, Version: 1.0
+Standard: ISO 19115:2003 - Geographic information - Metadata, Version: ISO 19115:2003
+Standard: MEDIN Discovery Metadata Standard, Version: Version 2.3
+Standard: ISO 19115-2 Geographic information -- Metadata -- Part 2: Extensions for imagery and gridded data, Version: ISO 19115-2:2009-02-15
+Standard: ISO 19115:2003 (GDI-BW), Version: 1.2
+Standard: ISO 19139/19119 Metadata for Web Services, Version: 2005
+Standard: ISO 19115 Geographic information Metadata; WISE Metadata profile, Version: 2003/Cor.1:2006
+Standard: ISO 19115/SeaDataNet profile, Version: 1.0
+Standard: ISO 19115 Geographic Information - Metadata, Version: ISO 19115
+Standard: ISO 19115-2, Version: ISO 19115-2:2009(E)
+Standard: ISO 19115-2 Geographic information - Metadata - Part 2: Extensions for imagery and gridded data, Version: ISO 19115-2:2009-02-15
+Standard: North American Profile of ISO19115:2003 - Geographic information - Metadata, Version: CAN/CGSB-171.100-2009
+Standard: ISO 19115 Geographic Information - Metadata, Version: 2009-02-15
+Standard: ISO 19119, Version: 2005
+Standard: ISO 19115-2 Geographic information - Metadata - Part 2: Extensions for Imagery and Gridded Data, Version: ISO 19115-2:2009
+Standard: ISO-NAP-USGIN, Version: 1.1
+Standard: ISO 19115, Version: 2003
+Standard: NAP - Metadata, Version: 1.2
+Standard: ISO-NAP-USGIN, Version: 1.1.4
+Standard: ISO 19115:2003/19139, Version: 1.0
+Standard: ISO 19115, Version: ISO 19139 / DKRZ ISO Simple Profile V1.0
+Standard: ANZLIC Metadata Profile: An Australian/New Zealand Profile of AS/NZS ISO 19115:2005, Geographic information - Metadata, Version: 1.1
+Standard: ISO 19115-2 Geographic information - Metadata - Part 2: Extensions for Imagery and Gridded Data, Version: ISO 19115-2:2009(E)
+Standard: GEMINI, Version: 2.1
+Standard: ISO 19115-2 Geographic Information - Metadata - Part 2: Extensions for Imagery and Gridded Data, Version: 2007
+Standard: ISO 19139/19115 Metadata for Datasets, Version: 2003
+Standard: ISO19115, Version: 2003/Cor.1:2006
+Standard: ISO 19115-2 Geographic information - Metadata - Part 2: Extensions for Imagery and Gridded Data between June 8, 2011 and July 28, 2011, Version: ISO 19115-2:2009(E)
+Standard: ISO 19115-2 Geographic Information - Metadata - Part 2: Extensions for Imagery and Gridded Data, Version: ISO 19115-2:2009(E)
+Standard: ISO 19115-2 Geographic information Metadata Part 2: Extensions for imagery and gridded data, Version: ISO 19115-2:2009-02-15
+Standard: MEDIN Discovery Metadata Standard, Version: 2.3.2
+Standard: ISO 19115-2 Geographic Information - North American Profile Metadata - Data with Biological Extensions, Version: ISO 19115-2:2009(E)
+Standard: DM - Regole tecniche RNDT, Version: 10 novembre 2011
