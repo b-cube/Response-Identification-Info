@@ -1,0 +1,34 @@
+"codelist","count"
+"./resources/codeList.xml#CI_RoleCode",95
+"CI_RoleCode",4
+"file://Agi-s000001/afdelingen/GSMS/Extern/Applicaties_en_Tools/Databeheer/Metadata/GeoMDE_22/resources/customCodelists_new.xml#CI_RoleCode",16
+"file://Shr-ipvw-gpr001/metadatatools/Metadatamaker/config_bestanden/customCodelists.xml#CI_RoleCode",5
+"file://appconf.intranet.rws.nl/Appconf/metadatatools/Metadatamaker/config_bestanden/customCodelists.xml#CI_RoleCode",3
+"http://adl.brs.gov.au/anrdl/resources/codeList/codeList20120313.xml#CI_RoleCode",10
+"http://asdd.ga.gov.au/asdd/profileinfo/gmxCodelists.xml#CI_RoleCode",801
+"http://aws2.caris.com/sfs/schemas/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_RoleCode",18
+"http://data.daff.gov.au/anrdl/resources/codeList/codeList20120313.xml#CI_RoleCode",283
+"http://mdtranslator.adiwg.org/api/codelists?format=xml#CI_RoleCode",29
+"http://nap.geogratis.gc.ca/metadata/register/napMetadataRegister.xml#IC_90",86
+"http://schemas.opengis.net/iso/19139/20070417/resources/Codelist/gmxCodelists.xml#CI_RoleCode",5
+"http://standards.iso.org/iso/19139/resources/codelist/gmxCodelists.xml",13250
+"http://standards.iso.org/iso/19139/resources/codelist/gmxCodelists.xml#CI_RoleCode",171
+"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmx Codelists.xml#CI_RoleCode",10
+"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_RoleCode",3711
+"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode",1
+"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode",19759
+"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode",536
+"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode",595
+"http://vocab.nerc.ac.uk/isoCodelists/sdnCodelists/gmxCodeLists.xml#CI_RoleCode",28
+"http://webarchive.nationalarchives.gov.uk/20130402145952/http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode",26
+"http://wis.wmo.int/2006/catalogues/gmxCodelists.xml#CI_RoleCode",1538
+"http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode",39219
+"http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode ",2
+"http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#gmd:CI_RoleCode",3982
+"http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode",641
+"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode",83545
+"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#gmd:CI_RoleCode",8399
+"http://www.rijkswaterstaat.nl/apps/geoservices/help/metadata/customCodelists.xml#CI_RoleCode",2
+"https://www.sciencebase.gov/vocab/category/4f4e475ce4b07f02db47de84",2
+"sponsor",11
+"www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode",6
