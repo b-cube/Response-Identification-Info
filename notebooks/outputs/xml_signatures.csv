@@ -1,0 +1,30 @@
+,protocol,name,type,filters,versions
+0,DC,DublinCore,metadata,"ANDS(""http://www.openarchives.org/OAI/2.0/oai_dc/"" | ""/*[local-name() = ""dc""]"")",-
+1,DIF,DIF,metadata,"ANDS(""http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/"" | ""/*[local-name()=""DIF""]"" | ""<Entry_ID>"")",-
+2,PDS,PDS,service,"ORS(""http://pds.nasa.gov/pds4/pds/v1"")",-
+3,CAP-ALERT,CAP-ALERT,service,"ORS(""http://www.incident.com/cap/1.0"" | ""urn:oasis:names:tc:emergency:cap:"")",-
+4,MARC 21 Format,MARC 21 Format,metadata,"ORS(""http://www.loc.gov/MARC21/slim"")",-
+5,DDI,DDI,metadata,"ANDS(""http://www.ddialliance.org/Specification/DDI-Codebook"" | ""/*[local-name()=""codeBook""]"")",-
+6,KML,KML,dataset,"ORS(""http://earth.google.com/kml"")",-
+7,ArcGISExplorerDocument,ArcGISExplorerDocument,service,"ORS(""http://www.esri.com/schemas/ArcGIS/"")",-
+8,ESRI MapServer Info,ESRI MapServer Info,service,"ANDS(""EsriPropertyType="" | ""ArcGISFormat"" | ""<Esri>"")",-
+9,Microsoft,Microsoft Document,dataset,"ORS(""urn:schemas-microsoft-com:office:office"")",-
+10,WordPress,WordPress,service,"ORS(""http://archipelago.phrasewise.com/rsd"" | ""?rsd"" | ""rsd.xml"")",-
+11,LOC-METS,LOC-METS,metadata,"ORS(""http://www.loc.gov/METS_Profile/"")",-
+12,DataCite,DataCite,metadata,"ORS(""http://datacite.org/schema/"")",-
+13,EML,EML,metadata,"ORS(""eml://ecoinformatics.org/eml-"")",-
+14,QuakeML,QuakeML,service,"ORS(""http://anss.org/xmlns/catalog"" | ""http://anss.org/xmlns/tensor"" | ""http://quakeml.org/xmlns/bed/"")",-
+15,NIEM,NIEM,metadata,"ORS(""http://niem.gov/"")",-
+16,Disco,Disco,metadata,"ORS(""http://schemas.xmlsoap.org/disco/"")",-
+17,SOAP,SOAP,service,"ORS(""http://schemas.xmlsoap.org/soap"")",-
+18,Sitemap,Sitemap,metadata,"ANDS(""http://www.sitemaps.org/schemas/sitemap/"" | ""<urlset"")",-
+19,waterML,waterML,service,"ORS(""http://www.cuahsi.org/waterML/"")",-
+20,ECHO,ECHO,service,"ORS(""http://echo.nasa.gov/"")",-
+21,MODAPS,MODAPS,service,"ORS(""http://modapsws.gsfc.nasa.gov/xsd"")",-
+22,IOOS,IOOS,service,"ORS(""http://www.noaa.gov/ioos/"")",-
+23,Zenodo,Zenodo,service,"ORS(""zenodo.org/"")",-
+24,Ferret ToolsUi,Ferret ToolsUI,service,"ORS(""http://ferret.pmel.noaa.gov/thredds/view/ToolsUI.jnlp?"")",-
+25,HDF-XML,HDF-XML,file,"ANDS(""/*[local-name()=""HDF5-File""]"" | ""xmlns:hdf5=""http://hdfgroup.org/DTDs/HDF5-File"")",-
+26,RSS,RSS,resultset,"ORS(""<rss"" | ""http://api.npr.org/nprml"")",-
+27,ATOM,ATOM,resultset,"ANDS(""http://www.w3.org/2005/Atom"" | ""<feed"" | ""count(/*/namespace::*[. = ""http://a9.com/-/spec/opensearch/1.1/""]) < 1"")",-
+28,FGDC,FGDC,metadata,"ORS(""/metadata/metainfo/metstdv[text()=""FGDC-STD-001-1998""]"" | ""/metadata/metainfo/metstdv[text()=""FGDC-STD-012-2002""]"")",-
