@@ -8,3 +8,4 @@ local/
 .ipynb_*
 notebooks/.ipynb_checkpoints/Unpack XML Signatures-checkpoint.ipynb
 *.~lock*
+notebooks/outputs/all_codelists_by_host.txt
