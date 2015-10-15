@@ -15,7 +15,8 @@
                     "status": 200, 
                     "subset": "5", 
                     "total": "10", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": []
                 }, 
                 "format_definition": true, 
                 "base": "http://dap.onc.uvic.ca/erddap/opensearch1.1/search", 
@@ -28,7 +29,8 @@
                     "status": 200, 
                     "subset": "5", 
                     "total": "13", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": []
                 }
             }
         ], 
@@ -36,20 +38,8 @@
             "xml": "http://www.w3.org/XML/1998/namespace", 
             "default": "http://a9.com/-/spec/opensearch/1.1/"
         }, 
-        "search_url_response": {
-            "status": 200, 
-            "subset": "5", 
-            "total": "13", 
-            "has_content": true
-        }, 
-        "url": "http://dap.onc.uvic.ca/erddap/opensearch1.1/description.xml", 
-        "example_url_response": {
-            "status": 200, 
-            "subset": "5", 
-            "total": "10", 
-            "has_content": true
-        }, 
-        "parameter_definitions": {}
+        "parameter_definitions": {}, 
+        "url": "http://dap.onc.uvic.ca/erddap/opensearch1.1/description.xml"
     }, 
     {
         "status": 200, 
@@ -69,9 +59,40 @@
                 "example_url_response": {
                     "status": 200, 
                     "subset": "5", 
-                    "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:georss=\"http://www.georss.org/georss\" xmlns:dif=\"http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif.xsd\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" rel=\"http://esipfed.org/ns/fedsearch/1.0/search#\" href=\"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do\"/>\n    ", 
                     "total": "319", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": [
+                        {
+                            "link_title": "CEOS WGISS Integrated Catalog (CWIC)", 
+                            "link_url": "http://cwic.wgiss.ceos.org/opensearch/datasets/MYDCSR_8/osdd.xml?clientId=fromgcmd", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "MODIS AQUA Clear Sky Radiance 8 Day Composite Daily L3 Global 25 Km Equal Area"
+                        }, 
+                        {
+                            "link_title": "CEOS WGISS Integrated Catalog (CWIC)", 
+                            "link_url": "http://cwic.wgiss.ceos.org/opensearch/datasets/MYDCSR_D/osdd.xml?clientId=fromgcmd", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "MODIS Level 3 Daily Clear Sky Radiance (Post-Launch)"
+                        }, 
+                        {
+                            "link_title": "CEOS WGISS Integrated Catalog (CWIC)", 
+                            "link_url": "http://cwic.wgiss.ceos.org/opensearch/datasets/s2k_aster_modis/osdd.xml?clientId=fromgcmd", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "SAFARI 2000 ASTER AND MODIS FIRE DATA COMPARISON, DRY SEASON 2001"
+                        }, 
+                        {
+                            "link_title": "CEOS WGISS Integrated Catalog (CWIC)", 
+                            "link_url": "http://cwic.wgiss.ceos.org/opensearch/datasets/MYD05_L2_C5_NRT/osdd.xml?clientId=fromgcmd", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "MODIS/Aqua Near Real Time (NRT) Total Precipitable Water Vapor 5-Min L2 Swath 1km and 5km (Collection 005)"
+                        }, 
+                        {
+                            "link_title": "CEOS WGISS Integrated Catalog (CWIC)", 
+                            "link_url": "http://cwic.wgiss.ceos.org/opensearch/datasets/s2k_modis_burned/osdd.xml?clientId=fromgcmd", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "SAFARI 2000 MODIS 500-M BURNED AREA PRODUCTS, SOUTHERN AFRICA, DRY SEASON 2000"
+                        }
+                    ]
                 }, 
                 "format_definition": true, 
                 "base": "http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do", 
@@ -96,19 +117,6 @@
             "default": "http://a9.com/-/spec/opensearch/1.1/", 
             "time": "http://a9.com/-/opensearch/extensions/time/1.0/", 
             "geo": "http://a9.com/-/opensearch/extensions/geo/1.0/"
-        }, 
-        "search_url_response": {
-            "status": 200, 
-            "has_content": true, 
-            "error": "No content"
-        }, 
-        "url": "http://gcmd.gsfc.nasa.gov/KeywordSearch/default/openSearch.jsp?Portal=cwic", 
-        "example_url_response": {
-            "status": 200, 
-            "subset": "5", 
-            "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:georss=\"http://www.georss.org/georss\" xmlns:dif=\"http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif.xsd\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" rel=\"http://esipfed.org/ns/fedsearch/1.0/search#\" href=\"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do\"/>\n    ", 
-            "total": "319", 
-            "has_content": true
         }, 
         "parameter_definitions": {
             "count": {
@@ -135,7 +143,8 @@
                 "options": [], 
                 "value": "{startPage}"
             }
-        }
+        }, 
+        "url": "http://gcmd.gsfc.nasa.gov/KeywordSearch/default/openSearch.jsp?Portal=cwic"
     }, 
     {
         "status": 200, 
@@ -182,13 +191,8 @@
             "podaac": "http://podaac.jpl.nasa.gov/opensearch/", 
             "geo": "http://a9.com/-/opensearch/extensions/geo/1.0/"
         }, 
-        "search_url_response": {
-            "status": 406, 
-            "has_content": true, 
-            "error": "HTML response"
-        }, 
-        "url": "http://podaac.jpl.nasa.gov/ws/search/dataset/osd.xml", 
-        "parameter_definitions": {}
+        "parameter_definitions": {}, 
+        "url": "http://podaac.jpl.nasa.gov/ws/search/dataset/osd.xml"
     }, 
     {
         "url": "http://ghrc.nsstc.nasa.gov/hydro/ghost.xml", 
@@ -197,14 +201,6 @@
     {
         "status": 200, 
         "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/xsl\" href=\"/xsl/frost.xsl\"?>\n<OpenSearchDescription xmlns=\"http://a9.com/-/spec/opensearch/1.1/\"\n                       xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\"\n                       xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\"\n                       xmlns:esipdiscovery=\"http://commons.esipfed.org/ns/discovery/1.2/\"\n\t\t       esipdiscovery:version=\"1.2\">\n  <ShortName>Mirador Dataset Search</ShortName>\n  <Description>Use Mirador Dataset Search to obtain a list of Earth Science Data Sets</Description>\n  <Tags>Mirador Dataset Search</Tags>\n  <Contact>gsfc-mirador-disc@lists.nasa.gov</Contact>\n  <Url type=\"application/atom+xml\" \n       template=\"http://mirador.gsfc.nasa.gov/cgi-bin/mirador/collectionlist.pl?keyword={searchTerms?}&amp;page={startPage?}&amp;count={count?}&amp;osLocation={geo:box?}&amp;osLocationPlaceName={geo:name?}&amp;startTime={time:start?}&amp;endTime={time:end?}&amp;format=atom\"/>\n  <Query role=\"example\" searchTerms=\"ozone\" \n         title=\"Sample Bounding Box Search\" \n         time:start=\"2010-01-01\" \n         time:end=\"2010-01-10\" \n         geo:box=\"-130.0,25.0,-65.0,50.0\"/>\n         <!--href=\"http://mirador-ts2.gsfc.nasa.gov/cgi-bin/mirador/collectionlist.pl?keyword=ozone&amp;page=1&amp;count=10&amp;osLocation-130.0,25.0,-65.0,50.0=&amp;startTime=2010-01-01&amp;endTime=2010-01-10&amp;format=atom\"/-->\n  <Query role=\"example\" searchTerms=\"Surface Air Temperature\" \n         title=\"Sample PlaceName Search\" \n         time:start=\"2010-01-01\" \n         time:end=\"2010-01-10\" \n         geo:name=\"greenbelt\"/>\n \n   <!--href=\"http://mirador-ts2.gsfc.nasa.gov/cgi-bin/mirador/collectionlist.pl?keyword=Surface%20Air%20Temperature&amp;page=1&amp;count=100&amp;osLocationPlaceName=greenbelt&amp;startTime=2010-01-01&amp;endTime=2010-01-10&amp;format=atom\"/-->\n  <Url type=\"application/rss+xml\" \n       template=\"http://mirador.gsfc.nasa.gov/cgi-bin/mirador/collectionlist.pl?keyword={searchTerms}&amp;page=1&amp;count={count}&amp;osLocation={geo:box}&amp;startTime={time:start}&amp;endTime={time:end}&amp;format=rss\"/>\n</OpenSearchDescription>\n\n", 
-        "parameter_definitions": {}, 
-        "url": "http://mirador.gsfc.nasa.gov/mirador_dataset_opensearch.xml", 
-        "example_url_response": {
-            "status": 200, 
-            "subset": "5", 
-            "total": "84", 
-            "has_content": true
-        }, 
         "templates": [
             {
                 "search_url": "http://mirador.gsfc.nasa.gov/cgi-bin/mirador/collectionlist.pl?count=5&keyword=&format=atom", 
@@ -222,7 +218,39 @@
                     "status": 200, 
                     "subset": "5", 
                     "total": "84", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": [
+                        {
+                            "link_title": "SBUVN7O3.008", 
+                            "link_url": "http://mirador.gsfc.nasa.gov/OpenSearch/mirador_opensearch_SBUVN7O3.008.xml", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "SBUV/Nimbus-7 Ozone Profile, Ozone Total Column 1-Orbit L2 200x200 km (SBUVN7O3) "
+                        }, 
+                        {
+                            "link_title": "BUVN04L2.001", 
+                            "link_url": "http://mirador.gsfc.nasa.gov/OpenSearch/mirador_opensearch_BUVN04L2.001.xml", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "BUV/Nimbus-4 Ozone (O3) Nadir Profile and Total Column Daily L2 (BUVN04L2) "
+                        }, 
+                        {
+                            "link_title": "SBUV2N09L2.001", 
+                            "link_url": "http://mirador.gsfc.nasa.gov/OpenSearch/mirador_opensearch_SBUV2N09L2.001.xml", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "SBUV2/NOAA-09 Ozone (O3) Nadir Profile and Total Column Daily L2 (SBUV2N09L2) "
+                        }, 
+                        {
+                            "link_title": "SBUV2N11L2.001", 
+                            "link_url": "http://mirador.gsfc.nasa.gov/OpenSearch/mirador_opensearch_SBUV2N11L2.001.xml", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "SBUV2/NOAA-11 Ozone (O3) Nadir Profile and Total Column Daily L2 (SBUV2N11L2) "
+                        }, 
+                        {
+                            "link_title": "SBUV2N14L2.001", 
+                            "link_url": "http://mirador.gsfc.nasa.gov/OpenSearch/mirador_opensearch_SBUV2N14L2.001.xml", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "SBUV2/NOAA-14 Ozone (O3) Nadir Profile and Total Column Daily L2 (SBUV2N14L2) "
+                        }
+                    ]
                 }, 
                 "format_definition": true, 
                 "base": "http://mirador.gsfc.nasa.gov/cgi-bin/mirador/collectionlist.pl", 
@@ -243,9 +271,8 @@
             "time": "http://a9.com/-/opensearch/extensions/time/1.0/", 
             "geo": "http://a9.com/-/opensearch/extensions/geo/1.0/"
         }, 
-        "search_url_response": {
-            "status": "timeout"
-        }
+        "parameter_definitions": {}, 
+        "url": "http://mirador.gsfc.nasa.gov/mirador_dataset_opensearch.xml"
     }, 
     {
         "status": 200, 
@@ -283,9 +310,22 @@
                 "search_url_response": {
                     "status": 200, 
                     "subset": "5", 
-                    "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" xmlns:os=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:georss=\"http://www.georss.org/georss\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:metalink=\"urn:ietf:params:xml:ns:metalink\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://eo-virtual-archive4.esa.int/search/ER02_SAR_RAW_0P/description\">\n  </link>\n  ", 
                     "total": "17751", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": [
+                        {
+                            "link_title": "", 
+                            "link_url": "http://eo-virtual-archive4.esa.int/search/ER02_SAR_RAW_0P/description", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Catalogue Search Feed for ERS-2 SAR Image SAR Annotated Raw Data Product Level 0 (ER02_SAR_RAW_0P)"
+                        }, 
+                        {
+                            "link_title": "", 
+                            "link_url": "http://eo-virtual-archive4.esa.int/search/ER02_SAR_RAW_0P/description", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Catalogue Search Feed for ERS-2 SAR Image SAR Annotated Raw Data Product Level 0 (ER02_SAR_RAW_0P)"
+                        }
+                    ]
                 }
             }
         ], 
@@ -306,27 +346,12 @@
             "os": "http://a9.com/-/spec/opensearch/1.1/", 
             "eop": "http://www.genesi-dr.eu/spec/opensearch/extensions/eop/1.0/"
         }, 
-        "search_url_response": {
-            "status": 200, 
-            "subset": "5", 
-            "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" xmlns:os=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:georss=\"http://www.georss.org/georss\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:metalink=\"urn:ietf:params:xml:ns:metalink\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"http://eo-virtual-archive4.esa.int/search/ER02_SAR_RAW_0P/description\">\n  </link>\n  ", 
-            "total": "17751", 
-            "has_content": true
-        }, 
-        "url": "http://eo-virtual-archive4.esa.int/search/ER02_SAR_RAW_0P/description", 
-        "parameter_definitions": {}
+        "parameter_definitions": {}, 
+        "url": "http://eo-virtual-archive4.esa.int/search/ER02_SAR_RAW_0P/description"
     }, 
     {
         "status": 200, 
         "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<OpenSearchDescription xmlns=\"http://a9.com/-/spec/opensearch/1.1/\">\n  <ShortName>ERDDAP</ShortName>\n  <Description>The ERDDAP at USGS is a data server that gives you a simple, consistent way to download subsets of scientific datasets in common file formats and make graphs and maps.</Description>\n  <Url type=\"application/atom+xml\"\n       template=\"http://www1.usgs.gov/erddap/opensearch1.1/search?searchTerms={searchTerms}&#x26;page={startPage?}&#x26;itemsPerPage={count?}&#x26;format=atom\"/>\n  <Url type=\"application/rss+xml\"\n       template=\"http://www1.usgs.gov/erddap/opensearch1.1/search?searchTerms={searchTerms}&#x26;page={startPage?}&#x26;itemsPerPage={count?}&#x26;format=rss\"/>\n  <Contact>csas@usgs.gov</Contact>\n  <Tags>atmosphere biology biosphere earth environment ocean science</Tags>\n  <LongName>ERDDAP at USGS</LongName>\n  <Image height=\"56\" width=\"55\">http://www1.usgs.gov/erddap/images/nlogo.gif</Image>\n  <Image height=\"313\" width=\"313\">http://www1.usgs.gov/erddap/images/noaa_simple.gif</Image>\n  <Image height=\"20\" width=\"20\">http://www1.usgs.gov/erddap/images/noaa20.gif</Image>\n  <Query role=\"example\" searchTerms=\"datasetID\" />\n  <Developer>Bob Simons (bob.simons at noaa.gov)</Developer>\n  <Attribution>USGS</Attribution>\n  <SyndicationRight>open</SyndicationRight>\n  <AdultContent>false</AdultContent>\n  <Language>en-us</Language>\n  <InputEncoding>UTF-8</InputEncoding>\n  <OutputEncoding>UTF-8</OutputEncoding>\n</OpenSearchDescription>\n", 
-        "parameter_definitions": {}, 
-        "url": "http://www1.usgs.gov/erddap/opensearch1.1/description.xml", 
-        "example_url_response": {
-            "status": 200, 
-            "subset": "5", 
-            "total": "1", 
-            "has_content": true
-        }, 
         "templates": [
             {
                 "search_url": "http://www1.usgs.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom", 
@@ -340,7 +365,8 @@
                     "status": 200, 
                     "subset": "5", 
                     "total": "1", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": []
                 }, 
                 "format_definition": true, 
                 "base": "http://www1.usgs.gov/erddap/opensearch1.1/search", 
@@ -353,7 +379,8 @@
                     "status": 200, 
                     "subset": "5", 
                     "total": "1", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": []
                 }
             }
         ], 
@@ -361,12 +388,8 @@
             "xml": "http://www.w3.org/XML/1998/namespace", 
             "default": "http://a9.com/-/spec/opensearch/1.1/"
         }, 
-        "search_url_response": {
-            "status": 200, 
-            "subset": "5", 
-            "total": "1", 
-            "has_content": true
-        }
+        "parameter_definitions": {}, 
+        "url": "http://www1.usgs.gov/erddap/opensearch1.1/description.xml"
     }, 
     {
         "status": 200, 
@@ -401,9 +424,16 @@
                 "search_url_response": {
                     "status": 200, 
                     "subset": "5", 
-                    "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:fn=\"http://www.w3.org/2005/xpath-functions\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:georss=\"http://www.georss.org/georss\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:os=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:rim=\"urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0\" xmlns:semantic=\"http://a9.com/-/opensearch/extensions/semantic/1.0/\" xmlns:sru=\"http://a9.com/-/opensearch/extensions/sru/2.0/\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" xmlns:wrs=\"http://www.opengis.net/cat/wrs/1.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"http://geo.spacebel.be/opensearch/description.xml\" rel=\"search\" type=\"application/opensearchdescription+xml\"/>\n", 
                     "total": "2592", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": [
+                        {
+                            "link_title": "", 
+                            "link_url": "http://geo.spacebel.be/opensearch/description.xml", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "FEDEO Clearinghouse - Search Response"
+                        }
+                    ]
                 }
             }, 
             {
@@ -444,9 +474,16 @@
                 "search_url_response": {
                     "status": 200, 
                     "subset": "5", 
-                    "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:fn=\"http://www.w3.org/2005/xpath-functions\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:georss=\"http://www.georss.org/georss\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:os=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:rim=\"urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0\" xmlns:semantic=\"http://a9.com/-/opensearch/extensions/semantic/1.0/\" xmlns:sru=\"http://a9.com/-/opensearch/extensions/sru/2.0/\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" xmlns:wrs=\"http://www.opengis.net/cat/wrs/1.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"http://geo.spacebel.be/opensearch/description.xml\" rel=\"search\" type=\"application/opensearchdescription+xml\"/>\n", 
                     "total": "2592", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": [
+                        {
+                            "link_title": "", 
+                            "link_url": "http://geo.spacebel.be/opensearch/description.xml", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "FEDEO Clearinghouse - Search Response"
+                        }
+                    ]
                 }
             }
         ], 
@@ -462,14 +499,6 @@
             "sru": "http://a9.com/-/opensearch/extensions/sru/2.0/", 
             "os": "http://a9.com/-/spec/opensearch/1.1/"
         }, 
-        "search_url_response": {
-            "status": 200, 
-            "subset": "5", 
-            "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:fn=\"http://www.w3.org/2005/xpath-functions\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:georss=\"http://www.georss.org/georss\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:os=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:rim=\"urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0\" xmlns:semantic=\"http://a9.com/-/opensearch/extensions/semantic/1.0/\" xmlns:sru=\"http://a9.com/-/opensearch/extensions/sru/2.0/\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" xmlns:wrs=\"http://www.opengis.net/cat/wrs/1.0\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"http://geo.spacebel.be/opensearch/description.xml\" rel=\"search\" type=\"application/opensearchdescription+xml\"/>\n", 
-            "total": "2592", 
-            "has_content": true
-        }, 
-        "url": "http://geo.spacebel.be/opensearch/description.xml", 
         "parameter_definitions": {
             "parentIdentifier": {
                 "options": [
@@ -562,20 +591,12 @@
                 ], 
                 "value": "{dc:type}"
             }
-        }
+        }, 
+        "url": "http://geo.spacebel.be/opensearch/description.xml"
     }, 
     {
         "status": 200, 
         "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<OpenSearchDescription xmlns=\"http://a9.com/-/spec/opensearch/1.1/\"\n                       xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\"\n                       xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\">\n  <ShortName>LANCE-MODIS Dataset Search</ShortName>\n  <Description>Use LANCE-MODIS Dataset Search to obtain a list of Near-Real-Time Earth Science Data Sets</Description>\n  <Tags>LANCE-MODIS Dataset Search</Tags>\n  <Contact>modapsuso@sigmaspace.com</Contact>\n  <Url type=\"application/atom+xml\" \n       template=\"http://lance2.modaps.eosdis.nasa.gov/axis2/services/MWSLance/searchDatasets?pattern={searchTerms}\"/>\n  <Query role=\"example\" searchTerms=\"adjusted reflectance\"/>\n</OpenSearchDescription>\n", 
-        "parameter_definitions": {}, 
-        "url": "http://lance-modis.eosdis.nasa.gov/user_services/dataset_opensearch.xml", 
-        "example_url_response": {
-            "status": 200, 
-            "subset": "Unknown", 
-            "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:georss=\"http://www.georss.org/georss\" rel=\"http://esipfed.org/ns/fedsearch/1.0/search#\" href=\"http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOpenSearch\"/> ", 
-            "total": "Unknown", 
-            "has_content": true
-        }, 
         "templates": [
             {
                 "search_url": "http://lance2.modaps.eosdis.nasa.gov/axis2/services/MWSLance/searchDatasets?pattern=", 
@@ -586,9 +607,166 @@
                 "example_url_response": {
                     "status": 200, 
                     "subset": "Unknown", 
-                    "search_rel": "<link xmlns=\"http://www.w3.org/2005/Atom\" xmlns:geo=\"http://a9.com/-/opensearch/extensions/geo/1.0/\" xmlns:time=\"http://a9.com/-/opensearch/extensions/time/1.0/\" xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:georss=\"http://www.georss.org/georss\" rel=\"http://esipfed.org/ns/fedsearch/1.0/search#\" href=\"http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOpenSearch\"/> ", 
                     "total": "Unknown", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": [
+                        {
+                            "link_title": "MOD09", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2 5-Min Land Surface Reflectance - 250m, 500m, 1km"
+                        }, 
+                        {
+                            "link_title": "MOD09A1N", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09A1N", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 3 Daily Rolling-8-Day Surface Reflectance - 500m"
+                        }, 
+                        {
+                            "link_title": "MOD09CMG", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09CMG", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "CMG Daily Surface Reflectance - 0.05Deg"
+                        }, 
+                        {
+                            "link_title": "MOD09CRS", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09CRS", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2 5-Min Coarse Resolution Surface Reflectance - 5km"
+                        }, 
+                        {
+                            "link_title": "MOD09GA", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09GA", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Light Daily Surface Reflectance - 1km and 500m"
+                        }, 
+                        {
+                            "link_title": "MOD09GHK", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09GHK", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Daily Surface Reflectance - 500m"
+                        }, 
+                        {
+                            "link_title": "MOD09GQ", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09GQ", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Light Daily Surface Reflectance - 250m"
+                        }, 
+                        {
+                            "link_title": "MOD09GQK", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09GQK", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Daily Surface Reflectance - 250m"
+                        }, 
+                        {
+                            "link_title": "MOD09GST", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09GST", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Daily Surface Reflectance State - 1km"
+                        }, 
+                        {
+                            "link_title": "MOD09Q1N", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD09Q1N", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 3 Daily Rolling-8-Day Surface Reflectance - 250m"
+                        }, 
+                        {
+                            "link_title": "MOD29", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD29", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2 5-Min Sea Ice Cover - 1km"
+                        }, 
+                        {
+                            "link_title": "MOD29L2C", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MOD29L2C", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2 5-Min Coarse Resolution Sea Ice Cover - 5km"
+                        }, 
+                        {
+                            "link_title": "MODAGAGG", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MODAGAGG", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 3 Daily Aggregated Surface Reflectance - 1km SIN Grid"
+                        }, 
+                        {
+                            "link_title": "MYD09", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2 5-Min Land Surface Reflectance - 250m, 500m, 1km"
+                        }, 
+                        {
+                            "link_title": "MYD09A1N", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09A1N", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 3 Daily Rolling-8-Day Surface Reflectance - 500m"
+                        }, 
+                        {
+                            "link_title": "MYD09CMG", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09CMG", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "CMG Daily Surface Reflectance - 0.05Deg"
+                        }, 
+                        {
+                            "link_title": "MYD09CRS", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09CRS", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2 5-Min Coarse Resolution Surface Reflectance - 5km"
+                        }, 
+                        {
+                            "link_title": "MYD09GA", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09GA", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Light Daily Surface Reflectance - 1km and 500m"
+                        }, 
+                        {
+                            "link_title": "MYD09GHK", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09GHK", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Daily Surface Reflectance - 500m"
+                        }, 
+                        {
+                            "link_title": "MYD09GQ", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09GQ", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Light Daily Surface Reflectance - 250m"
+                        }, 
+                        {
+                            "link_title": "MYD09GQK", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09GQK", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Daily Surface Reflectance - 250m"
+                        }, 
+                        {
+                            "link_title": "MYD09GST", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09GST", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2G Daily Surface Reflectance State - 1km"
+                        }, 
+                        {
+                            "link_title": "MYD09Q1N", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD09Q1N", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 3 Daily Rolling-8-Day Surface Reflectance - 250m"
+                        }, 
+                        {
+                            "link_title": "MYD29", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD29", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2 5-Min Sea Ice Cover - 1km"
+                        }, 
+                        {
+                            "link_title": "MYD29L2C", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYD29L2C", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 2 5-Min Coarse Resolution Sea Ice Cover - 5km"
+                        }, 
+                        {
+                            "link_title": "MYDAGAGG", 
+                            "link_url": "http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/getOSDD?product=MYDAGAGG", 
+                            "link_type": "application/opensearchdescription+xml", 
+                            "parent_title": "Level 3 Daily Aggregated Surface Reflectance - 1km SIN Grid"
+                        }
+                    ]
                 }, 
                 "format_definition": false, 
                 "base": "http://lance2.modaps.eosdis.nasa.gov/axis2/services/MWSLance/searchDatasets", 
@@ -598,7 +776,8 @@
                     "status": 500, 
                     "subset": "Unknown", 
                     "total": "Unknown", 
-                    "has_content": true
+                    "has_content": true, 
+                    "search_rels": []
                 }
             }
         ], 
@@ -608,11 +787,7 @@
             "geo": "http://a9.com/-/opensearch/extensions/geo/1.0/", 
             "time": "http://a9.com/-/opensearch/extensions/time/1.0/"
         }, 
-        "search_url_response": {
-            "status": 500, 
-            "subset": "Unknown", 
-            "total": "Unknown", 
-            "has_content": true
-        }
+        "parameter_definitions": {}, 
+        "url": "http://lance-modis.eosdis.nasa.gov/user_services/dataset_opensearch.xml"
     }
 ]
