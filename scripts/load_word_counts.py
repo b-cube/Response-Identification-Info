@@ -183,7 +183,8 @@ for i in xrange(START, TOTAL, LIMIT):
     for response in responses:
         cleaned_content = response.cleaned_content
 
-        if len(cleaned_content.encode('utf-8')) > 1.:
+        # omg. skip the big ones for regex hangs?
+        if len(cleaned_content.encode('utf-8')) / 1048576.0 > 1.:
             print 'SKIPPING big file', response.id
             continue
         
