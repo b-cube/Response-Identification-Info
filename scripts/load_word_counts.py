@@ -172,7 +172,7 @@ LIMIT = 100
 # total = 5
 # LIMIT= total
 
-print 'TOTAL', total
+print 'TOTAL', TOTAL
 
 for i in xrange(START, TOTAL, LIMIT):
     # get some responses
