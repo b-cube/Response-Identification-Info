@@ -1,0 +1,201 @@
+|dc:identifiers|event|link|name|repo|repo_changed|source
+0|False|been migrated|http://edoc.bbaw.de/oai?verb=Identify|Publication Server of Berlin-Brandenburgischen Akademie der Wissenschaften, Germany|Opus 4|False|OpenDOAR
+1|False|new registry|http://edoc.sub.uni-hamburg.de/klimawandel/oai?verb=Identify|Dokumentenserver Klimawandel of Climate Service Center/HZG , Germany|Opus 4|False|
+2|False|been migrated to FreiDok plus|https://www.freidok.uni-freiburg.de/oai/oai2.php?verb=Identify|The FreiDok repository|a new platform software|False|
+3|False|been migrated|http://eprints.teiwm.gr/cgi/oai2?verb=Identify|Library of ΤΕΙ of Western Macedonia, Greece|EPrints|False|
+4|False|changed the OAI-PMH basicurl|http://recherche.archives.somme.fr/oai_pmh.cgi?verb=Identify|Mémoires de la Somme Archives en ligne||False|
+5|True|improved the OAI-PMH interface|http://repository.unimilitar.edu.co/oai/request?verb=Identify|Repositorio Documental UMNG of Universidad Militar Nueva Granada, Colombia|DSpace|False|OpenDOAR
+6|False|been migrated to DSpace at National Taiwan Normal Univ|http://dspace.lib.ntnu.edu.tw/oai/request?verb=Identify|National Taiwan Normal University Repository||False|OpenDOAR
+7|False|changed the OAI-PMH basicurl|http://www.oceandocs.org/oai/request?verb=Identify|OceanDocs||False|OpenDOAR
+8|False|been migrated|http://phka.bsz-bw.de/oai?verb=Identify|OPUS-PHKA, the Publication Server of Karlsruhe University of Education, Germany|Opus 4|False|OpenDOAR
+9|False|switched the OAI-PMH basicurl again||Massey Research Online, the institutional repository of Massey Univ, New Zealand|DSpace|False|OpenDOAR
+10|False|been migrated|https://opus4.kobv.de/opus4-euv/oai?verb=Identify|Publication Server of Europa-University Viadrina, Germany|Opus 4|False|OpenDOAR
+11|False|been migrated|https://opus4.kobv.de/opus4-uni-passau/oai?verb=Identify|Dokumentenserver der Universität Passau of Passau University, Germany|Opus 4|False|OpenDOAR
+12|False|changed the OAI-PMH basicurl|https://vtext.valdosta.edu/oai/request?verb=Identify|Vtext Repository of Valdosta State University, US|DSpace|False|OpenDOAR
+13|True|improved the OAI-PMH interface|http://anemi.lib.uoc.gr/?verb=Identify|Anemi (Digital Library of Modern Greek Studies) of the University of Crete Library, Greece|Keystone|False|OpenDOAR
+14|False|migrated|https://tubdok.tub.tuhh.de/oai/request?verb=Identify|TUBdok, the open access repository of TUHH. Germany|DSpace|True|OpenDOAR
+15|True|improved the OAI-PMH interface|http://elocus.lib.uoc.gr/?verb=Identify|E-Locus, the institutional repository of the University of Crete Library, Greece|Keystone|False|OpenDOAR
+16|True|improved the OAI-PMH interface|http://archie.kumc.edu/oai/request?verb=Identify|Archie Digital Collections, the repository of University of Kansas Medical Center, US|DSpace|False|OpenDOAR
+17|False|changed the OAI-PMH basicurl|http://repository.ipu-japan.ac.jp/oai/Request?verb=Identify|OCEAN IPU Repository of International Pacific University (IPU), Japan||False|OpenDOAR
+18|False|changed the OAI-PMH basicurl.|http://publishup.uni-potsdam.de/opus4-ubp/oai?verb=Identify|publish.UP, the publication portal of the University of Potsdam, Germany|Opus4|True|OpenDOAR
+19|False|changed the OAI-PMH basicurl|http://e-archivo.uc3m.es/dspace-oai/request?verb=Identify|e-Archivo, the Institutional Repository of Carlos III University of Madrid, Span|DSpace|False|OpenDOAR
+20|False|changed the OAI-PMH basicurl|https://repository.unam.na/oai/request?verb=Identify|UNAM Scholarly Repository of University of Namibia|DSpace|False|OpenDOAR
+21|False|been migrated|http://repository.lasalle.edu.co/oai/request?verb=Identify|UNISALLE – RIUS, the research repository of Universidad de La Salle, Colombia|DSpace|False|
+22|True|improved the OAI-PMH interface|http://gru.openrepository.com/gru/oai/request?verb=Identify|Scholarly Commons, the institutional repository for Georgia Regents University, USA||False|OpenDOAR
+23|False|changed the OAI-PMH basicurl|https://dspace.vsb.cz/oai/request?verb=Identify|DSpace VŠB-TUO, the repository of the Technical University of Ostrava|DSpace|False|OpenDOAR
+24|False|changed the OAI-PMH basicurl|https://fagarkivet.hioa.no/oai/request?verb=Identify|Fagarkivet HIOA, the repository of Høgskolen i Oslo og Akershus, Norway|DSpace|False|OpenDOAR
+25|False|changed the OAI-PMH basicurl|http://wellcomeimages.org/wellcome_oai?verb=Identify|wellcome images, UK,||False|
+26|False|improved the OAI-PMH interface|http://e-publications.une.edu.au/fedora/oai?verb=Identify|e-publications@UNE, the institutional research repository of the University of New England, Australia|Fedora|False|OpenDOAR
+27|True|improved the OAI-PMH interface|http://digitalcase.case.edu:9000/fedora/oai?verb=Identify|Digital Case, the repository of Case Western Reserve University, USA|Fedora|False|OpenDOAR
+28|False|been migrated|https://tspace.library.utoronto.ca/oai/request?verb=Identify|TSpace, the research repository of University of Toronto, Canada|DSpace|False|OpenDOAR
+29|False|migrated.|http://ir.lib.hiroshima-u.ac.jp/api/oai/request?verb=Identify|HiR, Hiroshima University Institutional Repository, Japan|DSpace|False|OpenDOAR
+30|True|improved the OAI-PMH interface|http://dspace.onua.edu.ua/oai/request|eNUOLAIR, the Electronic National University Odessa Law Academy Institutional Repository, Ukraine,|DSpace|False|OpenDOAR
+31|False|changed the OAI-PMH basicurl|https://air.unimi.it/oai/request?verb=Identify|AIR, archivio Istituzionale della Ricerca dell'Università degli Studi di Milano, Italy|DSpace|False|OpenDOAR
+32|True|improved the OAI-PMH interface|http://repositorio.cedia.org.ec/oai/request?verb=Identify|Repositorio Digital CEDIA, Ecuador|DSpace|False|OpenDOAR
+33|False|changed the OAI-PMH basicurl|http://repository.newport.ac.uk/oai/request?verb=Identify|Research at the University of Wales, Newport, UK,|DSpace|False|OpenDOAR
+34|True|improved the OAI-PMH interface|http://repository.unam.na/oai/request?verb=Identify|UNAM The Scholarly Repository</a> of University of Namibia|DSpace|False|OpenDOAR
+35|True|improved the OAI-PMH interface.|http://istemag.univcasa.ma/oai/request?verb=Identify|The Dépôt institutionnel de l'Université Hassan II Casablanca, Marocco|DSpace|False|OpenDOAR
+36|False|new registry||Dokumentenserver der TU Clausthal, Germany.|MyCoRe|False|
+37|False|||New OAI-PMH system: Research Index FOX of the Leuphana University Lüneburg, Germany|Pure|False|
+38|False|changed the OAI-PMH basicurl|http://bura.brunel.ac.uk/oai/request?verb=Identify|BURA, Brunel University Research Archive,|DSpace|False|OpenDOAR
+39|False|improved the OAI-PMH interface|http://bdigital.zamorano.edu/oai/request?verb=Identify|Biblioteca Digital Wilson Popenoe, the Institutional Repository of Escuela Agrícola Panamericana Zamorano, Honduras||False|OpenDOAR
+40|False|changed the OAI-PMH basicurl|http://aperto.unito.it/dspace-oai/request?verb=Identify|AperTO, the Institutional Repository of Università degli Studi di Torino.Italy,|DSpace|False|OpenDOAR
+41|False|changed the OAI-PMH basicurl|http://midra.uni-miskolc.hu/monguz-oai-datagate-webservice/repositories/jadoxdc?verb=Identify|MIDRA (Miskolci Egyetem Digitális Raktár és Adattár), the Institutional Repository of University of Miskolc, Hungary,|JaDoX|False|OpenDOAR
+42|False|changed the OAI-PMH basicurl|http://rabida.uhu.es/oai/request?verb=Identify|Arias Montano, the Institutional Repository of the University of Huelva , Spain|DSpace|False|OpenDOAR
+43|True|improved the OAI-PMH interface|http://mruir.mtroyal.ca/oai/request?verb=Identify|The Mount Royal University Institutional Repository, Canada|DSpace|False|
+44|False|changed the OAI-PMH basicurl||UPEI Open Journals, the open access journal platform of Univ. of Prince Edward Island, Canada|OJS|False|
+45|False|changed the OAI-PMH basicurl|http://www.ruor.uottawa.ca/oai/request?verb=Identify|uO Research of University of Ottawa (Université d'Ottawa), Canada|DSpace|False|OpenDOAR
+46|False|new registry||Publication Server of the Aachen University of Applied Sciences</a>|Opus4|False|
+47|False|migrated.|http://scholarsarchive.byu.edu/do/oai/?verb=Identify|ScholarsArchive, Brigham Young University’s institutional repository|DigitalCommons|False|OpenDOAR
+48|False|migrated.|http://etd.uwc.ac.za/oai/request?verb=Identify|The repository UWC Electronic Thesis and Dissertations Repository of University of the Western Cape, South Africa|Dspace|False|OpenDOAR
+49|False|improved the OAI-PMH interface|http://pirhua.udep.edu.pe/oai/request?verb=Identify|Pirhua, the Institutional Repository of the University of Piura, Peru,||False|OpenDOAR
+50|False|improved the OAI PMH interface|http://archives.lib.state.ma.us/oai/request?verb=Identify|The State Library of Massachusetts Repository||False|OpenDOAR
+51|False|migrated|http://repositorium.uni-muenster.de/oai/miami?verb=Identify|The repository of Muenster University, Germany, miami|Alfresco|False|OpenDOAR
+52|False|changed the OAI-PMH basicurl|http://dspace.library.drexel.edu/oai/request?verb=Identify|Drexel E-Repository and Archives (iDEA) of Drexel University, United States|DSpace|False|OpenDOAR
+53|False|new registry|http://digital.ub.tu-freiberg.de/oai/?verb=Identify|Collections||False|
+54|False|changed the OAI-PMH basicurl|http://si-pddr.si.edu/oai/request?verb=Identify|Smithsonian Research Online of the Smithsonian Institution, United States|DSpace|False|OpenDOAR
+55|False|changed the OAI-PMH basicurl|https://teora.hit.no/oai/request?verb=Identify|TEORA - Telemark Open Research Archive, Norway,|DSpace|False|OpenDOAR
+56|False|changed the OAI-PMH basicurl|https://dspace.sunyconnect.suny.edu/oai/request?verb=Identify|SUNY Digital Repository of the State University of New York|DSpace|False|OpenDOAR
+57|False|migrated to RULA Digital Repository|http://digitalcommons.ryerson.ca/oai2?verb=Identify|The repository of Ryerson University|Islandora|False|OpenDOAR
+58|False|new registry||Publication Server of the Aachen University of Applied Sciences, Germanyy|Opus$|False|
+59|False|improved the OAI PMH interface|http://www.alhambra-patronato.es/oai?verb=Identify|Recursos de Investigación de la Alhambra||False|OpenDOAR
+60|False|changed the OAI-PMH basicurl||Southern Taiwan University Institutional Repository|DSpace|False|OpenDOAR
+61|False|new registry||PHIQ of Pädagogischen Hochschule St.Gallen (PHSG), Zwitzerland|ContentDM|False|
+62|False|changed the OAI-PMH basicurl||TropMed Central Antwerp, the Digital Repository of the Institute of Tropical Medicine (ITM)|DSpace|False|OpenDOAR
+63|False|new registry||Historische Bestände und Nachlässe der UBL, University Library Leipzig, Germany|MyCoRe|False|
+64|False|again changed the OAI-PMH basicurl||acceda</a> of Universidad de Las Palmas de Gran Canaria (ULPGC), Spain|DSpace|False|OpenDOAR
+65|False|improved the OAI-PMH interface|http://openaccess.iyte.edu.tr:8080/oai/request?verb=Identify|DSpace@IZTECH, the institutional repository of Izmir Institute of Technology, Turkey||False|OpenDOAR
+66|False|new registry||eDiss, Dissertationen der Georg-August-Universität Göttingen, Germany|DSpace|False|
+67|False|improved the OAI-PMH interface|http://ir.flo.org/lesley/oai2.action?verb=Identify|S@L: Scholarship at Lesley, the institutional repository of Lesley University, US||False|OpenDOAR
+68|False|improved the OAI-PMH interface|http://libdigi.unicamp.br/OAI/I/index.php?verb=Identify|Biblioteca Digital da UNICAMP, the institutional repository of Universidade Estadual de Campinas, Brazil||False|OpenDOAR
+69|False|improved the OAI-PMH interface|http://citeseerx.ist.psu.edu/oai2?verb=Identify|CiteSeerX||False|
+70|False|new registry||Jurnal Online ISI Yogyakarta|OJS|False|
+71|False|improved the OAI PMH interface|http://repositorio.puce.edu.ec/oai/request|Repositorio Digital PUCE, the institutional repository of the Pontificia Universidad Católica del Ecuador|DSpace|False|OpenDOAR
+72|False|improved the OAI PMH interface|http://dspace.dsto.defence.gov.au/oai/request?verb=Identify|DSTO Publications Online|DSpace|False|OpenDOAR
+73|False|improved the OAI PMH interface|http://rdu.unc.edu.ar/oai/request?verb=Identify|RD-UNC, the institutional repository of Universidad Nacional de Córdoba, Argentina,|DSpace|False|
+74|False|changed repository homepage url and the OAI PMH basicurl.||The Southern Taiwan University of Science and Technology Institutional Repository, Taiwan||False|OpenDOAR
+75|False|improved the OAI PMH interface|http://repositorio.iaen.edu.ec/oai/request?verb=Identify|Repositorio Digital IAEN, the institutional repository of Insiituto de Altos Estudios Nacionales, Quito, Ecuador||False|OpenDOAR
+76|False|improved the OAI PMH interface|http://archivia.unict.it/dspace-oai/request?verb=Identify|ArchivIA, the institutional repository of Universita di Catania, Italy||False|OpenDOAR
+77|False|changed the OAI-PMH basicurl||Publication Server of HTWG Konstanz, Germany,||False|OpenDOAR
+78|False|been migrated||The Publication Server of Konrad-Zuse-Zentrum für Informationstechnik Berlin (ZIB)||False|
+79|False|changed the OAI-PMH basicurl|http://archiv.ub.uni-heidelberg.de/savifadok/cgi/oai2?verb=Identify|SavifaDok, (Univ. of Heidelberg, Germany)|EPrints|True|OpenDOAR
+80|False|migrated||The LASICS OA platform of Univ. Minho, Portugal||False|
+81|False|changed the OAI-PMH basicurl||Coffee Science, journal of Universidade Federal de Lavras, Lavras, MG, Brasil,|OJS|False|
+82|False|improved the OAI PMH interface|http://dspace.ucuenca.edu.ec/oai/request?verb=Identify|Repositorio de la Universidad de Cuenca, Ecuador||False|
+83|False|changed the OAI-PMH basicurl||UIUC CONTENTdm Server Repository, Univ. of Illinois at Urbana-Champaign|ContentDM|False|
+84|False|improved the OAI PMH interface|http://dspace.ups.edu.ec/oai/request?verb=Identify|Repositorio Digital Universidad Politécnica Salesiana, Ecuador||False|
+85|False|changed the OAI-PMH basicurl||The Dokumentenserver Fakultät für Mathematik und Informatik of Leipzig University, Germany||False|
+86|False|changed the OAI-PMH basicurl||acceda of Universidad de Las Palmas de Gran Canaria (ULPGC), Spain|DSpace|False|OpenDOAR
+87|False|new registry||Wolfenbütteler Digitale Bibliothek (WDB)||False|
+88|False|new registry||ArTeMIS, the open access repository of ISAE, Institut supérieur de l'aéronautique et de l'espace||False|
+89|False|new registry||DTA - Deutsches Textarchiv||False|
+90|False|changed the OAI-PMH basicurl||T-Space of Univ. of Toronto, Canada|DSpace|False|OpenDOAR
+91|False|migrated||Messanae Universitas Studiorum, the institutional repository of University of Messina, Italy||False|
+92|False|changed the OAI-PMH basicurl||TamPub, the repository of University of Tampere, Finland|DSpace|False|OpenDOAR
+93|False|changed the OAI-PMH basicurl||oURspace of Univ. of Regina, Canada|DSpace|False|OpenDOAR
+94|False|new registry||HSR - Institutional Repository , Hochschule für Technik, Rappperswil, Switzerland.|EPrints|False|
+95|False|changed the OAI-PMH basicurl|http://archiv.ub.uni-heidelberg.de/propylaeumdok/cgi/oai2?verb=Identify|Propylaeum-DOK (Univ. of Heidelberg, Germany)|EPrints|True|OpenDOAR
+96|False|new registry||ORBilu, Univ. of Luxembourg|DSpace|False|
+97|False|new registry||ELBA, Electronic BASt Archive||False|
+98|False|improved the OAI-PMH interface||Toyo University Repository for Academic Resources||False|
+99|False|changed the OAI-PMH basicurl|http://ir.chna.edu.tw/ir-oai/request?verb=Identify|Chia Nan University of Pharmacy & Science Institutional Repository||False|
+100|False|new registry|http://digilib.lib.unipi.gr/dspace-oai/request?verb=Identify|Διώνη of Univ. of Piraeus, Greece|DSpace|False|OpenDOAR
+101|False|changed the OAI-PMH basicurl||FortWorks||False|OpenDOAR
+102|False|changed the OAI-PMH basicurl||Heriot-Watt University's institutional repository|DSpace|False|
+103|False|new registry|http://opus.bsz-bw.de/fhk/oai2/oai2.php?verb=Identify|Cologne Open Science of Cologne University of Applied Sciences|OPUS 33|False|
+104|False|changed the OAI-PMH basicurl||oops|EPrints|True|OpenDOAR
+105|False|new registry|http://publicatio.bibl.u-szeged.hu/cgi/oai2 ?verb=Identify|SZTE Repository of Publications, Szeged Univ., Hungary|EPrints|False|
+106|False|changed the OAI-PMH basicurl||University of Calgary Institutional Repository, Canada|DSpace|False|OpenDOAR
+107|False|changed the OAI-PMH basicurl||gei.digital|Goobi|False|
+108|False|been migrated||ETH E-Collection||False|OpenDOAR
+109|False|been migrated|http://archiv.ub.uni-heidelberg.de/volltextserver/cgi/oai2?verb=Identify|HeiDOK, the repository of Heidelberg University, Germany|Eprints|True|OpenDOAR
+110|False|changed the OAI-PMH basicurl|http://bibliodigital.itcr.ac.cr:8080/oai/request?verb=Identify|Repositorio Tec, the repositorio of Instituto Tecnológico de Costa Rica||False|OpenDOAR
+111|False||http://www.ejournal.sedinst.com/index.php/index/oai?verb=Identify|New OA journal platform: SEDinst International Journals, The Science and Education Development Institutea||False|
+112|False|new registry|http://doktori.bibl.u-szeged.hu/cgi/oai2?verb=Identify|SZTE Repository of Dissertations, Szeged Univ., Hungary|EPrints|False|
+113|False|new registry|http://esource.dbs.ie/oai/request?verb=Identify|DBS Esource (Dublin Business School)|DSpace|False|OpenDOAR
+114|False|changed the OAI-PMH basicurl again||National Chin-Yi University Institutional Repository||False|OpenDOAR
+115|False||http://jorl.net/index.php/index/oai?verb=Identify|New OA Journal: Otolaryngology online journal||False|
+116|False|repaired the OAI-PMH interface||WHOAS||False|
+117|False|changed the basicurl||The Social Science Open Access Repository (SSOAR)|DSpace|False|OpenDOAR
+118|False|improved the OAI-PMH interface||The University of Jos Institutional Repository||False|OpenDOAR
+119|False|changed the OAI-PMH basicurl||Massey Research Online, Massey Univ, New Zealand|DSpace|False|OpenDOAR
+120|False|changed the OAI-PMH basicurl||ALADIN Research Commons (ALADIN)|DSpache|False|
+121|False|optimized its OAI-PMH interface||Biblioteca digital da UniPiaget||False|OpenDOAR
+122|False|new registry|http://library.vlt.is/cgi/oai2?verb=Identify|UArctic Library|Eprints 327|False|
+123|False|new registry|http://ori-repository.univ-lorraine.fr/OAIHandler?verb=Identify|PETALE (Publications Et Travaux Académiques de LorrainE)||False|
+124|False|optimized the OAI-PMH interface||The PolyU Institutional Repository (PolyU IR)||False|
+125|False|migrated to Publikationer Luleå Tekniska Universitet||The repository of Lulea Technical University||False|
+126|False|new registry||AlmaDL Journals|OJS|False|
+127|False|activated the OAI-PMH interface now|http://hydra-oai-pmh.hull.ac.uk/?verb=Identify|Hydra, the repository of Hull Univ.,||False|
+128|False|upgraded the OAI-PMH interface||res doctae, the repository of Akademie der Wissenschaften, Göttingen||False|
+129|False|new registry|http://contentdm.ub.uni-koeln.de/oai?verb=Identify|Digitale Sammlungen der Universität zu Köln||False|
+130|False|migrated the OAI-PMH basicurl||University of Lethbridge Institutional Repository||False|
+131|False|changed the OAI-PMH basicurl||National Chin-Yi University Institutional Repository||False|
+132|False|new registry||KiDokS - Kirchlicher DokumentenServer der AKThB und des VkwB, Germany|the OPUS repository software|False|
+133|False|new registry||PIK Publications of Potsdam Institute for Climate Impact Research, Germany||False|
+134|False|been migrated||The Nemertes repository (Univ. of Patras, Greece)||False|
+135|False|changed the OAI-PMH basicurl||AUSpace of Athabasca Univ.||False|
+136|False|new registry||ART - TORVERGATA OA of Università degli Studi di Roma Tor Vergata||False|
+137|False|migrated and changed the OAI-PMH basicurl||MADOC of Univ. Mannheim||False|
+138|False|been migrated||NCSU Institutional Repository|DSpace|False|
+139|False|modified the OAI-PMH basicurl||DSpace Universidad de Talca, Chile||False|
+140|False|||The Caltech Environmental Quality Laboratory Technical Reports have abondened their OAI-PMH interface||False|
+141|False|||UJDigispace of Univ. Johannesburg changed the OAI-PMH basicurl||False|
+142|False|new registry||Sophiahemmet University College Publications||False|
+143|False|||OA repository Linnaeus University Publications re-organized||False|
+144|False|new registry|http://www.bundesarchiv.de/aktenreichskanzlei/1919-1933/connect/oairepos_all.xml?verb=Identify|Akten der Reichskanzlei. Weimarer Republik, Bundesarchiv, Germany||False|
+145|False|new registry|http://orka.bibliothek.uni-kassel.de/oai?verb=Identify|ORKA - Open Repository Kassel||False|
+146|False|modified the OAI.PMH interface||Villanova University Digital Library||False|
+147|False|changed the OAI-PMH basicurl||National Chiao Tung University Institutional Repository||False|
+148|False|improved its OAI-PMH interface||The Doshisha University Academic Repository||False|
+149|False|new registry||HUPS - Hochschule Ulm Publikationsserver||False|
+150|False|adopted the OAI-PMH basicurl||Institutional Repository at University of Zimbabwe||False|
+151|False|changed the OAI-PMH basicurl||Strathprints: The University of Strathclyde institutional repository||False|
+152|False|moved to DigitalCommons@EMU||Eastern Michigan University Repository||False|
+153|False|updated the DSpace system||Scholarly Materials And Research@Georgia Tech (SMARTech)||False|
+154|False|modified the OAI-PMH basicurl||Bristol Repository of Scholarly Eprints (ROSE)||False|
+155|False|migrated||DSpace@Universidad de los Andes||False|
+156|False|||Brandeis University Digital Collections have moved to Brandeis Institutional Repository||False|
+157|False|been migrated||The Hosei University Repository||False|
+158|False|been migrated|http://dspace.smu.ac.uk/oai/request?verb=Identify|The repository at Swansea Metropolitan University||False|
+159|False|moved to Central Connecticut State University Digital Collections||Central Connecticut State University Digital Archive||False|
+160|False|moved to LoboVault||DSpaceUNM||False|
+161|False|moved to UKnowledge||Univ. of Kentucky Archive.uky.edu||False|
+162|False|migrated to the Minority Health and Health Equity Archive||Minority Health Archive||False|
+163|False|changed the basicurl||National Taiwan University of Science and Technology Institutional Repository||False|
+164|False|improved the metadata quality||eEast-UkrNUIR||False|
+165|False|migrated the basicurl||La Biblioteca Virtual de Andalucía||False|
+166|False|migrated the basicurl||eArchives of Indiana University - Purdue University, Indianapolis||False|
+167|False|migrated||DSpace＠Kanagawa Institute of Technology (Japan)||False|
+168|False|changed the OAI-PMH basicurl|http://vtext.valdosta.edu:8080/oai/request?verb=Identify|Vtext Digital Repository||False|
+169|False|changed the OAI-PMH basicurl||TEGRA of Universad de la Salle, Colombia||False|
+170|False|changed the OAI-PMH basicurl||MSpace at the University of Manitoba||False|
+171|False|changed the OAI-PMH basicurl||Institutional Repository @ BRAC University|DSpace|False|
+172|False|new registry||eSport of German Sport University Cologne|EPrints|False|
+173|False|switched the basicurl||DSpace at University Leiden||False|
+174|False|changed the basicurl||Bayerische Staatsbibliothek München: Digitale Sammlungen||False|
+175|False|changed the basicurl||NPUE IR of National Pingtung University of Education (NPUE), Taiwan|DSpace|False|
+176|False|moved||Queensland DPI&F eResearch Archive (eRA)|EPrints 313|False|
+177|False|modified the OAI-PMH basicurl||Malmö University Electronic Publishing (MUEP)||False|
+178|False|||OAI-PMH interface available for Publications from Karolinska Institutet|DSpace|True|
+179|False|new registry||OPUS - Online-Publikations-Server der Hochschule Osnabrück, Germany||False|
+180|False|switched the basicurl||E-Dissertationen der Universität Hamburg||False|OpenDOAR
+181|False|new registry||RODIN, Object Repository for Teaching and Research at the University of Cadiz|DSpace and delivers currently around 4100 metadata records|False|
+182|False|||Norwegian Brage repositoires with improved OAI-PMH interface||False|
+183|False|new registry|http://oar.marine.ie/oai/request?verb=Identify|Marine Institute Open Access Repository, Galway, Ireland||False|
+184|False|changed its urls||Taiwan Theological College & Seminary Digital Repository|DSpace|False|
+185|False|new registry||USFSP Digital Archive (University of South Florida St. Petersburg)|DSpace|False|
+186|False|again changed the basicurl||National Cheng Kung University Institutional Repository||False|
+187|False|changed the basicurl||Digitum (Depósito de la Universidad de Murcia)||False|
+188|False|||OACIS of Tokyo University of Marine Science and Technology (TUMSAT) is accessible via OAI-PMH||False|
+189|False|new registry||HilDok (University of Hildesheim, Germany)||False|
+190|False|||Migrated repository: RiuNet with new url and new basicurl|DSpace|False|
+191|False|new registry||Te Tumu Eprints Repository with OAI-PMH interface||False|
+192|False|||ElAr, Open Electronic Archive of Kharkov National University of Radioelectronics is accessible via OAI-PMH now||False|
+193|False|||Colecciones Digitales Uniminuto with OAI-PMH basicurl now||False|
+194|False|||National United University Institutional Repository with modified basicurl||False|
+195|False|modified the basicurl||OPuS-Publikationsserver, Berufsverband Information Bibliothek e.V. (BIB)||False|
+196|False|||UNED Madrid with modified basicurl||False|
+197|False|||Theses de l'ULP, Univ Strassburg with modified basicurl||False|
+198|False|||National Central University Institutional Repository (NCUIR), Taiwan uses a modified basicurl|the DSpace software|False|
+199|False|||Feng Chia University Repository now accessible||False|
