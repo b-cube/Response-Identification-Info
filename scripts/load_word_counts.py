@@ -149,7 +149,7 @@ exclude_tags = ['schemaLocation', 'noNamespaceSchemaLocation']
 # In[26]:
 
 # grab the clean text from the rds
-with open('../local/big_rds.conf', 'r') as f:
+with open('local_rds.conf', 'r') as f:
     conf = js.loads(f.read())
 
 # our connection
@@ -172,10 +172,14 @@ LIMIT = 100
 # total = 5
 # LIMIT= total
 
+print 'TOTAL', total
+
 for i in xrange(0, total, LIMIT):
     # get some responses
     responses = session.query(Response).filter(Response.format=='xml').limit(LIMIT).offset(i).all()
     
+    print 'processing', i, results.rowcount
+
     appends = []
     
     for response in responses:
