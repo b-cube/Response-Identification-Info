@@ -149,7 +149,7 @@ exclude_tags = ['schemaLocation', 'noNamespaceSchemaLocation']
 # In[26]:
 
 # grab the clean text from the rds
-with open('local_rds.conf', 'r') as f:
+with open('big_rds.conf', 'r') as f:
     conf = js.loads(f.read())
 
 # our connection
@@ -162,8 +162,8 @@ session = Session()
 # In[27]:
 
 # get a count of the xml responses
-total = session.query(Response).filter(Response.format=='xml').count()
-
+TOTAL = session.query(Response).filter(Response.format=='xml').count()
+START = 0
 
 # In[ ]:
 
@@ -174,13 +174,11 @@ LIMIT = 100
 
 print 'TOTAL', total
 
-for i in xrange(0, total, LIMIT):
+for i in xrange(START, TOTAL, LIMIT):
     # get some responses
     responses = session.query(Response).filter(Response.format=='xml').limit(LIMIT).offset(i).all()
     
-    print 'processing', i, results.rowcount
-
-    appends = []
+    print 'processing', i, len(responses)
     
     for response in responses:
         cleaned_content = response.cleaned_content
@@ -203,13 +201,12 @@ for i in xrange(0, total, LIMIT):
             method="basic",
             response_id=response.id
         )
-        appends.append(bag)
-    
-    try:
-        session.add_all(appends)
-        session.commit()
-    except Exception as ex:
-        print 'failed ', i, ex
-        session.rollback()
-    
+
+        try:
+            session.add_all(bag)
+            session.commit()
+        except Exception as ex:
+            print 'failed ', response.id, ex
+            session.rollback()
+        
 session.close()
