@@ -183,7 +183,9 @@ for i in xrange(START, TOTAL, LIMIT):
     for response in responses:
         cleaned_content = response.cleaned_content
 
-        if len(cleaned_content.encode('utf-8')) > 
+        if len(cleaned_content.encode('utf-8')) > 1.:
+            print 'SKIPPING big file', response.id
+            continue
         
         # strip the html cruft but ignore the a tags
         bp = BagParser(cleaned_content.encode('utf-8'), True, False)
