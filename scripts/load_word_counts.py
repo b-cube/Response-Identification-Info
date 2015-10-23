@@ -20,6 +20,7 @@ import sqlalchemy as sqla
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.dialects.postgresql import *
 from sqlalchemy import and_, not_
+from sqlalchemy import func
 from mpp.models import Response
 from mpp.models import BagOfWords
 
@@ -162,7 +163,8 @@ session = Session()
 # In[27]:
 
 # get a count of the xml responses
-TOTAL = session.query(Response).filter(and_(Response.format=='xml', not_(Response.cleaned_content.lower().startswith("<rdf")))).count()
+TOTAL = session.query(Response).filter(
+    and_(Response.format=='xml', not_(func.lower(Response.cleaned_content).startswith("<rdf")))).count()
 START = 0
 
 # In[ ]:
@@ -176,7 +178,8 @@ print 'TOTAL', TOTAL
 
 for i in xrange(START, TOTAL, LIMIT):
     # get some responses
-    responses = session.query(Response).filter(and_(Response.format=='xml', not_(Response.cleaned_content.lower().startswith("<rdf")))).limit(LIMIT).offset(i).all()
+    responses = session.query(Response).filter(
+        and_(Response.format=='xml', not_(func.lower(Response.cleaned_content).startswith("<rdf")))).limit(LIMIT).offset(i).all()
     
     print 'processing', i, len(responses)
     
