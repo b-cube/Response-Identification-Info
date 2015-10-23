@@ -162,7 +162,7 @@ session = Session()
 # In[27]:
 
 # get a count of the xml responses
-TOTAL = session.query(Response).filter(and_(Response.format=='xml', not_(Response.cleaned_content.lower().startswith("<rdf"))).count()
+TOTAL = session.query(Response).filter(and_(Response.format=='xml', not_(Response.cleaned_content.lower().startswith("<rdf")))).count()
 START = 0
 
 # In[ ]:
@@ -176,7 +176,7 @@ print 'TOTAL', TOTAL
 
 for i in xrange(START, TOTAL, LIMIT):
     # get some responses
-    responses = session.query(Response).filter(and_(Response.format=='xml', not_(Response.cleaned_content.lower().startswith("<rdf"))).limit(LIMIT).offset(i).all()
+    responses = session.query(Response).filter(and_(Response.format=='xml', not_(Response.cleaned_content.lower().startswith("<rdf")))).limit(LIMIT).offset(i).all()
     
     print 'processing', i, len(responses)
     
