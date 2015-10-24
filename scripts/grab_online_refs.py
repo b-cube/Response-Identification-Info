@@ -51,9 +51,9 @@ for i in xrange(0, END, LIMIT):
             print 'xml fail', r['id']
             continue
 
-        if r['protocol'] == 'ISO':
+        if r['protocol'] == '"ISO"':
             xp = '//*/*[local-name()="MD_DigitalTransferOptions"]/*[local-name()="onLine"]/*[local-name()="CI_OnlineResource"]/*[local-name()="linkage"]/*[local-name()="URL"]'
-        elif r['protocol'] == 'FGDC':
+        elif r['protocol'] == '"FGDC"':
             xp = 'distinfo/stdorder/digform/digtopt/onlinopt/computer/networka/networkr'
         else:
             print r['id'], r['protocol']
