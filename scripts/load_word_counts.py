@@ -19,7 +19,7 @@ import json as js  # name conflict with sqla
 import sqlalchemy as sqla
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.dialects.postgresql import *
-from sqlalchemy import and_, or_
+from sqlalchemy import and_, or_, not_
 from mpp.models import Response
 from mpp.models import BagOfWords
 
@@ -163,10 +163,10 @@ session = Session()
 
 clauses = [
     Response.format=='xml',
-    or_(
+    not_(or_(
         Response.cleaned_content.startswith("<rdf"),
         Response.cleaned_content.startswith("<RDF")
-    )
+    ))
 ]
 
 # get a count of the xml responses
