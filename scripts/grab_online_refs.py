@@ -8,7 +8,7 @@ import os
 from lxml import etree
 
 # load the postgres connection file
-with open('../local/big_rds.conf', 'r') as f:
+with open('big_rds.conf', 'r') as f:
     conf = js.loads(f.read())
 
 # our connection
@@ -55,6 +55,9 @@ for i in xrange(0, END, LIMIT):
             xp = '//*/*[local-name()="MD_DigitalTransferOptions"]/*[local-name()="onLine"]/*[local-name()="CI_OnlineResource"]/*[local-name()="linkage"]/*[local-name()="URL"]'
         elif r['protocol'] == 'FGDC':
             xp = 'distinfo/stdorder/digform/digtopt/onlinopt/computer/networka/networkr'
+        else:
+            print r['id'], r['protocol']
+            continue
         
         refs = []
         elems = xml.xpath(xp)
