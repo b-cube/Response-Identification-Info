@@ -5,6 +5,7 @@ notebooks/outputs/*
 !notebooks/outputs/*.json
 
 local/
+scripts/outputs/
 
 .ipynb_*
 notebooks/.ipynb_checkpoints/Unpack XML Signatures-checkpoint.ipynb
