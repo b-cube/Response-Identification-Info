@@ -5,7 +5,7 @@ import json as js
 from mpp.models import Metric
 
 with open('big_rds.conf', 'r') as f:
-    conf = json.loads(f.read())
+    conf = js.loads(f.read())
 
 # our connection
 engine = sqla.create_engine(conf.get('connection'))
