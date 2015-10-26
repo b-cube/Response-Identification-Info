@@ -17,7 +17,7 @@ session = Session()
 # it's under scripts (forgot, but ephemera)
 files = glob.glob('outputs/online_refs/*.json')
 
-for f in files[:5]:
+for f in files:
     response_id = int(f.split('/')[-1].replace('.json', ''))
     print response_id
     with open(f, 'r') as g:
