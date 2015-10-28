@@ -24,7 +24,7 @@ with open(conf, 'r') as f:
     config = js.loads(f.read())
 
 # our connection
-engine = sqla.create_engine(conf.get('connection'))
+engine = sqla.create_engine(config.get('connection'))
 Session = sessionmaker()
 Session.configure(bind=engine)
 session = Session()
@@ -43,16 +43,27 @@ TOTAL = session.query(Response).filter(
 START = 0
 LIMIT = 100
 
+with open('bow_fails.txt', 'w') as f:
+    f.write('bag of words failures\n\n'.format(datetime.now().isoformat()))
+
 for i in xrange(START, TOTAL, LIMIT):
     response_ids = session.query(Response.id).filter(
         and_(*clauses)).limit(LIMIT).offset(i).all()
 
-    for response_id in response_ids:
+    for response_id, in response_ids:
         tc = TimedCmd(cmd % {"config": conf, "response_id": response_id})
         try:
             status, output, error = tc.run(timeout)
         except:
             print 'failed extraction: ', response_id
+            with open('bow_fails.txt', 'a') as f:
+                f.write('extract fail: \n'.format(response_id))
+            continue
+
+        if error:
+            print 'error from cli: ', response_id, error
+            with open('bow_fails.txt', 'a') as f:
+                f.write('cli fail: \n'.format(response_id))
             continue
 
         bag = BagOfWords(
@@ -67,6 +78,8 @@ for i in xrange(START, TOTAL, LIMIT):
             session.commit()
         except Exception as ex:
             print 'failed commit: ', response_id, ex
+            with open('bow_fails.txt', 'a') as f:
+                f.write('commit fail: \n'.format(response_id))
             session.rollback()
 
 session.close()

@@ -81,10 +81,10 @@ def strip_identifiers(texts):
 
 def clean(text):
     text = strip_dates(text)
-    text = remove_numeric(text)
+    text = remove_numeric(text).strip()
     text = remove_punctuation(text.strip()).strip()
-    # text = strip_punctuation(text)
-    text = strip_filenames(text)
+    text = strip_terminal_punctuation(text.strip()).strip()
+    text = strip_filenames(text).strip()
 
     return text
 
@@ -111,7 +111,9 @@ def main():
     Session.configure(bind=engine)
     session = Session()
 
-    response_id, cleaned_content = session.query(Response.id, Response.cleaned_content).filter(Response.id==int(options.response_id)).first()
+    response_id, cleaned_content = session.query(
+        Response.id, Response.cleaned_content
+    ).filter(Response.id == int(options.response_id)).first()
 
     session.close()
 
@@ -128,9 +130,9 @@ def main():
 
     stripped_text = [b[1].split() for b in bp.strip_text(exclude_tags) if b[1]]
     stripped_text = list(chain.from_iterable(stripped_text))
-    cleaned_text = [s for s in stripped_text if clean(s)]
-    bow = strip_identifiers(' '.join(cleaned_text))
-    print ' '.join(bow)
+    cleaned_text = [clean(s) for s in stripped_text]
+    bow = strip_identifiers(' '.join([c for c in cleaned_text if c]))
+    print ' '.join([b.encode('utf-8') for b in bow if b])
 
 
 if __name__ == '__main__':
