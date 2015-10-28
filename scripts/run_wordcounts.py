@@ -17,7 +17,7 @@ is empty - no partial resultset
 
 
 conf = 'big_rds.conf'
-cmd = 'python word_count_cli.py -x %(xml)s'
+cmd = 'python word_count_cli.py -x "%(xml)s"'
 timeout = 120  # in seconds, more than 2minutes seems like an eternity
 
 with open(conf, 'r') as f:
@@ -44,7 +44,7 @@ START = 0
 TOTAL = 0  # enter the value (that's a slow query, no indices)
 LIMIT = 100
 
-with open('bow_fails.txt', 'w') as f:
+with open('outputs/bow_fails.txt', 'w') as f:
     f.write('bag of words failures\n\n'.format(datetime.now().isoformat()))
 
 for i in xrange(START, TOTAL, LIMIT):
@@ -57,13 +57,13 @@ for i in xrange(START, TOTAL, LIMIT):
             status, output, error = tc.run(timeout)
         except:
             print 'failed extraction: ', response_id
-            with open('bow_fails.txt', 'a') as f:
+            with open('outputs/bow_fails.txt', 'a') as f:
                 f.write('extract fail: \n'.format(response_id))
             continue
 
         if error:
             print 'error from cli: ', response_id, error
-            with open('bow_fails.txt', 'a') as f:
+            with open('outputs/bow_fails.txt', 'a') as f:
                 f.write('cli fail: \n'.format(response_id))
             continue
 
@@ -79,7 +79,7 @@ for i in xrange(START, TOTAL, LIMIT):
             session.commit()
         except Exception as ex:
             print 'failed commit: ', response_id, ex
-            with open('bow_fails.txt', 'a') as f:
+            with open('outputs/bow_fails.txt', 'a') as f:
                 f.write('commit fail: \n'.format(response_id))
             session.rollback()
 

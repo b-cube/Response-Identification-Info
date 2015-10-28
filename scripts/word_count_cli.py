@@ -94,7 +94,7 @@ def main():
 
     exclude_tags = ['schemaLocation', 'noNamespaceSchemaLocation']
 
-    bp = BagParser(cleaned_content.encode('utf-8'), True, False)
+    bp = BagParser(options.xml_as_string.encode('utf-8'), True, False)
     if bp.parser.xml is None:
         sys.stderr.write('Failed xml parse')
         sys.exit(1)
