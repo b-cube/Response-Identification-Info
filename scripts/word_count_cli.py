@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from optparse import OptionParser
-import json as js
-from mpp.models import Response
-import traceback
-import sqlalchemy as sqla
-from sqlalchemy.orm import sessionmaker
-
 import sys
 import re
 import dateutil.parser as dateparser
@@ -91,35 +85,12 @@ def clean(text):
 
 def main():
     op = OptionParser()
-    op.add_option('--connection', '-c')
-    op.add_option('--response_id', '-i')
+    op.add_option('--xml_as_string', '-x')
 
     options, arguments = op.parse_args()
 
-    if not options.connection:
-        op.error('No RDS Connection provided')
-
-    if not options.response_id:
-        op.error('No response id')
-
-    with open(options.connection, 'r') as f:
-        conf = js.loads(f.read())
-
-    # our connection
-    engine = sqla.create_engine(conf.get('connection'))
-    Session = sessionmaker()
-    Session.configure(bind=engine)
-    session = Session()
-
-    response_id, cleaned_content = session.query(
-        Response.id, Response.cleaned_content
-    ).filter(Response.id == int(options.response_id)).first()
-
-    session.close()
-
-    if not response_id:
-        sys.stderr.write('Invalid response id')
-        sys.exit(1)
+    if not options.xml_as_string:
+        op.error('No xml')
 
     exclude_tags = ['schemaLocation', 'noNamespaceSchemaLocation']
 

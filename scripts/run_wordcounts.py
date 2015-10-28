@@ -16,7 +16,7 @@ is empty - no partial resultset
 '''
 
 
-conf = '../local/big_rds.conf'
+conf = 'big_rds.conf'
 cmd = 'python word_count_cli.py -c %(config)s -i %(response_id)s'
 timeout = 120  # in seconds, more than 2minutes seems like an eternity
 
