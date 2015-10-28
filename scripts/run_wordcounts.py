@@ -17,7 +17,7 @@ is empty - no partial resultset
 
 
 conf = 'big_rds.conf'
-cmd = 'python word_count_cli.py -c %(config)s -i %(response_id)s'
+cmd = 'python word_count_cli.py -x %(xml)s'
 timeout = 120  # in seconds, more than 2minutes seems like an eternity
 
 with open(conf, 'r') as f:
@@ -38,20 +38,21 @@ clauses = [
 ]
 
 # get a count of the xml responses
-TOTAL = session.query(Response).filter(
-    and_(*clauses)).count()
+# TOTAL = session.query(Response).filter(
+#     and_(*clauses)).count()
 START = 0
+TOTAL = 0  # enter the value (that's a slow query, no indices)
 LIMIT = 100
 
 with open('bow_fails.txt', 'w') as f:
     f.write('bag of words failures\n\n'.format(datetime.now().isoformat()))
 
 for i in xrange(START, TOTAL, LIMIT):
-    response_ids = session.query(Response.id).filter(
+    responses = session.query(Response.id, Response.cleaned_content).filter(
         and_(*clauses)).limit(LIMIT).offset(i).all()
 
-    for response_id, in response_ids:
-        tc = TimedCmd(cmd % {"config": conf, "response_id": response_id})
+    for response_id, cleaned_content in responses:
+        tc = TimedCmd(cmd % {"xml": cleaned_content})
         try:
             status, output, error = tc.run(timeout)
         except:
