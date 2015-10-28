@@ -20,15 +20,15 @@ is empty - no partial resultset
 def main():
 
     op = OptionParser()
-    op.add_option('--start', '-s', default='0')
-    op.add_option('--end', '-e', default='100')
-    op.add_option('--interval', '-i', default='100')
+    op.add_option('--start', '-s', default=0, type="int")
+    op.add_option('--end', '-e', default=100, type="int")
+    op.add_option('--interval', '-i', default=100, type="int")
 
     options, arguments = op.parse_args()
 
-    START = int(options.start)
-    TOTAL = int(options.end)
-    LIMIT = int(options.interval)
+    START = options.start
+    TOTAL = options.end
+    LIMIT = options.interval
 
     conf = 'big_rds.conf'
     cmd = 'python word_count_cli.py -x "%(xml)s"'
