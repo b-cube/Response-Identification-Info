@@ -31,7 +31,7 @@ def main():
     LIMIT = options.interval
 
     conf = 'big_rds.conf'
-    cmd = 'python word_count_cli.py -x "%(xml)s"'
+    cmd = "python word_count_cli.py -x '%s'"
     timeout = 120  # in seconds, more than 2minutes seems like an eternity
 
     with open(conf, 'r') as f:
@@ -60,13 +60,18 @@ def main():
 
     for i in xrange(START, TOTAL, LIMIT):
         responses = session.query(
-            Response.id, Response.cleaned_content
+            Response
         ).filter(
             and_(*clauses)
         ).limit(LIMIT).offset(i).all()
 
-        for response_id, cleaned_content in responses:
-            tc = TimedCmd(cmd % {"xml": cleaned_content})
+        for response in responses:
+            if response.bags_of_words:
+                continue
+
+            response_id = response.id
+            cleaned_content = response.cleaned_content
+            tc = TimedCmd(cmd % cleaned_content.replace("'", "\'"))
             try:
                 status, output, error = tc.run(timeout)
             except:
