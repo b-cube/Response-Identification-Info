@@ -103,7 +103,7 @@ def main():
     stripped_text = list(chain.from_iterable(stripped_text))
     cleaned_text = [clean(s) for s in stripped_text]
     bow = strip_identifiers(' '.join([c for c in cleaned_text if c]))
-    print ' '.join([b.encode('utf-8') for b in bow if b])
+    print ' '.join([b.encode('utf-8') for b in bow if b]).replace("'", "\'")
 
 
 if __name__ == '__main__':
