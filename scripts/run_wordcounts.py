@@ -7,6 +7,8 @@ from mpp.models import Response
 from mpp.models import BagOfWords
 from semproc.timed_command import TimedCmd
 from optparse import OptionParser
+import tempfile
+from os import write, close, unlink
 
 '''
 wrapper for the singleton bag of words cli
@@ -31,7 +33,7 @@ def main():
     LIMIT = options.interval
 
     conf = 'big_rds.conf'
-    cmd = "python word_count_cli.py -x '%s'"
+    cmd = "python word_count_cli.py -f %s"
     timeout = 120  # in seconds, more than 2minutes seems like an eternity
 
     with open(conf, 'r') as f:
@@ -71,7 +73,15 @@ def main():
 
             response_id = response.id
             cleaned_content = response.cleaned_content
-            tc = TimedCmd(cmd % cleaned_content.replace("'", "\'"))
+
+            # put it in a tempfile to deal with
+            # very long files and paper over the
+            # encoding, escaping junk
+            handle, name = tempfile.mkstemp(suffix='.xml')
+            write(handle, cleaned_content)
+            close(handle)
+
+            tc = TimedCmd(cmd % name)
             try:
                 status, output, error = tc.run(timeout)
             except:
@@ -79,6 +89,8 @@ def main():
                 with open('outputs/bow_fails.txt', 'a') as f:
                     f.write('extract fail: {0}\n'.format(response_id))
                 continue
+            finally:
+                unlink(name)
 
             if error:
                 print 'error from cli: ', response_id, error

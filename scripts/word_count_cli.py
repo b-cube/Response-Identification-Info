@@ -85,16 +85,22 @@ def clean(text):
 
 def main():
     op = OptionParser()
-    op.add_option('--xml_as_string', '-x')
+    op.add_option('--file', '-f')
 
     options, arguments = op.parse_args()
 
-    if not options.xml_as_string:
-        op.error('No xml')
+    # get it from some file, sometimes the xml
+    # is too long for the args and i'm tired of
+    # quoting things.
+    if not options.file:
+        op.error('No xml file')
 
     exclude_tags = ['schemaLocation', 'noNamespaceSchemaLocation']
 
-    bp = BagParser(options.xml_as_string.encode('utf-8'), True, False)
+    with open(options.file, 'r') as f:
+        xml_as_string = f.read()
+
+    bp = BagParser(xml_as_string.encode('utf-8'), True, False)
     if bp.parser.xml is None:
         sys.stderr.write('Failed xml parse')
         sys.exit(1)
