@@ -72,13 +72,13 @@ def main():
             except:
                 print 'failed extraction: ', response_id
                 with open('outputs/bow_fails.txt', 'a') as f:
-                    f.write('extract fail: \n'.format(response_id))
+                    f.write('extract fail: {0}\n'.format(response_id))
                 continue
 
             if error:
                 print 'error from cli: ', response_id, error
                 with open('outputs/bow_fails.txt', 'a') as f:
-                    f.write('cli fail: \n'.format(response_id))
+                    f.write('cli fail: {0}\n'.format(response_id))
                 continue
 
             bag = BagOfWords(
@@ -94,7 +94,7 @@ def main():
             except Exception as ex:
                 print 'failed commit: ', response_id, ex
                 with open('outputs/bow_fails.txt', 'a') as f:
-                    f.write('commit fail: \n'.format(response_id))
+                    f.write('commit fail: {0}\n'.format(response_id))
                 session.rollback()
 
     session.close()
