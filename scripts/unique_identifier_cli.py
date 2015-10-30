@@ -5,13 +5,8 @@ import json as js
 import traceback
 
 import sys
-import re
-import dateutil.parser as dateparser
-from itertools import chain
 
-from semproc.bag_parser import BagParser
 from semproc.unique_identifiers import IdentifierExtractor
-from semproc.nlp_utils import *
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -25,19 +20,22 @@ identifiers. same regex findall hangups
 def main():
     op = OptionParser()
     op.add_option('--url', '-u')
-    op.add_option('--xml_as_string', '-x')
+    op.add_option('--file', '-f')
     op.add_option('--debug', '-d', default='False')
 
     options, arguments = op.parse_args()
 
     if not options.url:
         op.error('No url')
-    if not options.xml_as_string:
-        op.error('No xml')
+    if not options.file:
+        op.error('No xml file')
 
     debug = bool(options.debug)
 
-    extractor = IdentifierExtractor(options.url, options.xml_as_string)
+    with open(options.file, 'r') as f:
+        xml_as_string = f.read()
+
+    extractor = IdentifierExtractor(options.url, xml_as_string)
 
     try:
         extractor.process_text()
