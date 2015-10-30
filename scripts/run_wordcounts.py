@@ -46,11 +46,7 @@ def main():
     session = Session()
 
     clauses = [
-        Response.format == 'xml',
-        not_(or_(
-            Response.cleaned_content.startswith("<rdf"),
-            Response.cleaned_content.startswith("<RDF")
-        ))
+        Response.format == 'xml'
     ]
 
     # get a count of the xml responses
