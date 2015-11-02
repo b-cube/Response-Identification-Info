@@ -106,6 +106,10 @@ and (
 	and every_error not like '% entity % not found%' --fatal error
 	and every_error not like '% input ended before all started tags were ended; last tag started is %' --fatal error
 	and every_error not like '% unmatched end tag expected %' --fatal error
+	and every_error not like '% element name expected%' --fatal error
+	and every_error not like '% complex type % violates the unique particle attribution rule in its components %'
+	and every_error not like '% referenced element % not found%'
+	and every_error not like '% invalid content in % element%'
 	
 )
 ;
