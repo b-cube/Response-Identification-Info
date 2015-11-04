@@ -6,7 +6,9 @@
 
 select distinct every_error
 from v
-where (every_error not like '% attribute % is not declared %'
+where every_error not like 'Error at validation CLI: timeout error'
+and
+	(every_error not like '% attribute % is not declared %'
 	and every_error not like '% no declaration found for element %'
 	and every_error not like '% element % is not allowed for content model %'
 	and every_error not like '% empty content is not valid for content model %'
@@ -26,6 +28,9 @@ where (every_error not like '% attribute % is not declared %'
 	and every_error not like '% markup declaration expected%'
 	and every_error not like '% invalid multi-byte sequence%'
 	and every_error not like '% unsupported protocol in URL%'
+	and every_error not like '% unterminated comment%'
+	and every_error not like '% prefix % can not be resolved to namespace URI%'
+	and every_error not like '% unmatched end tag detected%'
 )
 and (
 -- remove the nots for the access errors
@@ -110,7 +115,7 @@ and (
 	and every_error not like '% complex type % violates the unique particle attribution rule in its components %'
 	and every_error not like '% referenced element % not found%'
 	and every_error not like '% invalid content in % element%'
-	
+	and every_error not like '% base type specified in complexContent definition must be a complex type%'
 )
 ;
 
