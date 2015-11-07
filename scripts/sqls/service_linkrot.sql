@@ -51,6 +51,8 @@
 -- where i.ident->>'protocol' = 'OGC' or i.ident->>'protocol' = 'OpenSearch'
 -- order by protocol, date_trunc('month', r.initial_harvest_date)::date ASC;
 
+
+-- -- issues with ogc and head requests
 with i
 as (
     select d.response_id, jsonb_array_elements(d.identity::jsonb) ident
@@ -64,4 +66,4 @@ select date_trunc('month', r.initial_harvest_date)::date as harvest_month,
 from responses r join i on r.id = i.response_id
 	join service_linkrot s on s.response_id = r.id
 where i.ident->>'protocol' = 'OGC' and round(s.status, -2) > 200 and round(s.status, -2) < 900 
-order date_trunc('month', r.initial_harvest_date)::date ASC;
+order by date_trunc('month', r.initial_harvest_date)::date ASC;
