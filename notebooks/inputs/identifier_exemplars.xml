@@ -1,0 +1,52 @@
+<start>
+    <!--
+    not_urn's are identifier-like things that we don't consider
+    urns despite the similarity.
+
+    urns are things we do consider urns, even if not 100%
+    complying with the spec.
+
+    alone is just that - the strings as the only text. if
+    we can't grab them here, something is wrong.
+
+    text is the exemplar embedded in some text
+
+    urls is a set of things that are urls, embedded in
+    text or not, to make sure the urn check isn't scarfing
+    those
+    -->
+    <alone>
+        <not_urn>
+            <first>nlm:nlmuid-67840340R-bk</first>
+            <second>geonode:combined_tasks</second>
+            <third>gov.noaa.ngdc.stp.indices:G00587</third>
+            <fourth>00:23:2352</fourth>
+        </not_urn>
+        <urn>
+            <first>urn:nbn:nl:ui:13-01hb-3b</first>
+            <second>oai:easy.dans.knaw.nl:easy-dataset:53685</second>
+            <third>oai:www.mpi.nl:MPI110411</third>
+            <fourth>clarin.eu:cr1:p_1271859438204</fourth>
+            <fifth>urn:uuid:6426c02b-f2b1-4326-a767-2384c303faf3</fifth>
+        </urn>
+    </alone>
+    <text>
+        <not_urn>
+            <first>starting the sentence nlm:nlmuid-67840340R-bk and ending, it.</first>
+            <second>starting the sentence (geonode:combined_tasks)</second>
+            <third>starting the sentence gov.noaa.ngdc.stp.indices:G00587 and i don't know: other text.</third>
+        </not_urn>
+        <urn>
+            <first>starting the sentence urn:nbn:nl:ui:13-01hb-3b and ending, it</first>
+            <second>starting the sentence (oai:easy.dans.knaw.nl:easy-dataset:53685)</second>
+            <third>it's not much really, oai:www.mpi.nl:MPI110411, but some: stuff and : junk</third>
+            <fourth>tarting the sentence clarin.eu:cr1:p_1271859438204 words.</fourth>
+            <fifth>tarting the sentence - urn:uuid:6426c02b-f2b1-4326-a767-2384c303faf3 > getting bored.</fifth>
+        </urn>
+    </text>
+    <urls>
+        <first>http://pubs.usgs.gov/ds/618/data_files/fs/fs_e410_n3438_16/fs_e410_n3438_16.las.xml</first>
+        <second>http://www.nbmg.unr.edu/dox/of0330.pdf</second>
+        <third>http://e4ftl01.cr.usgs.gov/MOLT/MOD13Q1.005/2002.05.25/MOD13Q1.A2002145.h14v04.005.2007156103919.hdf.xml</third>
+    </urls>
+</start>
