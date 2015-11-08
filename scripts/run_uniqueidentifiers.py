@@ -57,14 +57,18 @@ def main():
             tc = TimedCmd(cmd.format(name, response.source_url))
             try:
                 status, output, error = tc.run(timeout)
-            except:
-                print 'failed extraction: ', response_id
+            except Exception as ex:
+                print '******propagated failed extraction: ', response_id
+                print ex
+                print
                 continue
             finally:
                 unlink(name)
 
             if error:
-                print 'error from cli: ', response_id, error
+                print '******error from cli: ', response_id
+                print error
+                print
                 continue
 
             commits = []
@@ -87,7 +91,9 @@ def main():
                 session.add_all(commits)
                 session.commit()
             except Exception as ex:
-                print 'failed commit: ', response_id, ex
+                print '**********failed commit: ', response_id
+                print ex
+                print
                 session.rollback()
     session.close()
 
