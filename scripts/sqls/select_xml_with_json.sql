@@ -29,7 +29,7 @@ with i as
 	where d.identity is not null
 )
 
-select x.xpath,x.extracted_json, i.ident->'protocol' as protocol
+select r.host, x.xpath,x.extracted_json, i.ident->'protocol' as protocol
 --x.extracted_json, x.xpath
 from responses r 
 	join xml_with_jsons x on x.file = r.source_url_sha

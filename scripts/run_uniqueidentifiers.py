@@ -1,10 +1,8 @@
-from datetime import datetime
 import json as js  # name conflict with sqla
 import sqlalchemy as sqla
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import and_, or_, not_
 from mpp.models import Response
-from mpp.models import Identifiers
+from mpp.models import UniqueIdentifier
 from semproc.timed_command import TimedCmd
 from optparse import OptionParser
 import tempfile
@@ -24,7 +22,7 @@ def main():
     LIMIT = options.interval
 
     conf = 'big_rds.conf'
-    cmd = "python unique_identifier_cli.py -f %s"
+    cmd = "python unique_identifier_cli.py -f {0} -u {1}"
     timeout = 120  # in seconds, more than 2minutes seems like an eternity
 
     with open(conf, 'r') as f:
@@ -36,7 +34,61 @@ def main():
     Session.configure(bind=engine)
     session = Session()
 
-    clauses = [
-        Response.format == 'xml'
-    ]
-    
+    for i in xrange(START, TOTAL, LIMIT):
+        for response in session.query(Response).filter(
+                Response.format == 'xml').limit(LIMIT).offset(i).all():
+
+            response_id = response.id
+
+            if response.identifiers:
+                continue
+
+            cleaned_content = response.cleaned_content
+
+            # put it in a tempfile to deal with
+            # very long files and paper over the
+            # encoding, escaping junk
+            handle, name = tempfile.mkstemp(suffix='.xml')
+            write(handle, cleaned_content)
+            close(handle)
+
+            tc = TimedCmd(cmd.format(name, response.source_url))
+            try:
+                status, output, error = tc.run(timeout)
+            except:
+                print 'failed extraction: ', response_id
+                continue
+            finally:
+                unlink(name)
+
+            if error:
+                print 'error from cli: ', response_id, error
+                continue
+
+            commits = []
+            for i in output.split('\n'):
+                if not i:
+                    continue
+                ident = js.loads(i)
+
+                identifier = UniqueIdentifier(
+                    response_id=response_id,
+                    tag=ident.get('tag'),
+                    extraction_type=ident.get('extraction_type'),
+                    match_type=ident.get('match_type'),
+                    original_text=ident.get('original_text'),
+                    potential_text=ident.get('potential_text')
+                )
+                commits.append(identifier)
+
+            try:
+                session.add_all(commits)
+                session.commit()
+            except Exception as ex:
+                print 'failed commit: ', response_id, ex
+                session.rollback()
+    session.close()
+
+
+if __name__ == '__main__':
+    main()
