@@ -48,5 +48,11 @@
         <first>http://pubs.usgs.gov/ds/618/data_files/fs/fs_e410_n3438_16/fs_e410_n3438_16.las.xml</first>
         <second>http://www.nbmg.unr.edu/dox/of0330.pdf</second>
         <third>http://e4ftl01.cr.usgs.gov/MOLT/MOD13Q1.005/2002.05.25/MOD13Q1.A2002145.h14v04.005.2007156103919.hdf.xml</third>
+        <fourth>http://dx.doi.org/10.5255/UKDA-SN-2158-1</fourth>
+        <fifth>http://hdl.handle.net/10022/AC:P:9998</fifth>
+        <sixth>https://www.cats.com/asg/asfgery</sixth>
     </urls>
+    <md5>
+        <first>e53076e89dfa08991fe7fdfbbd367892</first>
+    </md5>
 </start>
