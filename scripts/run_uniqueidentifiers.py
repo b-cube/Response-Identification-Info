@@ -77,7 +77,7 @@ def main():
                     extraction_type=ident.get('extraction_type'),
                     match_type=ident.get('match_type'),
                     original_text=ident.get('original_text'),
-                    potential_text=ident.get('potential_text')
+                    potential_identifier=ident.get('potential_identifier')
                 )
                 commits.append(identifier)
 
