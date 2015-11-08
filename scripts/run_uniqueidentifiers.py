@@ -9,6 +9,8 @@ import tempfile
 from os import write, close, unlink
 
 
+# TODO: some issue with an integer being too large for python.
+
 def main():
     op = OptionParser()
     op.add_option('--start', '-s', default=0, type="int")
