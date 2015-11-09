@@ -7,6 +7,7 @@ from semproc.timed_command import TimedCmd
 from optparse import OptionParser
 import tempfile
 from os import write, close, unlink
+import traceback
 
 
 # TODO: some issue with an integer being too large for python.
@@ -59,7 +60,7 @@ def main():
                 status, output, error = tc.run(timeout)
             except Exception as ex:
                 print '******propagated failed extraction: ', response_id
-                print ex
+                traceback.print_exc()
                 print
                 continue
             finally:

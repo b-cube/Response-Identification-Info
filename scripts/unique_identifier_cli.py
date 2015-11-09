@@ -7,6 +7,7 @@ import sys
 import os
 from semproc.unique_identifiers import IdentifierExtractor
 from semproc.nlp_utils import load_token_list
+import traceback
 
 import warnings
 warnings.filterwarnings('ignore')
