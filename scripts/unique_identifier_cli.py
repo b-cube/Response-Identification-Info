@@ -77,6 +77,7 @@ def main():
             identifiers.append(ident)
     except Exception as ex:
         if debug:
+            traceback.print_exc()
             sys.stderr.write('Failed extraction: {0}'.format(ex))
         else:
             sys.stderr.write('Failed extraction')

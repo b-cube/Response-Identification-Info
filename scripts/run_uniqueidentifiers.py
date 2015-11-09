@@ -60,7 +60,7 @@ def main():
                 status, output, error = tc.run(timeout)
             except Exception as ex:
                 print '******propagated failed extraction: ', response_id
-                traceback.print_exc()
+                # traceback.print_exc()
                 print
                 continue
             finally:
