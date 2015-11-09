@@ -25,7 +25,7 @@ def main():
     LIMIT = options.interval
 
     conf = 'big_rds.conf'
-    cmd = "python unique_identifier_cli.py -f {0} -u {1}"
+    cmd = 'python unique_identifier_cli.py -f {0} -u "{1}"'
     timeout = 120  # in seconds, more than 2minutes seems like an eternity
 
     with open(conf, 'r') as f:
