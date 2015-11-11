@@ -30,6 +30,11 @@
 -- select * into response_codelists from j;
 
 -- -- how many responses contain a bad codelist reference?
-select distinct r.response_id
-from response_codelists r join codelist_statuses c on c.codelist = r.codelist
-where c.status != 200;
+-- select count(distinct r.response_id)
+-- from response_codelists r join codelist_statuses c on c.codelist = r.codelist
+-- where c.status != 200;
+
+-- where are these code lists
+
+select distinct xpath
+from codelists;

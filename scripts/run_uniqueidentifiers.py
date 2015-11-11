@@ -1,5 +1,8 @@
 import json as js  # name conflict with sqla
 import sqlalchemy as sqla
+from sqlalchemy import exc
+from sqlalchemy import event
+from sqlalchemy import select
 from sqlalchemy.orm import sessionmaker
 from mpp.models import Response
 from mpp.models import UniqueIdentifier
@@ -32,10 +35,22 @@ def main():
         config = js.loads(f.read())
 
     # our connection
-    engine = sqla.create_engine(config.get('connection'))
+    engine = sqla.create_engine(config.get('connection'), pool_timeout=360)
     Session = sessionmaker()
     Session.configure(bind=engine)
     session = Session()
+
+    @event.listens_for(engine, "engine_connect")
+    def ping_connection(connection, branch):
+        if branch:
+            return
+        try:
+            connection.scalar(select[1])
+        except exc.DBAPIError as err:
+            if err.connection_invalidated:
+                connection.scalar(select([1]))
+            else:
+                raise
 
     for i in xrange(START, TOTAL, LIMIT):
         for response in session.query(Response).filter(
