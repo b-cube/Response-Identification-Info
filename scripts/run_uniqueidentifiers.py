@@ -45,7 +45,7 @@ def main():
         if branch:
             return
         try:
-            connection.scalar(select[1])
+            connection.scalar(select([1]))
         except exc.DBAPIError as err:
             if err.connection_invalidated:
                 connection.scalar(select([1]))
