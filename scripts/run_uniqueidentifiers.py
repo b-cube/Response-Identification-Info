@@ -53,14 +53,17 @@ def main():
                 raise
 
     for i in xrange(START, TOTAL, LIMIT):
+        print '***** START INTERVAL: ', i
         for response in session.query(Response).filter(
                 Response.format == 'xml').limit(LIMIT).offset(i).all():
 
+            print '\tready'
             response_id = response.id
 
             if response.identifiers:
                 continue
 
+            print '\tgo'
             cleaned_content = response.cleaned_content
 
             # put it in a tempfile to deal with
@@ -111,6 +114,8 @@ def main():
                 print ex
                 print
                 session.rollback()
+
+            print '\tcommitted'
     session.close()
 
 
