@@ -70,12 +70,14 @@ with lineage_tokens as
 	where d.identity is not null 
 		and e.value->>'protocol' = 'ISO'
 )
-select r.id, date_trunc('month', r.metadata_age)::date as age,
+select r.id, r.host, date_trunc('month', r.metadata_age)::date as age,
 	min(i.ident) as protocol,
 	sum((y.lineage->'tokens')::text::int) as num_lineage_tokens,
 	count(y.lineage->'tokens') as num_lineage_elements
 from responses r join i on i.response_id = r.id
 	left outer join lineage_tokens y on y.response_id = r.id
 where i.ident = '"ISO"'
-group by r.id
+group by r.id, age
 order by num_lineage_elements DESC;
+
+--19689
