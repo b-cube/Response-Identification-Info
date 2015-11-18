@@ -53,7 +53,6 @@ def main():
             else:
                 raise
 
-    join_query = session.query(UniqueIdentifier.response_id)
     for i in xrange(START, TOTAL, LIMIT):
         print '***** START INTERVAL: ', i
 
@@ -61,6 +60,7 @@ def main():
         # for response in session.query(Response).filter(
         #         Response.format == 'xml').limit(LIMIT).offset(i).all():
 
+        join_query = session.query(UniqueIdentifier.response_id)
         for response in session.query(Response).filter(
                 and_(Response.format == 'xml', ~Response.id.in_(join_query))
         ).limit(LIMIT).offset(i).all():
