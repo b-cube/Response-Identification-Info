@@ -55,12 +55,19 @@
 -- order by r.initial_harvest_date::date ASC;
 
 -- -- let's pivot the thing and lump by month
-with a as (
-	select o.id, round(case when o.status_code is null then 900 else o.status_code end, -2) as status
-	from osdds o
-)
-select a.status, count(a.status), date_trunc('month', r.initial_harvest_date)::date as months
-from osdds o join responses r on r.id = o.response_id
-	join a on a.id = o.id
-group by a.status, months
-order by months ASC;
+-- with a as (
+-- 	select o.id, round(case when o.status_code is null then 900 else o.status_code end, -2) as status
+-- 	from osdds o
+-- )
+-- select a.status, count(a.status), date_trunc('month', r.initial_harvest_date)::date as months
+-- from osdds o join responses r on r.id = o.response_id
+-- 	join a on a.id = o.id
+-- group by a.status, months
+-- order by months ASC;
+
+-- do the things have text?
+select count(o.id)
+	--, o.has_title, o.has_description, o.has_keywords
+from osdds o
+where status_code < 400 and status_code is not null
+	and o.has_keywords and o.has_title and o.has_description;
