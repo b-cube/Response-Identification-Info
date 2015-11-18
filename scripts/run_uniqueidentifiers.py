@@ -4,6 +4,7 @@ from sqlalchemy import exc
 from sqlalchemy import event
 from sqlalchemy import select
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy import and_
 from mpp.models import Response
 from mpp.models import UniqueIdentifier
 from semproc.timed_command import TimedCmd
@@ -52,10 +53,17 @@ def main():
             else:
                 raise
 
+    join_query = session.query(UniqueIdentifier.response_id)
     for i in xrange(START, TOTAL, LIMIT):
         print '***** START INTERVAL: ', i
+
+        # for any clean runs
+        # for response in session.query(Response).filter(
+        #         Response.format == 'xml').limit(LIMIT).offset(i).all():
+
         for response in session.query(Response).filter(
-                Response.format == 'xml').limit(LIMIT).offset(i).all():
+                and_(Response.format == 'xml', ~Response.id.in_(join_query))
+        ).limit(LIMIT).offset(i).all():
 
             print '\tready'
             response_id = response.id
