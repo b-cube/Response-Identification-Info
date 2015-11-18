@@ -18,15 +18,9 @@ import traceback
 
 def main():
     op = OptionParser()
-    op.add_option('--start', '-s', default=0, type="int")
-    op.add_option('--end', '-e', default=100, type="int")
-    op.add_option('--interval', '-i', default=100, type="int")
+    op.add_option('--files', '-f')
 
     options, arguments = op.parse_args()
-
-    START = options.start
-    TOTAL = options.end
-    LIMIT = options.interval
 
     conf = 'big_rds.conf'
     cmd = 'python unique_identifier_cli.py -f {0} -u "{1}"'
@@ -53,17 +47,12 @@ def main():
             else:
                 raise
 
-    for i in xrange(START, TOTAL, LIMIT):
-        print '***** START INTERVAL: ', i
+    for f in options.files.split(','):
+        with open(f, 'r') as g:
+            data = [int(a.strip()) for a in g.readlines() if a]
 
-        # for any clean runs
-        for response in session.query(Response).filter(
-                Response.format == 'xml').limit(LIMIT).offset(i).all():
-
-            # join_query = session.query(UniqueIdentifier.response_id)
-            # for response in session.query(Response).filter(
-            #         and_(Response.format == 'xml', ~Response.id.in_(join_query))
-            # ).limit(LIMIT).offset(i).all():
+        for d in data:
+            response = session.query(Response).filter(Response.id == d).first()
 
             print '\tready'
             response_id = response.id
