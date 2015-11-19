@@ -6,13 +6,17 @@
 
 with i as 
 (
-	select d.response_id, jsonb_array_elements(d.identity::jsonb) ident
-	from identities d
-	where d.identity is not null
+	select d.response_id, (e.value->'protocol')::text as ident
+   	from identities d, jsonb_array_elements(d.identity::jsonb) e
+	where d.identity is not null 
+		and (e.value->>'protocol' = 'ISO' or e.value->>'protocol' = 'FGDC')
 )
-select r.id, r.host, r.metadata_age,
+select r.id, 
+	r.host, 
+	r.metadata_age::date as age, 
+	extract('year' from r.metadata_age) as the_year,
 	array_length(v.errors, 1) as number_of_errors,
-	i.ident->'protocol' as protocol
+	trim(both '"' from i.ident) as protocol
 from responses r 
 	right outer join validations as v on v.response_id = r.id
 	left outer join i on i.response_id = r.id
