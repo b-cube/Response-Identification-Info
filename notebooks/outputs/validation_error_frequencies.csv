@@ -1,0 +1,104 @@
+% fatal error during schema scan% |17800
+% reference to external entity declaration % |11437
+% unable to open DTD document% |4890
+% unable to connect socket for URL % |3175
+% unable to read from socket for URL % |488
+% unable to open file % |8567
+% unable to open primary document entity % |3674
+% unable to open external entity % |164
+% unable to resolve host/address % |2070
+% attribute % is not declared % |1452607
+% no declaration found for element % |2417126
+% element % is not allowed for content model % |47467
+% empty content is not valid for content model % |3046
+% missing elements in content model % |6710
+% schemaLocation does not contain namespace-location pairs% |2123
+% no character data is allowed by content model% |387
+% unable to find validator for% |480
+% grammar not found for namespace % |51
+% element % is referenced in a content model but was never declared% |391
+% no complete functional mapping between particles% |20851
+% namespace for % cannot be bound to prefix other than % |5
+% root element name of XML Schema document must be % |31
+% element % must be from the XML Schema namespace% |31
+% namespace % is referenced without import declaration% |44
+% imported schema % has different target namespace %; expected % |18
+% schema document % has different target namespace from the one specified in instance document % |4690
+% markup declaration expected% |4
+% unterminated comment% |1
+% prefix % can not be resolved to namespace URI% |29
+% unmatched end tag detected% |1
+% missing required attribute % |2057
+% attribute % has already been declared% |117
+% attribute % declared more than once in the same scope% |310
+% attribute % refers to unknown entity % |85
+% attribute % is already specified for element % |38
+% global element % declared more than once% |1519
+% global type % declared more than once or also declared as simpleType% |2553
+% global attributeGroup % declared more than once% |49
+% simpleType % for attribute % not found% |76
+% type % specified as the base in simpleContent definition must not have complex content% |110
+% type % cannot be used in its own union, list, or restriction definition% |57
+% attribute % cannot appear in local element declarations% |38
+% attribute % is already defined in base% |10
+% element % has a type which does not derive from the type of the element at the head of the substitution group% |100
+% expected end of tag % |241
+% unexpected end of input% |1
+% entity % not found% |3942
+% input ended before all started tags were ended; last tag started is % |1
+% unmatched end tag expected % |0
+% referenced element % not found% |128
+% base type specified in complexContent definition must be a complex type% |16
+% unsupported protocol in URL% |265
+% invalid multi-byte sequence% |25
+% empty string encountered% |1657
+% value % is invalid ENTITY% |8764
+% value % is invalid NCName% |3484
+% value % is invalid QName% |441
+% value % is invalid Name% |38
+% ID value % is not unique% |4058
+% ID value % has already been used% |4
+% value % not in enumeration% |5179
+% value % does not match regular expression facet% |7648
+% invalid character encountered% |3286
+% element % must be qualified% |2563
+% element % must be unqualified% |16
+% attribute % must be unqualified% |110
+% missing % separator in dateTime value % |1907
+% value % is invalid boolean% |1083
+% value % does not match any member types of the union% |1916
+% incomplete time value % |621
+% invalid time value % |181
+% invalid dateTime value % |9
+% value % has length % which is less than minLength facet value % |789
+% ID attribute % is referenced but was never declared% |1028
+% specified for non-nillable element % |127
+% element % is of simple type and cannot have elements in its content% |101
+% value % must be greater than or equal to minExclusive facet value % |121
+% value % must be greater than or equal to minInclusive facet value % |185
+% attribute % refers to unknown entity % |85
+% attribute % is already specified for element % |38
+% year value % must follow % format% |321
+% month value % must be between 1 and % |7
+% duration value % must start with % |100
+% value % is invalid anyURI% |279
+% content of element % differs from its declared fixed value% |44
+% whitespace must not occur between externally declared elements with element content in standalone document% |91
+% attribute cannot have empty value% |41
+% value % must be less than maxExclusive facet value % |25
+% value % must be less than maxInclusive facet value % |0
+% value % must be less than or equal to maxInclusive facet value % |82
+% day value % must be between 1 and % |20
+% whitespace expected% |18
+% element % has identity constraint key with no value% |25
+% type of attribute % must be derived by restriction from type of the corresponding attribute in the base% |6
+% value % for attribute % does not match its type%s defined enumeration or notation list% |169
+% type % not found% |888
+% attribute % has value % that does not match its #FIXED value % |33
+% invalid content in % element% |32
+% non-whitespace characters are not allowed in schema declarations other than % |1909
+% global type % declared more than once or also declared as complexType% |50
+% global group % declared more than once% |5
+% unknown simpleType % |18
+% equal sign expected% |4
+% complex type % violates the unique particle attribution rule in its components % |66
