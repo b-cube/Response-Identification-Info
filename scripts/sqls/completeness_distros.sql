@@ -65,15 +65,16 @@
 -- where extract(year from r.metadata_age) = 1964;
 
 -- -- how many have a lineage token for the statement
+-- -- THIS is in the wrong place
 
-with m as (
-	select response_id, existences->'lineage' as has_lineage
-	from metadata_completeness
-)
+-- with m as (
+-- 	select response_id, existences->'lineage' as has_lineage
+-- 	from metadata_completeness
+-- )
 
-select r.host,
-	sum(case when m.has_lineage::text = 'true' then 1 else 0 end) as count_w_lineage,
-	sum(case when m.has_lineage::text != 'true' then 1 else 0 end) as count_wo_lineage
-from responses r join m on m.response_id = r.id
-group by r.host
-order by count_w_lineage DESC;
+-- select r.host,
+-- 	sum(case when m.has_lineage::text = 'true' then 1 else 0 end) as count_w_lineage,
+-- 	sum(case when m.has_lineage::text != 'true' then 1 else 0 end) as count_wo_lineage
+-- from responses r join m on m.response_id = r.id
+-- group by r.host
+-- order by count_w_lineage DESC;
