@@ -67,35 +67,43 @@
 -- order by r.host, element_value, num_responses DESC;
 
 -- -- how many have a protocol at all?
-with j as 
-(
-	select response_id, element_key, count(id) as num_values
+-- with j as 
+-- (
+-- 	select response_id, element_key, count(id) as num_values
+-- 	from iso_onlineresources
+-- 	where --element_key = 'name'
+-- 		--and 
+-- 		tags ilike '%/distributionInfo%'
+-- 	group by element_key, response_id
+-- ), i as (
+-- 	select d.response_id, (e.value->'protocol')::text as protocol
+-- 	from identities d, jsonb_array_elements(d.identity::jsonb) e
+-- 	where d.identity is not null and e.value->>'protocol' = 'ISO'
+-- )
+-- select j.element_key, 
+-- 	count(distinct j.response_id) as num_responses,
+-- 	(
+-- 		select count(distinct i.response_id) as total_responses
+-- 		from i
+-- 	) as total_responses,
+-- 	round(
+-- 		count(distinct j.response_id) / (
+-- 			select count(distinct i.response_id)::numeric
+-- 			from i
+-- 		) * 100., 2
+-- 	) as pct_responses
+-- from j join responses r on j.response_id = r.id
+-- group by j.element_key
+-- order by num_responses DESC;
+
+
+with j as (
+	select response_id, id, lower(element_value) as eval, element_key
 	from iso_onlineresources
-	where --element_key = 'name'
-		--and 
-		tags ilike '%/distributionInfo%'
-	group by element_key, response_id
-), i as (
-	select d.response_id, (e.value->'protocol')::text as protocol
-	from identities d, jsonb_array_elements(d.identity::jsonb) e
-	where d.identity is not null and e.value->>'protocol' = 'ISO'
+	where tags ilike '%/distributionInfo%' and element_key != 'function_codelist'
 )
-select j.element_key, 
-	count(distinct j.response_id) as num_responses,
-	(
-		select count(distinct i.response_id) as total_responses
-		from i
-	) as total_responses,
-	round(
-		count(distinct j.response_id) / (
-			select count(distinct i.response_id)::numeric
-			from i
-		) * 100., 2
-	) as pct_responses
-from j join responses r on j.response_id = r.id
-group by j.element_key
-order by num_responses DESC;
--- 3594 / 19689 (18% of responses contain at least one distro url with a protocol)
--- 6513 / 19689 (33% with a function code)
--- 1449 / 19689 (7% with an application profile)
--- 10015 / (51% with a name)
+select j.eval, array_agg(distinct j.element_key) as keys, count(j.id) as num_vals
+from j
+group by j.eval
+having array_length(array_agg(distinct j.element_key), 1) > 1 and array_agg(distinct j.element_key)::text[] <> ARRAY['description', 'name']
+order by num_vals DESC;
