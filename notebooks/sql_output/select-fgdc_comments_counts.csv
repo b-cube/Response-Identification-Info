@@ -1,10 +1,10 @@
-tags,code,num_per_tag
-MI_Metadata,not mapped,2647
-MI_Metadata,translated,3037
-MI_Metadata/contentInfo,not mapped,6685
-MI_Metadata/contentInfo,translated,10197
-MI_Metadata/contentInfo/MD_CoverageDescription,not mapped,6685
-MI_Metadata/contentInfo/MD_CoverageDescription/dimension/MD_Band,not mapped,23436
-MI_Metadata/distributionInfo/MD_Distribution/distributor/MD_Distributor/distributionOrderProcess/MD_StandardOrderProcess,not mapped,84
-MI_Metadata/distributionInfo/MD_Distribution/distributor/MD_Distributor/distributionOrderProcess/MD_StandardOrderProcess/plannedAvailableDateTime,not mapped,6
-MI_Metadata/spatialRepresentationInfo/MD_GridSpatialRepresentation/cellGeometry,not mapped,1252
+"tags","code","num_per_tag"
+"MI_Metadata","not mapped",2647
+"MI_Metadata","translated",3037
+"MI_Metadata/contentInfo","not mapped",6685
+"MI_Metadata/contentInfo","translated",10197
+"MI_Metadata/contentInfo/MD_CoverageDescription","not mapped",6685
+"MI_Metadata/contentInfo/MD_CoverageDescription/dimension/MD_Band","not mapped",23436
+"MI_Metadata/distributionInfo/MD_Distribution/distributor/MD_Distributor/distributionOrderProcess/MD_StandardOrderProcess","not mapped",84
+"MI_Metadata/distributionInfo/MD_Distribution/distributor/MD_Distributor/distributionOrderProcess/MD_StandardOrderProcess/plannedAvailableDateTime","not mapped",6
+"MI_Metadata/spatialRepresentationInfo/MD_GridSpatialRepresentation/cellGeometry","not mapped",1252
