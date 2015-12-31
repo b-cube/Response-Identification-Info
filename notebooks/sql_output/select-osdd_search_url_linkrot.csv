@@ -1,0 +1,8 @@
+"code","accept_type","num"
+200,"application/atom+xml",393
+200,"application/rss+xml",301
+400,"application/atom+xml",23
+400,"application/rss+xml",22
+400,"text/atom+xml",1
+500,"application/atom+xml",5
+500,"application/rss+xml",15
