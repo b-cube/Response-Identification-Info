@@ -1,0 +1,56 @@
+"protocol","match_type","count_w_type","pct_w_type","total_responses"
+"FGDC","cooluri",316,1.20,26299
+"FGDC","doi",396,1.51,26299
+"FGDC","md5",403,1.53,26299
+"FGDC","text",1280,4.87,26299
+"FGDC","urn",261,0.99,26299
+"FGDC","uuid",7602,28.91,26299
+"ISO","cooluri",238,1.21,19689
+"ISO","doi",420,2.13,19689
+"ISO","md5",3756,19.08,19689
+"ISO","text",11500,58.41,19689
+"ISO","urn",1444,7.33,19689
+"ISO","uuid",14322,72.74,19689
+"OAI-PMH","cooluri",28,1.49,1882
+"OAI-PMH","doi",213,11.32,1882
+"OAI-PMH","hdl",405,21.52,1882
+"OAI-PMH","md5",37,1.97,1882
+"OAI-PMH","text",468,24.87,1882
+"OAI-PMH","urn",1305,69.34,1882
+"OAI-PMH","uuid",53,2.82,1882
+"OGC:CSW GetCapabilities","urn",10,76.92,13
+"OGC:CSW GetCapabilities","uuid",2,15.38,13
+"OGC:CSW Resultset","md5",1,20.00,5
+"OGC:CSW Resultset","text",2,40.00,5
+"OGC:CSW Resultset","uuid",3,60.00,5
+"OGC:SOS GetCapabilities","cooluri",1,8.33,12
+"OGC:SOS GetCapabilities","urn",12,100.00,12
+"OGC:WCS GetCapabilities","cooluri",2,0.20,978
+"OGC:WCS GetCapabilities","urn",3,0.31,978
+"OGC:WCS GetCapabilities","uuid",40,4.09,978
+"OGC:WFS GetCapabilities","cooluri",44,10.68,412
+"OGC:WFS GetCapabilities","doi",3,0.73,412
+"OGC:WFS GetCapabilities","md5",5,1.21,412
+"OGC:WFS GetCapabilities","urn",3,0.73,412
+"OGC:WFS GetCapabilities","uuid",83,20.15,412
+"OGC:WMS GetCapabilities","cooluri",6,0.36,1644
+"OGC:WMS GetCapabilities","md5",38,2.31,1644
+"OGC:WMS GetCapabilities","text",1233,75.00,1644
+"OGC:WMS GetCapabilities","urn",6,0.36,1644
+"OGC:WMS GetCapabilities","uuid",155,9.43,1644
+"OPeNDAP","cooluri",13,0.96,1348
+"OPeNDAP","doi",123,9.12,1348
+"OPeNDAP","urn",269,19.96,1348
+"OpenSearch:OpenSearchDescription","cooluri",150,3.24,4636
+"OpenSearch:OpenSearchDescription","md5",101,2.18,4636
+"OpenSearch:OpenSearchDescription","urn",10,0.22,4636
+"OpenSearch:OpenSearchDescription","uuid",86,1.86,4636
+"OpenSearch:Resultset","doi",4,0.46,874
+"OpenSearch:Resultset","md5",2,0.23,874
+"OpenSearch:Resultset","text",14,1.60,874
+"OpenSearch:Resultset","uuid",11,1.26,874
+"UNIDATA","cooluri",12345,79.08,15611
+"UNIDATA","md5",10,0.06,15611
+"UNIDATA","text",14923,95.59,15611
+"UNIDATA","urn",1,0.01,15611
+"UNIDATA","uuid",61,0.39,15611
