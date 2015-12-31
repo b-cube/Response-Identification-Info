@@ -1,0 +1,7 @@
+"protocol","count_w_doi","pct_w_doi","total_responses"
+"FGDC",396,1.51,26299
+"ISO",420,2.13,19689
+"OAI-PMH",213,11.32,1882
+"OGC:WFS GetCapabilities",3,0.73,412
+"OPeNDAP",123,9.12,1348
+"OpenSearch:Resultset",4,0.46,874
