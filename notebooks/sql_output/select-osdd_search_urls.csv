@@ -1,0 +1,761 @@
+"search_url","accept_type","status_code","total","subset","has_content","error","has_nested_search_urls"
+"http://101.datascience.community/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://101.datascience.community/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://159.213.89.76:80/geonetwork/srv/ita/rss.search?hitsPerPage=5&any=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://aac.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://academiccommons.columbia.edu/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://accesscenter.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://acmw.rpi.edu/?feed=atom&s=","application/atom+xml","200","","","true","""HTML response""",f
+"http://acmw.rpi.edu/?feed=rss2&s=","application/rss+xml","200","","","true","""HTML response""",f
+"http://admissions.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://admissions.colostate.edu/SearchResults.ashx?q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://advanceddataanalytics.net/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://advanceddataanalytics.net/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://agriculturalwithdrlindsay.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://agriculturalwithdrlindsay.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://alcp.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://alexandria.ucsb.edu/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://alien.jrc.ec.europa.eu/ws/10b/search/results/atom?count=5&q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://alien.jrc.ec.europa.eu/ws/10b/search/results/rss?count=5&q=","application/rss+xml","404","","","true","""HTML response""",f
+"http://alumni.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://alvs.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://ambassadors.nescent.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ambassadors.nescent.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://antimoneylaundering.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://antimoneylaundering.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://apacc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://aptlifehandbook.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://assessment.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://athletics.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://awm-solutions.iwmi.org/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://baacc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://bafb.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://bahainyc.org/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://barcelonaservicejam.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://barcelonaservicejam.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://barsummit.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://barsummit.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://bclines.bethelks.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://bclines.bethelks.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://beeldbank.amsterdam.nl/opensearch/?count=5&searchTerms=","application/rss+xml","404","","","true","""HTML response""",f
+"http://beh.columbia.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://beh.columbia.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://bengtbeier.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://bengtbeier.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://beta.data.ordnancesurvey.co.uk/datasets/50k-gazetteer/apis/search?output=atom&query=&max=5","application/atom+xml","400","","","true","""XML Parse error""",f
+"http://beta.data.ordnancesurvey.co.uk/datasets/50k-gazetteer/apis/search?output=rss&query=&max=5","application/rss+xml","400","","","true","""XML Parse error""",f
+"http://beta.data.ordnancesurvey.co.uk/datasets/boundary-line/apis/search?output=atom&query=&max=5","application/atom+xml","400","","","true","""XML Parse error""",f
+"http://beta.data.ordnancesurvey.co.uk/datasets/boundary-line/apis/search?output=rss&query=&max=5","application/rss+xml","400","","","true","""XML Parse error""",f
+"http://beta.data.ordnancesurvey.co.uk/datasets/code-point-open/apis/search?output=atom&query=&max=5","application/atom+xml","400","","","true","""XML Parse error""",f
+"http://beta.data.ordnancesurvey.co.uk/datasets/code-point-open/apis/search?output=rss&query=&max=5","application/rss+xml","400","","","true","""XML Parse error""",f
+"http://beta.data.ordnancesurvey.co.uk/datasets/os-linked-data/apis/search?output=atom&query=&max=5","application/atom+xml","400","","","true","""XML Parse error""",f
+"http://beta.data.ordnancesurvey.co.uk/datasets/os-linked-data/apis/search?output=rss&query=&max=5","application/rss+xml","400","","","true","""XML Parse error""",f
+"http://bicycle.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://biomed20.ucsf.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://biomed20.ucsf.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://bitss.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://bitss.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://blackberry.wordpress.org/?feed=atom&s=","application/atom+xml","200","","","true","""HTML response""",f
+"http://blackberry.wordpress.org/?feed=rss2&s=","application/rss+xml","200","","","true","""HTML response""",f
+"http://blocbibreserva.ub.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocbibreserva.ub.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocdelletres.ub.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocdelletres.ub.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocfarminfo.ub.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocfarminfo.ub.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocfiq.ub.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocfiq.ub.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocgeologia.ub.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocgeologia.ub.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocmat.ub.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocmat.ub.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocpavellorepublica.ub.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocpavellorepublica.ub.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocveu.ub.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blocveu.ub.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.aaanet.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.aaanet.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.bea.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.bea.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.datadryad.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.datadryad.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.dmptool.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.dmptool.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.gvsig.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.gvsig.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.medicare.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.medicare.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.openaccessbutton.org/?feed=atom&s=","application/atom+xml","200","","","true","""HTML response""",f
+"http://blog.openaccessbutton.org/?feed=rss2&s=","application/rss+xml","200","","","true","""HTML response""",f
+"http://blog.personalgenomes.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.personalgenomes.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.sdss3.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://blog.sdss3.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://blog.trade.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.trade.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.wellcome.ac.uk/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.wellcome.ac.uk/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.wikimedia.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.wikimedia.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.zooniverse.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://blog.zooniverse.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://bloomsburydtc.ac.uk/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://bloomsburydtc.ac.uk/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://brennayovanoff.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://brennayovanoff.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://business.uicapture.uiowa.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""186""","""5""","true","",f
+"http://bv.stanford.edu/en/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://caesr-web.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://caspian.iwlearn.org/opensearch_atom.xml?b_size%3Aint=5&SearchableText=","application/atom+xml","200","""0""","""5""","true","",t
+"http://caspian.iwlearn.org/opensearch_rss.xml?b_size%3Aint=5&SearchableText=","application/rss+xml","200","""0""","""5""","true","",t
+"http://catalog.libraries.wm.edu/Search/Results?lookfor=&view=rss","application/rss+xml","200","""3106189""","""50""","true","",f
+"http://cbe.tamu.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://cdra.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://ceeds-project.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ceeds-project.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://certmapper.cr.usgs.gov/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""576""","""5""","true","",t
+"http://chroniclingamerica.loc.gov/search/pages/results/?andtext=&format=atom","application/atom+xml","200","""10020861""","""10""","true","",t
+"http://chroniclingamerica.loc.gov/search/titles/results/?count=5&terms=&format=atom","application/atom+xml","200","""153021""","""50""","true","",t
+"http://cibed.troy.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://circulatingnow.nlm.nih.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://circulatingnow.nlm.nih.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://citizenscienceassociation.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://citizenscienceassociation.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://climateaudit.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://climateaudit.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://climate.iarc.uaf.edu:8080/geonetwork/srv/jp/rss.search?hitsPerPage=5&any=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://clsbluesky.law.columbia.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://clsbluesky.law.columbia.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://cms.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://coastwatch.pfeg.noaa.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""941""","""5""","true","",f
+"http://coastwatch.pfeg.noaa.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://coeducate.bolton.ac.uk/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://coeducate.bolton.ac.uk/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://coins.lib.virginia.edu/apis/search?q=&format=atom","application/atom+xml","500","","","true","""HTML response""",f
+"http://collections.nlm.nih.gov/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://collections.nlm.nih.gov.libproxy.lib.unc.edu/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://columns.dcp.ufl.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://columns.dcp.ufl.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://comet2011.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://communitycolleges.wy.edu/dual/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://communitycolleges.wy.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://communityhealthmaps.nlm.nih.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://communityhealthmaps.nlm.nih.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://conflictresolution.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://congress.fortiuspamplonabayonne.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://congress.fortiuspamplonabayonne.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://conversationtree.rutgers.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://conversationtree.rutgers.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://core.tdar.org/search/rss?query=","application/atom+xml","200","""389112""","""25""","true","",t
+"http://coursedesign.uidaho.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://coursedesign.uidaho.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://coworkingassembly.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://coworkingassembly.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://crtp.capture.duke.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""335""","""5""","true","",f
+"http://css.cul.columbia.edu/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://csugreeks.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://cur.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://data.abuledu.org/wp/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://data.abuledu.org/wp/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://databib.org/search_results.php?query=&format=rss","application/rss+xml","200","","","true","""HTML response""",f
+"http://data.gns.cri.nz:80/metadata/srv/eng/rss.search?hitsPerPage=5&any=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://dataharmonization.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dataharmonization.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://data.ioos.us/gliders/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""122""","""5""","true","",f
+"http://data.ioos.us/gliders/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://datajourno.in/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://datajourno.in/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://data.nanoos.org/deverddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""16""","""5""","true","",f
+"http://data.nanoos.org/deverddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://data.ordnancesurvey.co.uk/datasets/boundary-line/apis/search?output=atom&query=&max=5","application/atom+xml","400","","","true","""XML Parse error""",f
+"http://data.ordnancesurvey.co.uk/datasets/boundary-line/apis/search?output=rss&query=&max=5","application/rss+xml","400","","","true","""XML Parse error""",f
+"http://data.ordnancesurvey.co.uk/datasets/code-point-open/apis/search?output=atom&query=&max=5","application/atom+xml","400","","","true","""XML Parse error""",f
+"http://data.ordnancesurvey.co.uk/datasets/code-point-open/apis/search?output=rss&query=&max=5","application/rss+xml","400","","","true","""XML Parse error""",f
+"http://data.ordnancesurvey.co.uk/datasets/os-linked-data/apis/search?output=atom&query=&max=5","application/atom+xml","400","","","true","""XML Parse error""",f
+"http://data.ordnancesurvey.co.uk/datasets/os-linked-data/apis/search?output=rss&query=&max=5","application/rss+xml","400","","","true","""XML Parse error""",f
+"http://dataportal.mtc.ca.gov/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://datapub.cdlib.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://datapub.cdlib.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://datascienc.es/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://datascienc.es/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://data-search.nerc.ac.uk/search/full/catalogue.atom?q=&c=5","application/atom+xml","200","","","true","""HTML response""",f
+"http://data-search.nerc.ac.uk/search/full/catalogue.rss?q=&c=5","application/rss+xml","200","","","true","""HTML response""",f
+"http://datatherapy.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://datatherapy.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://datavizhub.co/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://datavizhub.co/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dati.provincia.fi.it:80/geonetwork/srv/ita/rss.search?hitsPerPage=5&any=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://davidwalsh.name/rss_search?s=","application/rss+xml","404","","","true","""HTML response""",f
+"http://dee.uidaho.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dee.uidaho.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dev.approval.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://development.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://develop.uaex.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://develop.uaex.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://de.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://dh2014.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dh2014.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dirt.asla.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dirt.asla.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://disaster.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://distruc.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://djclpp.law.duke.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://djclpp.law.duke.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://d.lib.ncsu.edu/collections/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://dualcredit.uidaho.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dualcredit.uidaho.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://dugi-imatges.udg.edu/rss?p=&rg=5","application/rss+xml","200","""2368""","""5""","true","",t
+"http://eands.caltech.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://eands.caltech.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ecowatch.ncddc.noaa.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""40""","""5""","true","",f
+"http://ecowatch.ncddc.noaa.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://eepartnership.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://eepartnership.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://elag2013.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://elag2013.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://elcentro.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://emergency.pepperdine.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://emergency.pepperdine.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://emergencysavings.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://emergencysavings.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://energonomics.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://energonomics.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://en.search.wordpress.com/?q=&f=feed","application/rss+xml","200","","","true","""HTML response""",f
+"http://environment.law.harvard.edu/?feed=atom&s=","application/atom+xml","403","","","true","""HTML response""",f
+"http://environment.law.harvard.edu/?feed=rss2&s=","application/rss+xml","403","","","true","""HTML response""",f
+"http://eo-virtual-archive4.esa.int/search/atom/?count=5&q=","application/atom+xml","200","""23""","""5""","true","",t
+"http://epthinktank.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://epthinktank.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://eris.uky.edu/.atom?q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://eris.uky.edu/.rss?q=","application/rss+xml","404","","","true","""HTML response""",f
+"http://ernesturtasun.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ernesturtasun.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://eros.usgs.gov/refbase/opensearch.php?query=&recordSchema=atom&maximumRecords=5","application/atom+xml","404","","","true","""HTML response""",f
+"http://eros.usgs.gov/refbase/opensearch.php?query=&recordSchema=rss&maximumRecords=5","application/rss+xml","404","","","true","""HTML response""",f
+"http://eteam.ou.edu/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://ethicsandsociety.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ethicsandsociety.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://europaeischeschriftstellerkonferenz.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://europaeischeschriftstellerkonferenz.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://euspot.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://euspot.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://evanlieberman.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://evanlieberman.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://evhippel.mit.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://evhippel.mit.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://example.com/myatom/?q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://fdatransparencyblog.fda.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://fdatransparencyblog.fda.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://fleuves.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://fleuves.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://flexible.dce.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://forthesakeofall.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://forthesakeofall.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://frda.stanford.edu/en/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://free-group.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://free-group.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://frontierfields.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://frontierfields.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://fsl.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://fuqua.capture.duke.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""139""","""5""","true","",f
+"http://gam.pictura-dp.nl/api/opensearch/?count=5&searchTerms=","application/rss+xml","200","","","true","""HTML response""",f
+"http://garblab.wordpress.com/?feed=atom&s=","application/atom+xml","200","","","true","""HTML response""",f
+"http://garblab.wordpress.com/?feed=rss2&s=","application/rss+xml","200","","","true","""HTML response""",f
+"http://gateway.bti.umn.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://gateway.bti.umn.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=amd_ar&clientId=fromgcmd&output=atom","application/atom+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=amd_ar&clientId=fromgcmd&output=rss","application/rss+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=GCMD&clientId=fromgcmd&output=atom","application/atom+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=GCMD&clientId=fromgcmd&output=atom","application/atom+xml","503","","","true","""HTML response""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=GCMD&clientId=fromgcmd&output=rss","application/rss+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=globec&clientId=fromgcmd&output=atom","application/atom+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=globec&clientId=fromgcmd&output=rss","application/rss+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=idn_ceos&clientId=fromgcmd&output=atom","application/atom+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=idn_ceos&clientId=fromgcmd&output=rss","application/rss+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=solas&clientId=fromgcmd&output=atom","application/atom+xml","200","","","true","""No content""",f
+"http://gcmd.gsfc.nasa.gov/KeywordSearch/OpenSearch.do?count=5&MetadataType=0&searchTerms=&Portal=solas&clientId=fromgcmd&output=rss","application/rss+xml","200","","","true","""No content""",f
+"http://gened.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://geospatial.usc.edu/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""43""","""5""","true","",t
+"http://gianluca.dellavedova.org/?feed=atom&s=","application/atom+xml","200","","","true","""HTML response""",f
+"http://gianluca.dellavedova.org/?feed=rss2&s=","application/rss+xml","200","","","true","""HTML response""",f
+"http://gis.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://gis.jacksoncounty.org/Portal/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://glbtrc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://globalvillage.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://gnowgi.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://gnowgi.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://goworldwind.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://goworldwind.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://gsa.ucdavis.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://gsa.ucdavis.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://gsc.berkeley.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://gsc.berkeley.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://handbook.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://higheredtoday.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://higheredtoday.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://highplainsmuseum.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://highplainsmuseum.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://hipsec.unlv.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://hipsec.unlv.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://historian.nursing.upenn.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://historian.nursing.upenn.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://homes.hendrix.edu/burling/burling/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://homes.hendrix.edu/burling/hau/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://homes.hendrix.edu/burling/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://honors.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://housing.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://hp.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://html5apps-project.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://html5apps-project.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://icon.uicapture.uiowa.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""920""","""5""","true","",f
+"http://idealproject.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://idealproject.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ie.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://infocus.nlm.nih.gov.libproxy.lib.unc.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://infocus.nlm.nih.gov.libproxy.lib.unc.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://innovation.uconn.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://innovation.uconn.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://inquiry.research.umn.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://inquiry.research.umn.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://interculturallearningasia.edu.au/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://interculturallearningasia.edu.au/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://interprofessional.umich.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://interprofessional.umich.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://inthelightofhumanenature.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://inthelightofhumanenature.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://investinscience.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://investinscience.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ir.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://irepbath.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://irepbath.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://is4oa.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://is4oa.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://itsgettinghotinhere.org/?feed=atom&s=","application/atom+xml","200","","","true","""HTML response""",f
+"http://itsgettinghotinhere.org/?feed=rss2&s=","application/rss+xml","200","","","true","""HTML response""",f
+"http://itss.csuchico.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://itss.csuchico.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://jnjr.div.ed.ac.uk/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://jnjr.div.ed.ac.uk/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://jpalfrey.andover.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://jpalfrey.andover.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://kaiserhealthnews.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://kaiserhealthnews.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://keycommunities.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://keyexplore.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://keyhp.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://key.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://keyservice.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://kukuraweb.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://kulturmasche.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://kulturmasche.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://labores.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://labores.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://lance2.modaps.eosdis.nasa.gov/axis2/services/MWSLance/searchDatasets?pattern=","application/atom+xml","500","""Unknown""","""Unknown""","true","",f
+"http://landsat.usgs.gov/refbase/opensearch.php?query=&recordSchema=atom&maximumRecords=5","application/atom+xml","200","","","true","""HTML response""",f
+"http://landsat.usgs.gov/refbase/opensearch.php?query=&recordSchema=rss&maximumRecords=5","application/rss+xml","200","","","true","""HTML response""",f
+"http://law.capture.duke.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""353""","""5""","true","",f
+"http://lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://lcp.law.duke.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://lcp.law.duke.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://lindquist.cul.columbia.edu/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://lions-talk-science.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://lions-talk-science.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://livelyexperiment.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://livelyexperiment.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://lookoutforchildabuse.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://lookoutforchildabuse.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://losangeles.cbslocal.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://losangeles.cbslocal.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://magsci.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://magsci.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mapdata.environment.nsw.gov.au:8080/geonetwork/srv/en/rss.search?hitsPerPage=5&any=","application/rss+xml","403","","","true","""HTML response""",f
+"http://marcrogers.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://marcrogers.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mcnair.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://mdmlab.rutgers.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mdmlab.rutgers.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://medicine.uicapture.uiowa.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""1511""","""5""","true","",f
+"http://metadata.gis.washington.edu/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""14""","""5""","true","",t
+"http://mhcten.mtholyoke.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mhcten.mtholyoke.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://missionlog.noaa.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://missionlog.noaa.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mobiwebapp.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mobiwebapp.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mode.ioe.ac.uk/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mode.ioe.ac.uk/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://modwebsrv.modaps.eosdis.nasa.gov/axis2/services/MODAPSservices/searchDatasets?pattern=","application/atom+xml","500","""Unknown""","""Unknown""","true","",f
+"http://moloney.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://monthly.si.umich.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://monthly.si.umich.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mountaincampus.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://ms.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://multifaithworld.rrc.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://multifaithworld.rrc.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://mycsu.colostate.edu/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://nacc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://ncbiinsights.ncbi.nlm.nih.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ncbiinsights.ncbi.nlm.nih.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ncbiinsights.ncbi.nlm.nih.gov.libproxy.lib.unc.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ncbiinsights.ncbi.nlm.nih.gov.libproxy.lib.unc.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://netimpactboston.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://netimpactboston.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://news.canarydatabase.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://news.canarydatabase.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ngdc.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""22925""","""5""","true","",t
+"http://nrhh.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://nsidc.org/api/dataset/2/OpenSearch?count=5&searchTerms=","application/atom+xml","200","""960""","""5""","true","",t
+"http://nsidc.org/api/opensearch/1.1/dataset?itemsPerPage=5&searchterms=","text/atom+xml","406","","","true","""No content""",f
+"http://nuqsu.qatar.northwestern.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://nuqsu.qatar.northwestern.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://nursing.uicapture.uiowa.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""8""","""5""","true","",f
+"http://nwrwic.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://nwrwic.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://nwsidebar.wsba.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://nwsidebar.wsba.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://oas.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://oas.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://ocl.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://ocw.ub.edu/opensearch_rss?search=","application/rss+xml","200","""2662""","""10""","true","",t
+"http://odin-project.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://odin-project.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://oeo.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://oos.soest.hawaii.edu/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""179""","""5""","true","",f
+"http://oos.soest.hawaii.edu/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://opendata.enschede.nl/fulltext.search.xml?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://opendatamanchester.org.uk/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://opendatamanchester.org.uk/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://openvault.wgbh.org/catalog.rss?q=","application/rss+xml","406","","","true","""XML Parse error""",f
+"http://oregonbilds.uoregon.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://oregonbilds.uoregon.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://osmc.noaa.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""16""","""5""","true","",f
+"http://osmc.noaa.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://osp.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://otp.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://oxsync.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://pacioos-mapserver2.ancl.hawaii.edu/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""8""","""5""","true","",f
+"http://pacioos-mapserver2.ancl.hawaii.edu/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://parentsandfamily.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://parents.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://pd.dce.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://pennstatehersheygireport.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://pennstatehersheygireport.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://pennstatehersheyorthoreport.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://pennstatehersheyorthoreport.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://pennstatemedicine.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://pennstatemedicine.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://perelosantos.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://perelosantos.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://physicsfrontline.aps.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://physicsfrontline.aps.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://place-based-research.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://place-based-research.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://planb.nicecupoftea.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://planb.nicecupoftea.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://planning.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://portal.oceannet.org/search/full/catalogue.atom?q=&c=5","application/atom+xml","200","""9903""","""5""","true","",t
+"http://portal.oceannet.org/search/full/catalogue.rss?q=&c=5","application/rss+xml","200","""9903""","""5""","true","",t
+"http://portal.oceannet.org/search/light/catalogue.atom?q=&c=5","application/atom+xml","200","""9902""","""5""","true","",t
+"http://portal.oceannet.org/search/light/catalogue.rss?q=&c=5","application/rss+xml","200","""9902""","""5""","true","",t
+"http://pratt.capture.duke.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""401""","""5""","true","",f
+"http://prevet.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://projecthydra.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://projecthydra.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://project-thor.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://project-thor.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://protectmydata.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://protectmydata.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://protect-your-home.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://protect-your-home.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://pubchemblog.ncbi.nlm.nih.gov/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://pubchemblog.ncbi.nlm.nih.gov/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://pubs.er.usgs.gov/publication/rss?q=&format=rss","application/rss+xml","404","","","true","""HTML response""",f
+"http://qz.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://qz.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ragenglewood.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ragenglewood.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ramride.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://rda.ucar.edu/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""360""","""5""","true","",t
+"http://refbase.arl.noaa.gov/opensearch.php?query=&recordSchema=atom&maximumRecords=5","application/atom+xml","200","","","true","""XML Parse error""",f
+"http://refbase.arl.noaa.gov/opensearch.php?query=&recordSchema=rss&maximumRecords=5","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://refbase.wsulibs.wsu.edu/yellowstone/opensearch.php?query=&recordSchema=atom&maximumRecords=5","application/atom+xml","200","","","true","""XML Parse error""",f
+"http://refbase.wsulibs.wsu.edu/yellowstone/opensearch.php?query=&recordSchema=rss&maximumRecords=5","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://research.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://research-data.ansto.gov.au/search/query?queryString=&sf_format=atom","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://reshallpolicies.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://resliferecruitment.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://retiredfaculty.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://rha.colostate.edu/SearchResults.ashx?q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://richard.esplins.org/siwi/feeds/search/?pattern=","application/rss+xml","404","","","true","""HTML response""",f
+"http://rightsincontext.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://rightsincontext.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://riteproject.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://riteproject.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://roadshow.nescent.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://roadshow.nescent.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://rodeo.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://rsln.cloudapp.net/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://rslnmag.fr/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://rushinperson.rush.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://rushinperson.rush.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://sabre.lib.sussex.ac.uk/vufindsmu/Search/Results?lookfor=&view=rss","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://sacs.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://advisingworks.wordpress.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"https://advisingworks.wordpress.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://sahe.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://sardiniaopendata.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://sardiniaopendata.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"https://athletics.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://bluehub.jrc.ec.europa.eu/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""124""","""5""","true","",f
+"https://bluehub.jrc.ec.europa.eu/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://scalablestartup.berkeley.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://scalablestartup.berkeley.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://scc.georgetown.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://scc.georgetown.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://scholarlykitchen.sspnet.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://scholarlykitchen.sspnet.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://scholars.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://sciencelife.uchospitals.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://sciencelife.uchospitals.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://scienceunderthestars.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://scienceunderthestars.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"https://communitycolleges.wy.edu/dual/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://communitycolleges.wy.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://coursecast.soton.ac.uk/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""441""","""5""","true","",f
+"https://coursecast.uakron.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""1811""","""5""","true","",f
+"https://coursecast.unco.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""21""","""5""","true","",f
+"http://sdi.eea.europa.eu:80/catalogue/srv/eng/rss.search?hitsPerPage=5&any=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"https://d.lib.ncsu.edu/collections/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://sdpanopto.uth.tmc.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""0""","""5""","true","",f
+"http://seagep.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://seakgis03.alaska.edu/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""214""","""5""","true","",t
+"http://search.warwick.ac.uk/atom?q=&indexSection=sitebuilder","application/atom+xml","200","""0""","""20""","true","",t
+"http://search.warwick.ac.uk/rss?q=&indexSection=sitebuilder","application/rss+xml","200","""0""","""20""","true","",t
+"http://ses.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"https://find.nrao.edu/papers/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://sfs.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"https://gauchocast.ucsb.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""1026""","""5""","true","",f
+"http://skyline.uhd.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://skyline.uhd.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"https://libweb.grinnell.edu/vufind/Search/Results?lookfor=&view=rss","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://sls.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://smart-metadata.eis.uow.edu.au:80/geonetwork/srv/eng/rss.search?hitsPerPage=5&any=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"https://ngdc.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""22925""","""5""","true","",t
+"http://solarphysics.livingreviews.org/refdb/search?format=rss&l=10&o=False&js=lrsp&q=1&s=yearDesc&tH=&tMH=substring","application/rss+xml","200","","","true","""HTML response""",f
+"https://ondemand.usf.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""475""","""5""","true","",f
+"http://sowiport.gesis.org/Search/Results?lookfor=&view=rss","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"https://panopto.umsl.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""1466""","""5""","true","",f
+"https://panopto.uw.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""0""","""5""","true","",f
+"http://spatialdata.oregonexplorer.info/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""405""","""5""","true","",t
+"http://spinportal.chem.ox.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://storercollege.lib.wvu.edu/catalog.rss?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"https://streaming.stlcop.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""109""","""5""","true","",f
+"https://tccon-wiki.caltech.edu/@api/deki/site/opensearch?q=&limit=5&format=atom","application/atom+xml","400","""Unknown""","""Unknown""","true","",f
+"https://tccon-wiki.caltech.edu/@api/deki/site/opensearch?q=&limit=5&format=rss","application/rss+xml","400","""Unknown""","""Unknown""","true","",f
+"http://storm.brynmawr.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://storm.brynmawr.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"https://tripod.brynmawr.edu/find/Books/Results?lookfor=&view=rss","application/rss+xml","200","""2486543""","""50""","true","",f
+"http://structureddata.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://structureddata.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://studentstories.hillsdale.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://studentstories.hillsdale.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"https://uhpress.wordpress.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"https://uhpress.wordpress.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://sumasa.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://sumasa.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://supportandsafety.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://sustainability.tamu.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://weblearn.ox.ac.uk/portal/tool/00bbfe76-3941-4c10-93e9-a4807348d633/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/17918095-50c9-4042-a907-95f13dd07383/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/26a240a7-0292-4047-847a-24bdf5b63d56/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/3a1634be-ce41-4619-ad6d-1c1fb06364c1/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/5423d5b7-18b0-4510-bdae-eaad7f65d441/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/5b0a7f69-0072-4f52-822b-fb2fbbca4c45/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/5ef5088f-556d-4300-af91-932d3290f165/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/8c2d6a6e-f977-42c4-8423-7728ba28e6f9/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/b98af8df-4559-403a-af96-3eeb6edef9fc/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/c1ce66a0-c057-4f25-89c8-37f221a5af8a/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/db464ae1-8468-43b4-a25c-670c67359bf7/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/e7a57c23-90c2-4ac9-b24b-55bd6fbade9d/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://weblearn.ox.ac.uk/portal/tool/efa2a4ec-a80a-4073-b93f-cb1b56bcd41e/rss20?search=&panel=Main","application/rss+xml","500","","","true","""HTML response""",f
+"https://writingonpubliceducation.wordpress.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"https://writingonpubliceducation.wordpress.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"https://www.communitycolleges.wy.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://www.facilities.udel.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://www.genesys-pgr.org/acn/opensearch?q=","application/rss+xml","500","","","true","""HTML response""",f
+"https://www.innovate-community.oired.vt.edu/community/feeds/search/atom?q=&peopleEnabled=true&Submit=Search","application/atom+xml","200","""0""","""15""","true","",t
+"https://www.innovate-community.oired.vt.edu/community/feeds/search/rss2?q=&peopleEnabled=true&Submit=Search","application/rss+xml","200","""0""","""15""","true","",t
+"https://www.law.illinois.edu/iplbss/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"https://www.medfordmaps.org/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://www.metrotransit.org/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"https://www.ngdc.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""22925""","""5""","true","",t
+"https://www.tiaacommunities.org/community/feeds/search/atom?q=&peopleEnabled=true&Submit=Search","application/atom+xml","200","","","true","""HTML response""",f
+"https://www.tiaacommunities.org/community/feeds/search/rss2?q=&peopleEnabled=true&Submit=Search","application/rss+xml","200","","","true","""HTML response""",f
+"http://teach.okbu.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://teach.okbu.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://texashistory.unt.edu/search/opensearch/?q=&format=atom","application/atom+xml","200","""618388""","""10""","true","",f
+"http://texaspipelinewatch.org/?feed=atom&s=","application/atom+xml","200","","","true","""HTML response""",f
+"http://texaspipelinewatch.org/?feed=rss2&s=","application/rss+xml","200","","","true","""HTML response""",f
+"http://theautismprogram.illinois.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://theautismprogram.illinois.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://theritualproject.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://theritualproject.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://theta.edu.au/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://theta.edu.au/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://thewattclub.hw.ac.uk/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://thewattclub.hw.ac.uk/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://tnt.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://torinoprocess.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://torinoprocess.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://transitfuture.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://transitfuture.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://trinity.capture.duke.edu/Panopto/Search/Search.ashx?count=5&query=","application/rss+xml","200","""2995""","""5""","true","",f
+"http://tss.it.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://uaf.nodc.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=atom","application/atom+xml","200","""1452561""","""5""","true","",f
+"http://uaf.nodc.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""1452561""","""5""","true","",t
+"http://uasreno.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://uasreno.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://ufexec.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://undeclared.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://undergrad.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://unheardvoicesproject.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://unheardvoicesproject.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://universityarchitect.tamu.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://upwell.pfeg.noaa.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""5730""","""5""","true","",f
+"http://upwell.pfeg.noaa.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://urmaspaet.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://urmaspaet.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://utahdatadive.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://utahdatadive.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://utfab.colostate.edu/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://veterans.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://vpa.tamu.edu/SearchResults.ashx?q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://vpea.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://vufind.lib.bbk.ac.uk/vufind/Search/Results?lookfor=&view=rss","application/rss+xml","200","""280298""","""50""","true","",f
+"http://wakeforestmuseum.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://wakeforestmuseum.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://wa-node.gis.washington.edu/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""14""","""5""","true","",t
+"http://wcc-aswcc.yccd.edu/SearchResults.ashx?q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://wcc-ms.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://weare.shoreline.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://weare.shoreline.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://wgac.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://whalesense.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://whalesense.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://whatweknow.law.columbia.edu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://whatweknow.law.columbia.edu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://whatworkswellbeing.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://whatworkswellbeing.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://wmsbf.org/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://wmsbf.org/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://worldcat.org/webservices/catalog/search/worldcat/opensearch?q=&format=atom","application/atom+xml","400","","","true","""HTML response""",f
+"http://worldcat.org/webservices/catalog/search/worldcat/opensearch?q=&format=rss","application/rss+xml","400","","","true","""HTML response""",f
+"http://writingwar.com/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://writingwar.com/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://wsnet.colostate.edu/CWIS308/Mojo/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://wsnet.colostate.edu/CWIS584/Lori_Peek/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www1.usgs.gov/csas/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""652""","""5""","true","",t
+"http://www1.usgs.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=atom","application/atom+xml","200","""1""","""5""","true","",f
+"http://www1.usgs.gov/erddap/opensearch1.1/search?itemsPerPage=5&searchTerms=&format=rss","application/rss+xml","200","","","true","""XML Parse error""",f
+"http://www.aa.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.afrotc.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.agnic.org/catalog.rss?q=","application/rss+xml","404","","","true","""HTML response""",f
+"http://www.alvs.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.asap.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.baacc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.bahainyc.org/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.communitycolleges.wy.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.conflictresolution.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.coris.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""10590""","""5""","true","",t
+"http://www.cubewerx.com/wrs.cgi?crs=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&outputFormat=RSS&service=CSW&anyText=&request=GetRecords&+resultType=hits&typeNames=csw%3ARecord&maxRecords=5&version=2.0.2","application/atom+xml","404","","","true","""HTML response""",f
+"http://www.dataunitwales.gov.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.dce.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.distance.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.emodnet-geology.eu:80/emodnet/srv/eng/rss.search?hitsPerPage=5&any=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.esrl.noaa.gov/psd/pubs/cgi/search/simple?q=&output=RSS","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.esrl.noaa.gov/psd/pubs/cgi/search/simple?q=&output=RSS2","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.findingaugustine.org/Search/Results?lookfor=&view=rss","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.gahetna.nl/beeldbank-api/opensearch/?count=5&searchTerms=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.geftwap.org/opensearch_atom.xml?b_size%3Aint=5&SearchableText=","application/atom+xml","200","""0""","""5""","true","",t
+"http://www.geftwap.org/opensearch_rss.xml?b_size%3Aint=5&SearchableText=","application/rss+xml","200","""0""","""5""","true","",t
+"http://www.geonorge.no:80/geonetwork/srv/nor/rss.search?hitsPerPage=5&any=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.glbtrc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.globalvillage.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.gwascentral.org/phenotypes?q=&page_size=5&format=atom","application/atom+xml","400","","","true","""HTML response""",f
+"http://www.gwascentral.org/phenotypes?q=&page_size=5&format=rss","application/rss+xml","400","","","true","""HTML response""",f
+"http://www.gwascentral.org/studies?q=&page_size=5&format=atom","application/atom+xml","400","","","true","""HTML response""",f
+"http://www.gwascentral.org/studies?q=&page_size=5&format=rss","application/rss+xml","400","","","true","""HTML response""",f
+"http://www.hes.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.honors.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.hospitalsdatabase.lshtm.ac.uk/web-services/hospitals.php?countyno=5&name=&format=atom","application/atom+xml","200","""24""","""Unknown""","true","",t
+"http://www.hospitalsdatabase.lshtm.ac.uk/web-services/hospitals.php?countyno=5&name=&format=rss","application/rss+xml","200","""24""","""Unknown""","true","",t
+"http://www.housing.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.hp.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.iesc.org/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.irc.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.keyccs.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.keycommunities.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.key.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.law.illinois.edu/externship/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.livegreen.lc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.madata.gr/feed.php?output_type=atom&search_query=","application/atom+xml","200","","","true","""No content""",f
+"http://www.madata.gr/feed.php?output_type=rss&search_query=","application/rss+xml","200","","","true","""No content""",f
+"http://www.metrotransit.org/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.morris.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.mountaincampus.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.ms-sc.org/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.mycsu.colostate.edu/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.nacc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.ngdc.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""22925""","""5""","true","",t
+"http://www.nhm.ac.uk/natureplus/community/feeds/search/atom?q=&peopleEnabled=true&Submit=Search","application/atom+xml","200","""0""","""15""","true","",t
+"http://www.nhm.ac.uk/natureplus/community/feeds/search/rss2?q=&peopleEnabled=true&Submit=Search","application/rss+xml","200","""0""","""15""","true","",t
+"http://www.nodc.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=atom","application/atom+xml","200","""1452561""","""5""","true","",f
+"http://www.nodc.noaa.gov/geoportal/rest/find/document?max=5&searchText=&f=georss","application/rss+xml","200","""1452561""","""5""","true","",t
+"http://www.oas.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.ocl.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.oeo.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.ombuds.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.orientation.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.osp.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.otp.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.parentsandfamily.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.parents.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.ramride.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.rds.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.resliferecruitment.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.rha.colostate.edu/SearchResults.ashx?q=","application/atom+xml","404","","","true","""HTML response""",f
+"http://www.rslnmag.fr/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.sarasota.wateratlas.usf.edu/seagrass/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.sass.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.sc.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.scholars.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.sea-cadets.org/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.senate.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.ses.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.sfs.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.slce.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.slice.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.smartopendata.eu:8080/alfresco/wcservice/api/search/keyword.atom?q=&c=5","application/atom+xml","500","","","true","""HTML response""",f
+"http://www.smartopendata.eu:8080/alfresco/wcservice/api/search/keyword.rss?q=&c=5","application/rss+xml","500","","","true","""HTML response""",f
+"http://www.supportandsafety.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.tcd.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.tmcs.ac.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.treeo.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.ufadvising.ufl.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.ulc.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.undeclared.casa.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.unedddatacymru.gov.uk/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.unidata.ucar.edu/blogs/news/feed/entries/atom?q=","application/atom+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.uniprot.org/keywords/?sort=score&query=&limit=5&format=rss","application/rss+xml","200","""1192""","""5""","true","",f
+"http://www.urbancollege.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://www.utfab.colostate.edu/syndication.axd?q=","application/rss+xml","200","""Unknown""","""Unknown""","true","",f
+"http://www.veterans.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.wgac.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.wps.colostate.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""20""","true","",t
+"http://www.znyswap.org/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://yanisvaroufakis.eu/?feed=atom&s=","application/atom+xml","200","""Unknown""","""Unknown""","true","",t
+"http://yanisvaroufakis.eu/?feed=rss2&s=","application/rss+xml","200","""Unknown""","""Unknown""","true","",t
+"http://yc-acc.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://yc-scc.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
+"http://yc-slo.yccd.edu/SearchResults.ashx?q=","application/atom+xml","200","""0""","""10""","true","",t
