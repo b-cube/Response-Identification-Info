@@ -1,0 +1,56 @@
+"tag","tokens","num_per_tag"
+"Abstract","WMS",396
+"Abstract","Scientific Data",319
+"Abstract","A compliant implementation of WMS plus most of the SLD extension (dynamic styling). Can also generate PDF, SVG, KML, GeoRSS",19
+"Abstract","This is the reference implementation of WFS 1.0.0 and WFS 1.1.0, supports all WFS operations including Transaction.",18
+"Abstract","Map service to support the Coastal Flood Exposure Mapper",13
+"AccessConstraints","none",788
+"AccessConstraints","None",110
+"AccessConstraints","NONE",95
+"AccessConstraints","Although these data have been processed successfully on the computer system at the Nevada Bureau of Mines and Geology, no warranty expressed or implied is made regarding the accuracy or utility of the data on any system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. This disclaimer applies both to individual use of the data and aggregate use with other data. It is strongly recommended that these data be directly acquired from the Nevada Bureau of Mines and Geology. It is also strongly recommended that careful attention be paid to the contents of the metadata file associated with the data. The Nevada Bureau of Mines and Geology shall not be held liable for improper use of the data described and/or contained herein. By using this data you hereby agree to these conditions.",17
+"AccessConstraints","None. The Kansas Biological Survey (KBS) and its representatives make no warranty or representation, either expressed or implied, with respect to the digital data and their documentation, their quality, performance, merchantability, or fitness for a particular purpose. The digital data are distributed on \""as is\"" basis, and the user assumes all risk as to their quality, the results obtained from their use, and the performance of the data. In no event will the KBS or its representatives be liable for any direct, indirect, special, incidental or consequential damages resulting from and defect in the KBS's digital data or in their documentation. This disclaimer of warranty is exclusive and in lieu of all others, oral or written, expressed or implied. No agent or employee is authorized to make any modification, extension, or addition to this warranty.",13
+"Fees","none",703
+"Fees","None",382
+"Fees","NONE",134
+"IndividualName","GStore Support",42
+"IndividualName","Melony Barrett",42
+"IndividualName","Geoinformatics",37
+"IndividualName","Peter N. Schweitzer",26
+"IndividualName","Gary Johnson",21
+"Keyword","meteorology | atmosphere | climate | ocean | earth science",214
+"Keyword","bathymetry | lidar | topography | ocean | earth science",109
+"Keyword","RGIS | New Mexico",84
+"Keyword","WFS | WMS | GEOSERVER",20
+"Keyword","infoMapAccessService",14
+"Keyword","flooding, storm surge, sea level rise, exposure, coastal hazards",13
+"Keyword","ArcIMS",10
+"Name","WMS",1086
+"Name","OGC:WMS",226
+"Name","MapServer WFS",157
+"PositionName","GIS Specialist",43
+"PositionName","technical support",42
+"PositionName","Geoinformatics Manager",37
+"PositionName","Geologist",30
+"PositionName","IT Professional II",21
+"ProviderName","Arizona Geological Survey",45
+"ProviderName","Earth Data Analysis Center",42
+"ProviderName","Illinois State Geological Survey",42
+"ProviderName","Nevada Bureau of Mines and Geology",27
+"ProviderName","U.S. Geological Survey Mineral Resources Program",26
+"ServiceType","OGC WMTS",792
+"ServiceType","WFS",203
+"ServiceType","OGC WCS",43
+"ServiceType","WCS",39
+"ServiceType","OGC WFS",36
+"ServiceType","CSW",12
+"ServiceTypeVersion","1.0.0",805
+"ServiceTypeVersion","1.1.0",221
+"ServiceTypeVersion","1.1.2",42
+"ServiceTypeVersion","1.0.0 | 1.1.0 | 1.1.1 | 1.1.2",38
+"ServiceTypeVersion","2.0.0",18
+"ServiceTypeVersion","2.0.2",12
+"Title","WMS",281
+"Title","ECCO THREDDS Server",185
+"Title","Coastal and Marine Geology THREDDS Server",109
+"Title","GeoServer Web Feature Service",17
+"Title","GeoServer Web Map Service",16
