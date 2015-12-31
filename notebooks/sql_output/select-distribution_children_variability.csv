@@ -1,0 +1,21 @@
+"eval","keys","num_vals"
+"download","{application_profile,function_code,function_codelist,name}",12450
+"http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/codelist/gmxcodelists.xml#ci_onlinefunctioncode","{function_code,function_codelist}",10636
+"information","{application_profile,description,function_code,function_codelist,name}",3190
+"http","{application_profile,name,protocol}",2882
+"order","{function_code,protocol}",1812
+"wms","{application_profile,description,name}",655
+"ftp","{name,protocol}",541
+"search","{function_code,function_codelist}",538
+"google earth","{application_profile,name}",344
+"opendap","{name,protocol}",261
+"offlineaccess","{function_code,function_codelist}",103
+"kml","{application_profile,name,protocol}",84
+"documentation","{application_profile,name}",57
+"thredds","{application_profile,name,protocol}",49
+"rest","{application_profile,name}",46
+"esri","{description,name,protocol}",30
+"ogc:wms","{name,protocol}",29
+"xls","{application_profile,name}",10
+"zip","{application_profile,name}",7
+"other","{application_profile,name}",4
