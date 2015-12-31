@@ -1,0 +1,41 @@
+"element_value","num_elems"
+"Analysis Tool",3
+"Any FTP client",209
+"browser",138
+"CSV/TXT",74
+"Data Search Application",77
+"Documentation",51
+"Download",104
+"Google Earth",342
+"http",6
+"http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10",2
+"http://stategeothermaldata.org/uri-gin/aasg/xmlschema/PowerPlantFacility/0.2",1
+"http://stategeothermaldata.org/uri-gin/aasg/xmlschema/welllog/0.8",1
+"Information",33
+"KML",71
+"Map Search Application",66
+"Other",2
+"REST",45
+"Sample",82
+"Service",1
+"Standard Internet browser",527
+"Standard Internet Browser",58
+"Standard Internet browsers can browse OPeNDAP servers and specialized OPeNDAP software can enable more sophisticated data access and visualizations.",16
+"Standard Internet browsers can browse THREDDS Data Servers and specialized THREDDS software can enable more sophisticated data access and visualizations.",16
+"THREDDS",28
+"Various",1
+"VENDOR=ADOBE : APPLICATION=Reader",10
+"VENDOR = ADOBE: APPLICATION = Reader",2
+"VENDOR=ESRI : APPLICATION=ArcGIS",3
+"VENDOR = ESRI: APPLICATION = ArcInfo",1
+"VENDOR = ESRI: APPLICATION = ARCINFO",48
+"VENDOR=ESRI : APPLICATION=OGS",6
+"VENDOR=ESRI : APPLICATION=OGS;",1
+"VENDOR=ESRI : APPLICATION=OGS; VENDOR=ADOBE : APPLICATION=Reader; VENDOR=MICROSOFT : APPLICATION=Word 2011",2
+"VENDOR=MICROSOFT : APPLICATION=Word 2011",2
+"web browser",527
+"Web Browser",556
+"WMS",1
+"XLS",2
+"ZIP",5
+"Zipped Access",2
