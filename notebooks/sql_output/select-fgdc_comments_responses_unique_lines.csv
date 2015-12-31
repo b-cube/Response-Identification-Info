@@ -1,0 +1,59 @@
+"a_comment","found_in_responses"
+"translated from eainfo to MD_FeatureCatalogueDescription",3187
+"Other FGDC spatial reference elements not mapped to ISO from Xpath: //spref ",3091
+"translated from eainfo/detailed to MD_CoverageDescription ",2350
+"FGDC content not mapped to ISO. From Xpath: //enttyp ",2347
+"translated from eainfo to MD_FeatureCatalogueDescription ",1934
+"/horizsys/geograph mapped to MD_GridSpatialRepresentation ",1272
+"FGDC content not mapped to ISO. From Xpath: //spdoinfo/rastinfo/rasttype ",1252
+"FGDC content not mapped to ISO. From Xpath: //attrdomv/udom ",1242
+"FGDC content not mapped to ISO. From Xpath: //attrdomv/edom ",767
+"FGDC content not mapped to ISO. From Xpath: //enttyp",660
+"FGDC Content not mapped to ISO from Xpath: //spdoinfo/indspref ",535
+"FGDC content not mapped to ISO. From Xpath: //spdoinfo/rastinfo/rasttype",457
+"FGDC content not mapped to ISO. From Xpath: //attrdomv/udom",452
+"FGDC content not mapped to ISO. From Xpath: //attrdomv/codesetd ",360
+"translated from dataqual/cloud to MD_ImageDescription",325
+"FGDC content not mapped to ISO. From Xpath: //attrdomv/edom",266
+"translated from dataqual/cloud to MD_ImageDescription ",226
+"FGDC content not mapped to ISO. From Xpath: //attrdomv/codesetd",122
+"Vertical Datum not mapped to ISO ",20
+"North American Datum of 1983 ",14
+"Ellipsoid, vertical units: Meters ",13
+"FGDC content not mapped to ISO. From Xpath: //distinfo/stdorder/resdesc ",12
+"Geodetic Horizontal Datum not mapped to ISO ",6
+"Entity Type Definition Source not translated: American Society for Photogrammetry and Remote Sensing ",6
+"FGDC content not mapped to ISO. From Xpath: //distinfo/availabl/timeinfo/rngdates/enddate ",5
+"World Geodetic System 1984 EPOCH 2000.0000 ",5
+"Mean Sea Level, vertical units: Meters ",5
+"World Geodetic System 1984 ellipsoid height, vertical units: meters ",5
+"Perennial; Positional Accuracy",2
+"FGDC content not mapped to ISO. From Xpath: //distinfo/availabl/timeinfo/rngdates/enddate",2
+"Entity Type Definition Source not translated: GHRSST and the US National Oceanographic Data Center ",2
+"Intermittent; Positional Accuracy ",2
+"not applicable</edomvd> <edomvds>http://nhd.usgs.gov/NHDinGEO_FCodes_by_layer.pdf</edomvds> </edom> <edom> <edomv>46003</edomv> <edomvd>STREAM/RIVER: Hydrographic Category ",2
+"not applicable</edomvd> <edomvds>same</edomvds> </edom> <edom> <edomv>46000</edomv> <edomvd>STREAM/RIVER: Feature type only: no attributes</edomvd> <edomvds>same</edomvds> </edom> <edom> <edomv>33400</edomv> <edomvd>CONNECTOR: Feature type only: no attributes</edomvd> <edomvds>same</edomvds> </edom> <edom> <edomv>33600</edomv> <edomvd>CANAL/DITCH: Feature type only: no attributes</edomvd> <edomvds>same</edomvds> </edom>",2
+"not applicable</edomvd> <edomvds>same</edomvds> </edom> <edom> <edomv>46000</edomv> <edomvd>STREAM/RIVER: Feature type only: no attributes</edomvd> <edomvds>same</edomvds> </edom> <edom> <edomv>33400</edomv> <edomvd>CONNECTOR: Feature type only: no attributes</edomvd> <edomvds>same</edomvds> </edom> <edom> <edomv>33600</edomv> <edomvd>CANAL/DITCH: Feature type only: no attributes</edomvd> <edomvds>same</edomvds> </edom> ",2
+"srcscale: 1200 ",2
+"Attribute Definition Source not translated: http://www.nodc.noaa.gov/SatelliteData/pathfinder4km/userguide.html ",2
+"Attribute Definition Source not translated: http://www.cogsci.princeton.edu ",2
+"Attribute Definition Source not translated: http://jwocky.gsfc.nasa.gov/ ",2
+"Attribute Definition Source not translated: GHRSST Science Team (2010), The Recommended GHRSST Data Specification (GDS) Revision 2.0 Technical Specifications, available from the GHRSST International Project Office, http://www.ghrsst.org, pp 120. ",2
+"WGS84 ",2
+"POLYGON ",1
+"RASTER&gt;</indspref> ",1
+"srcscale: 1200",1
+"Entity Type Definition Source not translated: Woolpert, Inc. ",1
+"srcscale: 14400",1
+"srcscale: 24000",1
+"srcscale: 3000",1
+"Ellipsoid, vertical units: meters ",1
+"LINE ",1
+"NAD83 Ellipsoid, vertical units: feet ",1
+"Entity Type Definition Source not translated: Florida GIS Baseline Specification for Orthophotography and LiDAR V 1.2 ",1
+"North American Datum of 1983(CORS96) EPOCH 2003.0000 ",1
+"Attribute Definition Source not translated: Woolpert, Inc ",1
+"Unknown ",1
+"Entity Type Definition Source not translated: Software Generated ",1
+"Entity Type Definition Source not translated: Software generated ",1
+"Aggregration Criteria not mapped from FGDC ",1
