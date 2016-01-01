@@ -1,0 +1,147 @@
+"host","lineage_type","count"
+"217.23.233.67","Statement",3
+"arcticlcc.org","No Lineage",1
+"bluehub.jrc.ec.europa.eu","No Lineage",13
+"bluehub.jrc.ec.europa.eu","Statement",123
+"catalog.data.gov","No Lineage",3934
+"catalog.data.gov","Processing Steps",767
+"catalog.data.gov","Statement",186
+"catalogue.datalocale.fr","Statement",1
+"ca.water.usgs.gov","No Lineage",1
+"cida.usgs.gov","Statement",2
+"climate-adapt.eea.europa.eu","Statement",1
+"coast.noaa.gov","No Lineage",234
+"coastwatch.pfeg.noaa.gov","No Lineage",78
+"coastwatch.pfeg.noaa.gov","Statement",255
+"crack.seismo.unr.edu","No Lineage",3
+"crack.seismo.unr.edu","Processing Steps",7
+"d1opzmrrdjgef4.cloudfront.net","No Lineage",1
+"data.boisestate.edu","No Lineage",4
+"data.daff.gov.au","No Lineage",5
+"data.daff.gov.au","Statement",18
+"data.doi.gov","No Lineage",43
+"data.fao.org","Statement",1
+"data.gov.au","No Lineage",17
+"data.gov.au","Statement",7
+"data.ioos.us","Statement",184
+"data.nanoos.org","No Lineage",18
+"data.nanoos.org","Statement",4
+"data.noaa.gov","No Lineage",985
+"data.noaa.gov","Processing Steps",83
+"data.noaa.gov","Statement",176
+"data.nodc.noaa.gov","No Lineage",101
+"data.ottawa.ca","No Lineage",6
+"data.ottawa.ca","Statement",1
+"datapoint.metoffice.gov.uk","Statement",25
+"data.satapps.org","Statement",37
+"data-search.nerc.ac.uk","No Lineage",10
+"data-search.nerc.ac.uk","Statement",678
+"data.ulm.de","Processing Steps",46
+"dataxfer.stanford.edu","No Lineage",4
+"dcsu059g9fk65.cloudfront.net","Statement",5
+"discomap.eea.europa.eu","Statement",1
+"docs.lib.noaa.gov","No Lineage",2
+"donnees.ec.gc.ca","No Lineage",5
+"ecco.jpl.nasa.gov","Statement",147
+"ecowatch.ncddc.noaa.gov","No Lineage",2
+"ecowatch.ncddc.noaa.gov","Statement",74
+"edgar.jrc.ec.europa.eu","Statement",2
+"edg.epa.gov","Statement",67
+"epa.gov","No Lineage",1
+"ferret.pmel.noaa.gov","No Lineage",1
+"ferret.pmel.noaa.gov","Statement",15
+"gar.lternet.edu","Processing Steps",20
+"geoport.whoi.edu","No Lineage",45
+"geoport.whoi.edu","Statement",67
+"gis.breconbeacons.org","No Lineage",1
+"gis.breconbeacons.org","Statement",3
+"gisdata.nd.gov","No Lineage",1
+"gsics.eumetsat.int","Statement",10
+"gstore.unm.edu","No Lineage",404
+"gstore.unm.edu","Processing Steps",269
+"inport.nmfs.noaa.gov","No Lineage",588
+"inport.nmfs.noaa.gov","Processing Steps",188
+"inspire.halton.gov.uk","No Lineage",2
+"inspire.halton.gov.uk","Statement",1
+"locationmde.data.gov.uk","No Lineage",28
+"locationmde.data.gov.uk","Statement",153
+"map.richmond.gov.uk","No Lineage",3
+"maps.bristol.gov.uk","Statement",10
+"maps.derby.gov.uk","Statement",7
+"maps.norfolk.gov.uk","Statement",19
+"maps.northlincs.gov.uk","No Lineage",1
+"mcm.lternet.edu","No Lineage",2
+"mcm.lternet.edu","Processing Steps",74
+"meta.geo.census.gov","No Lineage",46
+"meta.geo.census.gov","Processing Steps",1681
+"mrdata.usgs.gov","No Lineage",23
+"ngdc.noaa.gov","Processing Steps",2
+"oos.soest.hawaii.edu","No Lineage",27
+"oos.soest.hawaii.edu","Processing Steps",2
+"oos.soest.hawaii.edu","Statement",299
+"opendata.euskadi.eus","No Lineage",15
+"opendata.euskadi.eus","Statement",662
+"opendata.thessaloniki.gr","Statement",6
+"osmc.noaa.gov","No Lineage",11
+"osmc.noaa.gov","Statement",16
+"pacioos-mapserver2.ancl.hawaii.edu","Statement",13
+"partnerdataexport.ccw.gov.uk","Statement",1
+"portal.oceannet.org","No Lineage",2
+"portal.oceannet.org","Statement",96
+"repository.stategeothermaldata.org","No Lineage",12
+"repository.stategeothermaldata.org","Statement",2331
+"rsg.pml.ac.uk","No Lineage",1
+"rsg.pml.ac.uk","Statement",5
+"sero.nmfs.noaa.gov","Processing Steps",32
+"stellwagen.er.usgs.gov","Statement",109
+"taskman.eionet.europa.eu","Statement",2
+"tds.glos.us","Statement",4
+"upwell.pfeg.noaa.gov","No Lineage",2
+"upwell.pfeg.noaa.gov","Statement",117
+"vislab-ccom.unh.edu","No Lineage",1
+"vogis.cnv.at","Statement",1
+"webarchive.nationalarchives.gov.uk","No Lineage",7
+"webarchive.nationalarchives.gov.uk","Statement",130
+"wis.wmo.int","No Lineage",21
+"wis.wmo.int","Statement",2
+"www1.ncdc.noaa.gov","Statement",1
+"www1.usgs.gov","Statement",2
+"www.add.scar.org","No Lineage",1
+"www.admiralty.co.uk","No Lineage",3
+"www.admiralty.co.uk","Statement",25
+"www.aoncadis.org","No Lineage",31
+"www.bco-dmo.org","Processing Steps",1
+"www.beacons-npa.gov.uk","Statement",2
+"www.charts.noaa.gov","No Lineage",430
+"www.coris.noaa.gov","No Lineage",56
+"www.coris.noaa.gov","Processing Steps",205
+"www.coris.noaa.gov","Statement",2
+"www.data.gouv.fr","Statement",2
+"www.datalocale.fr","Statement",1
+"www.datanorthyorkshire.org","Statement",1
+"www.deq.state.va.us","Processing Steps",1
+"www.earthsystemgrid.org","No Lineage",93
+"www.eea.europa.eu","Statement",20
+"www.epa.gov","No Lineage",1
+"www.euskadi.eus","No Lineage",8
+"www.euskadi.eus","Statement",281
+"www.ga.gov.au","Statement",1
+"www.geoportal.rlp.de","No Lineage",3
+"www.geoportal.rlp.de","Statement",1
+"www.geoviqua.org","Processing Steps",2
+"www.gogeo.ac.uk","Statement",1
+"www.lehendakaritza.ejgv.euskadi.eus","Statement",36
+"www.marine-geo.org","No Lineage",5
+"www.nauticalcharts.noaa.gov","No Lineage",1
+"www.ncddc.noaa.gov","No Lineage",111
+"www.ncddc.noaa.gov","Processing Steps",204
+"www.ngdc.noaa.gov","No Lineage",47
+"www.ngdc.noaa.gov","Processing Steps",90
+"www.ngdc.noaa.gov","Statement",855
+"www.ngu.no","Processing Steps",6
+"www.rijkswaterstaat.nl","Statement",6
+"www.salford.gov.uk","Statement",14
+"www.seadatanet.org","Statement",3
+"www.sitr.regione.sicilia.it","No Lineage",2
+"www.usgs.gov","No Lineage",1155
+"www.usgs.gov","Processing Steps",5
