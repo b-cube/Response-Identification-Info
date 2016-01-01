@@ -1,5 +1,3 @@
-postgres/
-
 notebooks/outputs/*
 !notebooks/outputs/*.txt
 !notebooks/outputs/*.csv
@@ -16,9 +14,6 @@ notebooks/outputs/all_codelists_by_host.txt
 
 notebooks/outputs/responses_with_json.csv
 
-
 notebooks/outputs/federal_linkrot_20150925.json
-
-notebooks/Notes.ipynb
 
 scripts/missing_20151102.csv
