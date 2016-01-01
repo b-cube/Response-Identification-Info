@@ -24,27 +24,27 @@ or, if not required, these modules were used during the data processing at some 
 
 **Duplicate Detection:** demonstration of TF-IDf against different metadata representations of the same dataset and a vector near-duplicate/similarity algorithm against the kinds of identifier representations often found in the documents. [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Duplicate%20Detection.ipynb)
 
-**Identifiers:** [link]()
+**Identifiers:** brief analysis of unique identifiers in the set of XML documents with additional analysis of DOIs [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Identifiers.ipynb)
 
-**ISO Specific Details:** [link]()
+**ISO Specific Details:** analysis of codelists, variation in version identification and distribution CI_OnlineResource characterization [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20ISO%20Specific%20Details.ipynb)
 
-**Metadata Metrics Fine-grained:** [link]()
+**Metadata Metrics Fine-grained:** more detailed analysis of the metadata standards (FGDC, ISO-19115) including lineage and data quality token counts, distribution link linkrot checks and lineage as processing steps vs. lineage as statement in ISO documnets [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Metadata%20Metrics%20fine-grained.ipynb)
 
-**Metadata Metrics:** [link]()
+**Metadata Metrics:** document-level token counts (more akin to bag of words counts with some exclusions), metadata document "age" [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Metadata%20Metrics.ipynb)
 
-**OGC Tokens:** [link]()
+**OGC Tokens:** token and linkrot analysis of the harvested OGC GetCapabilities services [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20OGC%20Tokens.ipynb)
 
-**OpenSearch:** [link]()
+**OpenSearch:** quick check of the OSDDs for CWIC/ESIP best practices and to understand likelihood of viable machine-actionable request generation [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20OpenSearch.ipynb)
 
-**Schemas:** [link]()
+**Schemas:** linkrot analysis of XML schemas from the harvest dataset with a second focus on federally-hosted schemas [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Schemas.ipynb)
 
-**Service Linkrot:** [link]()
+**Service Linkrot:** smaller linkrot check of OGC GetCapabilities and OpenSearch services [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Service%20Linkrot.ipynb)
 
-**Validation Metrics:** [link]()
+**Validation Metrics:** analysis of XML validation data for overall validity by protocol and an exploration of the error types [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Validation%20Metrics.ipynb)
 
 The SQL found in the notebooks can be found in the <code>sql</code> subdirectory, with subdirectories labeled by notebook name. The individual references are in the notebooks as necessary. The output of these SQL queries can be found in the <code>sql_output</code> subdirectory, again with references in the notebooks.
 
-The entire Postgres database is available as a SQL dump: [responses database]()
+The entire Postgres database is available as a SQL dump: [responses database](). See the associated README for more information.
 
 ####Local Notebook Access
 
@@ -67,7 +67,7 @@ you will need to update the file path to this configuration file. The configurat
 
 ```
 {
-    "connection": "postgresql://my_user:my_password@my_database.url.com:5432/my_database"
+    "connection": "postgresql://my_user:my_password@my_database.url.com:my_port/my_database"
 }
 ```
 
