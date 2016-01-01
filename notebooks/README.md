@@ -16,13 +16,13 @@ For the most part, the processing and analysis code relies on lxml, pandas, sqla
 
 [semantics-preprocessing](https://github.com/b-cube/semantics-preprocessing) : module for most of the document processing (in the pipeline or standalone).
 
-or, if not required, these modules were used during the data processing at some point. For example, the semantics-pipeline code is not called directly from a notebook but was used to execute the document identification process, the results of which are used in the notebooks.
+or, if not required, these modules were used during the data processing at some point. For example, the semantics-pipeline code is not called directly from a notebook but was used to execute the document identification process, the results of which are used in these notebooks. Each notebook contains links to the preprocessing notebooks or other scripts used for the data generation related to that notebook.
 
-###Table of Contents
+###Notebooks
 
 **Blended Metadata:** analysis of any questions related to blended documents, i.e. ISO-19115 elements found in FGDC-CSDGM documents or JSON embedded in XML documents. [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Blended%20Metadata.ipynb)
 
-**Duplicate Detection:** demonstration of TF-IDf against different metadata representations of the same dataset and a vector near-duplicate/similarity algorithm against the kinds of identifier representations often found in the documents. [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Duplicate%20Detection.ipynb)
+**Duplicate Detection:** demonstration of TF-IDF against different metadata representations of the same dataset and a vector near-duplicate/similarity algorithm against the kinds of identifier representations often found in the documents. [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Duplicate%20Detection.ipynb)
 
 **Identifiers:** brief analysis of unique identifiers in the set of XML documents with additional analysis of DOIs [link](https://github.com/b-cube/Response-Identification-Info/blob/master/notebooks/Analysis%20-%20Identifiers.ipynb)
 
